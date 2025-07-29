@@ -1,0 +1,9 @@
+@use "sass:math";
+
+@function emsize($value) {
+  @return math.div($value, 16) * 1rem;
+}
+
+@function tracking($value) {
+  @return calc(#{$value} / 1em);
+}

@@ -1,0 +1,7 @@
+@mixin apply-height($value, $set-md-radius: true) {
+  height: $value;
+
+  @if $set-md-radius {
+    --md-sys-shape-corner-full: calc(#{$value} / 2);
+  }
+}

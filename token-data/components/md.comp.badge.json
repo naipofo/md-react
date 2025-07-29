@@ -1,0 +1,161 @@
+{
+  "displayName": "Badges",
+  "tokenSetName": "md.comp.badge",
+  "tokens": [
+    {
+      "tokenName": "md.comp.badge.color",
+      "displayName": "Badge color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.badge.shape",
+      "displayName": "Badge shape",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.full",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.badge.size",
+      "displayName": "Badge size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 6,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.badge.large.color",
+      "displayName": "Badge large color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.badge.large.shape",
+      "displayName": "Badge large shape",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.full",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.badge.large.size",
+      "displayName": "Badge large size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 16,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.badge.large.label-text.color",
+      "displayName": "Badge large label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.badge.large.label-text.font",
+      "displayName": "Badge large label text font",
+      "tokenValueType": "FONT_NAMES",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.label-small.font",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.badge.large.label-text.line-height",
+      "displayName": "Badge large label text line height",
+      "tokenValueType": "LINE_HEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.label-small.line-height",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.badge.large.label-text.size",
+      "displayName": "Badge large label text size",
+      "tokenValueType": "FONT_SIZE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.label-small.size",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.badge.large.label-text.tracking",
+      "displayName": "Badge large label text tracking",
+      "tokenValueType": "FONT_TRACKING",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.label-small.tracking",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.badge.large.label-text.weight",
+      "displayName": "Badge large label text weight",
+      "tokenValueType": "FONT_WEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.label-small.weight",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.badge.large.label-text.type",
+      "displayName": "Badge large label text type",
+      "tokenValueType": "TYPOGRAPHY",
+      "data": {
+        "token": {
+          "type": {
+            "fontNameTokenName": "md.comp.badge.large.label-text.font",
+            "fontWeightTokenName": "md.comp.badge.large.label-text.weight",
+            "fontSizeTokenName": "md.comp.badge.large.label-text.size",
+            "fontTrackingTokenName": "md.comp.badge.large.label-text.tracking",
+            "lineHeightTokenName": "md.comp.badge.large.label-text.line-height"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

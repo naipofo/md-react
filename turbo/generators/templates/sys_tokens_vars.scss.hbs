@@ -1,0 +1,6 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Token group: {{name}} */
+
+{{#each tokens}}
+${{kebabCase @key}}: var(--{{kebabCase @key}}, {{this}});
+{{/each}}

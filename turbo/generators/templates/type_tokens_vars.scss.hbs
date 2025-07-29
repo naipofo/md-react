@@ -1,0 +1,14 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Token group: {{name}} */
+
+@use '../helpers' as *;
+
+{{#each tokens}}
+${{kebabCase @key}}: var(--{{kebabCase @key}}, {{#if this.type~}}
+  {{~#if (eq this.type "weight")}}{{{this.value}}}{{/if~}}
+  {{~#if (eq this.type "tracking")}}tracking({{{this.value}}}){{/if~}}
+  {{~#if (eq this.type "font")}}{{{this.value}}}{{/if~}}
+{{~else~}}
+  emsize({{{this}}})
+{{~/if~}});
+{{/each}}

@@ -1,0 +1,44 @@
+@use "../../tokens/component-tokens/md-comp-badge.scss" as *;
+@use "../../util.scss" as *;
+
+.MdcBadge {
+  position: relative;
+  display: inline-block;
+
+  & > .MdcBadge-badge {
+    position: absolute;
+    z-index: 1;
+
+    padding-inline: 4px;
+
+    background-color: rgb($md-comp-badge-large-color);
+    border-radius: $md-comp-badge-large-shape;
+    @include apply-height($md-comp-badge-large-size);
+    color: rgb($md-comp-badge-large-label-text-color);
+
+    top: #{14-16}px;
+    inset-inline-end: #{12-16}px;
+
+    min-width: 16px;
+    max-width: 34px;
+
+    white-space: nowrap;
+    user-select: none;
+
+    font-family: $md-comp-badge-large-label-text-font;
+    font-size: $md-comp-badge-large-label-text-size;
+    font-weight: $md-comp-badge-large-label-text-weight;
+    line-height: $md-comp-badge-large-label-text-line-height;
+    letter-spacing: $md-comp-badge-large-label-text-tracking;
+
+    &:empty {
+      top: 0;
+      inset-inline-end: 0;
+      padding: 0;
+      min-width: initial;
+      width: 6px;
+      height: 6px;
+      transform: none;
+    }
+  }
+}

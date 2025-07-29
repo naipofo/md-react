@@ -1,0 +1,412 @@
+{
+  "md.sys.typescale.body-large": "24",
+  "md.sys.typescale.body-large.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.body-large.weight": {
+    "value": 400,
+    "type": "weight"
+  },
+  "md.sys.typescale.body-large.size": "16",
+  "md.sys.typescale.body-large.tracking": {
+    "value": 0.5,
+    "type": "tracking"
+  },
+  "md.sys.typescale.body-large.line-height": "24",
+  "md.sys.typescale.title-medium": "24",
+  "md.sys.typescale.title-medium.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.title-medium.weight": {
+    "value": 500,
+    "type": "weight"
+  },
+  "md.sys.typescale.title-medium.size": "16",
+  "md.sys.typescale.title-medium.tracking": {
+    "value": 0.15,
+    "type": "tracking"
+  },
+  "md.sys.typescale.title-medium.line-height": "24",
+  "md.sys.typescale.display-large": "64",
+  "md.sys.typescale.display-large.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.display-large.weight": {
+    "value": 400,
+    "type": "weight"
+  },
+  "md.sys.typescale.display-large.size": "57",
+  "md.sys.typescale.display-large.tracking": {
+    "value": -0.25,
+    "type": "tracking"
+  },
+  "md.sys.typescale.display-large.line-height": "64",
+  "md.sys.typescale.label-medium": "16",
+  "md.sys.typescale.label-medium.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.label-medium.weight": {
+    "value": 500,
+    "type": "weight"
+  },
+  "md.sys.typescale.label-medium.weight.prominent": {
+    "value": 700,
+    "type": "weight"
+  },
+  "md.sys.typescale.label-medium.size": "12",
+  "md.sys.typescale.label-medium.tracking": {
+    "value": 0.5,
+    "type": "tracking"
+  },
+  "md.sys.typescale.label-medium.line-height": "16",
+  "md.sys.typescale.body-small": "16",
+  "md.sys.typescale.body-small.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.body-small.weight": {
+    "value": 400,
+    "type": "weight"
+  },
+  "md.sys.typescale.body-small.size": "12",
+  "md.sys.typescale.body-small.tracking": {
+    "value": 0.4,
+    "type": "tracking"
+  },
+  "md.sys.typescale.body-small.line-height": "16",
+  "md.sys.typescale.display-medium": "52",
+  "md.sys.typescale.display-medium.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.display-medium.weight": {
+    "value": 400,
+    "type": "weight"
+  },
+  "md.sys.typescale.display-medium.size": "45",
+  "md.sys.typescale.display-medium.line-height": "52",
+  "md.sys.typescale.label-large": "20",
+  "md.sys.typescale.label-large.size": "14",
+  "md.sys.typescale.label-large.line-height": "20",
+  "md.sys.typescale.label-large.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.label-large.weight": {
+    "value": 500,
+    "type": "weight"
+  },
+  "md.sys.typescale.label-large.weight.prominent": {
+    "value": 700,
+    "type": "weight"
+  },
+  "md.sys.typescale.label-large.tracking": {
+    "value": 0.1,
+    "type": "tracking"
+  },
+  "md.sys.typescale.headline-large": "40",
+  "md.sys.typescale.headline-large.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.headline-large.weight": {
+    "value": 400,
+    "type": "weight"
+  },
+  "md.sys.typescale.headline-large.size": "32",
+  "md.sys.typescale.headline-large.line-height": "40",
+  "md.sys.typescale.headline-small": "32",
+  "md.sys.typescale.headline-small.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.headline-small.weight": {
+    "value": 400,
+    "type": "weight"
+  },
+  "md.sys.typescale.headline-small.size": "24",
+  "md.sys.typescale.headline-small.line-height": "32",
+  "md.sys.typescale.emphasized.display-small": "44",
+  "md.sys.typescale.emphasized.display-small.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.emphasized.display-small.weight": {
+    "value": 500,
+    "type": "weight"
+  },
+  "md.sys.typescale.emphasized.display-small.size": "36",
+  "md.sys.typescale.emphasized.display-small.line-height": "44",
+  "md.sys.typescale.emphasized.headline-large": "40",
+  "md.sys.typescale.emphasized.headline-large.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.emphasized.headline-large.weight": {
+    "value": 500,
+    "type": "weight"
+  },
+  "md.sys.typescale.emphasized.headline-large.size": "32",
+  "md.sys.typescale.emphasized.headline-large.line-height": "40",
+  "md.sys.typescale.emphasized.headline-medium": "36",
+  "md.sys.typescale.emphasized.headline-medium.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.emphasized.headline-medium.weight": {
+    "value": 500,
+    "type": "weight"
+  },
+  "md.sys.typescale.emphasized.headline-medium.size": "28",
+  "md.sys.typescale.emphasized.headline-medium.line-height": "36",
+  "md.sys.typescale.emphasized.title-large": "28",
+  "md.sys.typescale.emphasized.title-large.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.emphasized.title-large.weight": {
+    "value": 500,
+    "type": "weight"
+  },
+  "md.sys.typescale.emphasized.title-large.size": "22",
+  "md.sys.typescale.emphasized.title-large.line-height": "28",
+  "md.sys.typescale.emphasized.title-medium": "24",
+  "md.sys.typescale.emphasized.title-medium.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.emphasized.title-medium.weight": {
+    "value": 700,
+    "type": "weight"
+  },
+  "md.sys.typescale.emphasized.title-medium.size": "16",
+  "md.sys.typescale.emphasized.title-medium.tracking": {
+    "value": 0.15,
+    "type": "tracking"
+  },
+  "md.sys.typescale.emphasized.title-medium.line-height": "24",
+  "md.sys.typescale.emphasized.title-small": "20",
+  "md.sys.typescale.emphasized.title-small.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.emphasized.title-small.weight": {
+    "value": 700,
+    "type": "weight"
+  },
+  "md.sys.typescale.emphasized.title-small.size": "14",
+  "md.sys.typescale.emphasized.title-small.tracking": {
+    "value": 0.1,
+    "type": "tracking"
+  },
+  "md.sys.typescale.emphasized.title-small.line-height": "20",
+  "md.sys.typescale.emphasized.body-large": "24",
+  "md.sys.typescale.emphasized.body-large.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.emphasized.body-large.weight": {
+    "value": 500,
+    "type": "weight"
+  },
+  "md.sys.typescale.emphasized.body-large.size": "16",
+  "md.sys.typescale.emphasized.body-large.tracking": {
+    "value": 0.5,
+    "type": "tracking"
+  },
+  "md.sys.typescale.emphasized.body-large.line-height": "24",
+  "md.sys.typescale.emphasized.body-medium": "20",
+  "md.sys.typescale.emphasized.body-medium.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.emphasized.body-medium.weight": {
+    "value": 500,
+    "type": "weight"
+  },
+  "md.sys.typescale.emphasized.body-medium.size": "14",
+  "md.sys.typescale.emphasized.body-medium.tracking": {
+    "value": 0.25,
+    "type": "tracking"
+  },
+  "md.sys.typescale.emphasized.body-medium.line-height": "20",
+  "md.sys.typescale.emphasized.label-large": "20",
+  "md.sys.typescale.emphasized.label-large.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.emphasized.label-large.weight": {
+    "value": 700,
+    "type": "weight"
+  },
+  "md.sys.typescale.emphasized.label-large.size": "14",
+  "md.sys.typescale.emphasized.label-large.tracking": {
+    "value": 0.1,
+    "type": "tracking"
+  },
+  "md.sys.typescale.emphasized.label-large.line-height": "20",
+  "md.sys.typescale.emphasized.body-small": "16",
+  "md.sys.typescale.emphasized.body-small.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.emphasized.body-small.weight": {
+    "value": 500,
+    "type": "weight"
+  },
+  "md.sys.typescale.emphasized.body-small.size": "12",
+  "md.sys.typescale.emphasized.body-small.tracking": {
+    "value": 0.4,
+    "type": "tracking"
+  },
+  "md.sys.typescale.emphasized.body-small.line-height": "16",
+  "md.sys.typescale.emphasized.label-medium": "16",
+  "md.sys.typescale.emphasized.label-medium.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.emphasized.label-medium.weight": {
+    "value": 700,
+    "type": "weight"
+  },
+  "md.sys.typescale.emphasized.label-medium.size": "12",
+  "md.sys.typescale.emphasized.label-medium.tracking": {
+    "value": 0.5,
+    "type": "tracking"
+  },
+  "md.sys.typescale.emphasized.label-medium.line-height": "16",
+  "md.sys.typescale.emphasized.label-small": "16",
+  "md.sys.typescale.emphasized.label-small.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.emphasized.label-small.weight": {
+    "value": 700,
+    "type": "weight"
+  },
+  "md.sys.typescale.emphasized.label-small.size": "11",
+  "md.sys.typescale.emphasized.label-small.tracking": {
+    "value": 0.5,
+    "type": "tracking"
+  },
+  "md.sys.typescale.emphasized.label-small.line-height": "16",
+  "md.sys.typescale.emphasized.display-large": "64",
+  "md.sys.typescale.emphasized.display-large.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.emphasized.display-large.weight": {
+    "value": 500,
+    "type": "weight"
+  },
+  "md.sys.typescale.emphasized.display-large.size": "57",
+  "md.sys.typescale.emphasized.display-large.tracking": {
+    "value": -0.25,
+    "type": "tracking"
+  },
+  "md.sys.typescale.emphasized.display-large.line-height": "64",
+  "md.sys.typescale.emphasized.display-medium": "52",
+  "md.sys.typescale.emphasized.display-medium.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.emphasized.display-medium.weight": {
+    "value": 500,
+    "type": "weight"
+  },
+  "md.sys.typescale.emphasized.display-medium.size": "45",
+  "md.sys.typescale.emphasized.display-medium.line-height": "52",
+  "md.sys.typescale.emphasized.headline-small": "32",
+  "md.sys.typescale.emphasized.headline-small.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.emphasized.headline-small.weight": {
+    "value": 500,
+    "type": "weight"
+  },
+  "md.sys.typescale.emphasized.headline-small.size": "24",
+  "md.sys.typescale.emphasized.headline-small.line-height": "32",
+  "md.sys.typescale.display-small": "44",
+  "md.sys.typescale.display-small.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.display-small.weight": {
+    "value": 400,
+    "type": "weight"
+  },
+  "md.sys.typescale.display-small.size": "36",
+  "md.sys.typescale.display-small.line-height": "44",
+  "md.sys.typescale.headline-medium": "36",
+  "md.sys.typescale.headline-medium.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.headline-medium.weight": {
+    "value": 400,
+    "type": "weight"
+  },
+  "md.sys.typescale.headline-medium.size": "28",
+  "md.sys.typescale.headline-medium.line-height": "36",
+  "md.sys.typescale.title-small": "20",
+  "md.sys.typescale.title-small.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.title-small.weight": {
+    "value": 500,
+    "type": "weight"
+  },
+  "md.sys.typescale.title-small.size": "14",
+  "md.sys.typescale.title-small.tracking": {
+    "value": 0.1,
+    "type": "tracking"
+  },
+  "md.sys.typescale.title-small.line-height": "20",
+  "md.sys.typescale.body-medium": "20",
+  "md.sys.typescale.body-medium.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.body-medium.weight": {
+    "value": 400,
+    "type": "weight"
+  },
+  "md.sys.typescale.body-medium.size": "14",
+  "md.sys.typescale.body-medium.tracking": {
+    "value": 0.25,
+    "type": "tracking"
+  },
+  "md.sys.typescale.body-medium.line-height": "20",
+  "md.sys.typescale.label-small": "16",
+  "md.sys.typescale.label-small.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.label-small.weight": {
+    "value": 500,
+    "type": "weight"
+  },
+  "md.sys.typescale.label-small.size": "11",
+  "md.sys.typescale.label-small.tracking": {
+    "value": 0.5,
+    "type": "tracking"
+  },
+  "md.sys.typescale.label-small.line-height": "16",
+  "md.sys.typescale.title-large": "28",
+  "md.sys.typescale.title-large.line-height": "28",
+  "md.sys.typescale.title-large.font": {
+    "value": "\"Roboto\"",
+    "type": "font"
+  },
+  "md.sys.typescale.title-large.weight": {
+    "value": 400,
+    "type": "weight"
+  },
+  "md.sys.typescale.title-large.size": "22"
+}
