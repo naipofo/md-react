@@ -45,6 +45,9 @@ const sysTokenActions = () => {
     "color.json",
     "corner.json",
     "corner-value.json",
+    "elevation.json",
+    "motion.json",
+    "state.json",
   ];
 
   const actions: (PlopTypes.ActionType | null)[] = normalSysTokenFiles.map(
