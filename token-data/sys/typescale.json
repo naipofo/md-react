@@ -1,5 +1,11 @@
 {
-  "md.sys.typescale.body-large": "24",
+  "md.sys.typescale.body-large": {
+    "fontNameTokenName": "md.sys.typescale.body-large.font",
+    "fontWeightTokenName": "md.sys.typescale.body-large.weight",
+    "fontSizeTokenName": "md.sys.typescale.body-large.size",
+    "fontTrackingTokenName": "md.sys.typescale.body-large.tracking",
+    "lineHeightTokenName": "md.sys.typescale.body-large.line-height"
+  },
   "md.sys.typescale.body-large.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -14,7 +20,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.body-large.line-height": "24",
-  "md.sys.typescale.title-medium": "24",
+  "md.sys.typescale.title-medium": {
+    "fontNameTokenName": "md.sys.typescale.title-medium.font",
+    "fontWeightTokenName": "md.sys.typescale.title-medium.weight",
+    "fontSizeTokenName": "md.sys.typescale.title-medium.size",
+    "fontTrackingTokenName": "md.sys.typescale.title-medium.tracking",
+    "lineHeightTokenName": "md.sys.typescale.title-medium.line-height"
+  },
   "md.sys.typescale.title-medium.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -29,7 +41,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.title-medium.line-height": "24",
-  "md.sys.typescale.display-large": "64",
+  "md.sys.typescale.display-large": {
+    "fontNameTokenName": "md.sys.typescale.display-large.font",
+    "fontWeightTokenName": "md.sys.typescale.display-large.weight",
+    "fontSizeTokenName": "md.sys.typescale.display-large.size",
+    "fontTrackingTokenName": "md.sys.typescale.display-large.tracking",
+    "lineHeightTokenName": "md.sys.typescale.display-large.line-height"
+  },
   "md.sys.typescale.display-large.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -44,7 +62,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.display-large.line-height": "64",
-  "md.sys.typescale.label-medium": "16",
+  "md.sys.typescale.label-medium": {
+    "fontNameTokenName": "md.sys.typescale.label-medium.font",
+    "fontWeightTokenName": "md.sys.typescale.label-medium.weight",
+    "fontSizeTokenName": "md.sys.typescale.label-medium.size",
+    "fontTrackingTokenName": "md.sys.typescale.label-medium.tracking",
+    "lineHeightTokenName": "md.sys.typescale.label-medium.line-height"
+  },
   "md.sys.typescale.label-medium.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -63,7 +87,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.label-medium.line-height": "16",
-  "md.sys.typescale.body-small": "16",
+  "md.sys.typescale.body-small": {
+    "fontNameTokenName": "md.sys.typescale.body-small.font",
+    "fontWeightTokenName": "md.sys.typescale.body-small.weight",
+    "fontSizeTokenName": "md.sys.typescale.body-small.size",
+    "fontTrackingTokenName": "md.sys.typescale.body-small.tracking",
+    "lineHeightTokenName": "md.sys.typescale.body-small.line-height"
+  },
   "md.sys.typescale.body-small.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -78,7 +108,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.body-small.line-height": "16",
-  "md.sys.typescale.display-medium": "52",
+  "md.sys.typescale.display-medium": {
+    "fontNameTokenName": "md.sys.typescale.display-medium.font",
+    "fontWeightTokenName": "md.sys.typescale.display-medium.weight",
+    "fontSizeTokenName": "md.sys.typescale.display-medium.size",
+    "fontTrackingTokenName": "md.sys.typescale.display-medium.tracking",
+    "lineHeightTokenName": "md.sys.typescale.display-medium.line-height"
+  },
   "md.sys.typescale.display-medium.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -88,8 +124,18 @@
     "type": "weight"
   },
   "md.sys.typescale.display-medium.size": "45",
+  "md.sys.typescale.display-medium.tracking": {
+    "value": 0,
+    "type": "tracking"
+  },
   "md.sys.typescale.display-medium.line-height": "52",
-  "md.sys.typescale.label-large": "20",
+  "md.sys.typescale.label-large": {
+    "fontNameTokenName": "md.sys.typescale.label-large.font",
+    "fontWeightTokenName": "md.sys.typescale.label-large.weight",
+    "fontSizeTokenName": "md.sys.typescale.label-large.size",
+    "fontTrackingTokenName": "md.sys.typescale.label-large.tracking",
+    "lineHeightTokenName": "md.sys.typescale.label-large.line-height"
+  },
   "md.sys.typescale.label-large.size": "14",
   "md.sys.typescale.label-large.line-height": "20",
   "md.sys.typescale.label-large.font": {
@@ -108,7 +154,13 @@
     "value": 0.1,
     "type": "tracking"
   },
-  "md.sys.typescale.headline-large": "40",
+  "md.sys.typescale.headline-large": {
+    "fontNameTokenName": "md.sys.typescale.headline-large.font",
+    "fontWeightTokenName": "md.sys.typescale.headline-large.weight",
+    "fontSizeTokenName": "md.sys.typescale.headline-large.size",
+    "fontTrackingTokenName": "md.sys.typescale.headline-large.tracking",
+    "lineHeightTokenName": "md.sys.typescale.headline-large.line-height"
+  },
   "md.sys.typescale.headline-large.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -118,8 +170,18 @@
     "type": "weight"
   },
   "md.sys.typescale.headline-large.size": "32",
+  "md.sys.typescale.headline-large.tracking": {
+    "value": 0,
+    "type": "tracking"
+  },
   "md.sys.typescale.headline-large.line-height": "40",
-  "md.sys.typescale.headline-small": "32",
+  "md.sys.typescale.headline-small": {
+    "fontNameTokenName": "md.sys.typescale.headline-small.font",
+    "fontWeightTokenName": "md.sys.typescale.headline-small.weight",
+    "fontSizeTokenName": "md.sys.typescale.headline-small.size",
+    "fontTrackingTokenName": "md.sys.typescale.headline-small.tracking",
+    "lineHeightTokenName": "md.sys.typescale.headline-small.line-height"
+  },
   "md.sys.typescale.headline-small.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -129,8 +191,18 @@
     "type": "weight"
   },
   "md.sys.typescale.headline-small.size": "24",
+  "md.sys.typescale.headline-small.tracking": {
+    "value": 0,
+    "type": "tracking"
+  },
   "md.sys.typescale.headline-small.line-height": "32",
-  "md.sys.typescale.emphasized.display-small": "44",
+  "md.sys.typescale.emphasized.display-small": {
+    "fontNameTokenName": "md.sys.typescale.emphasized.display-small.font",
+    "fontWeightTokenName": "md.sys.typescale.emphasized.display-small.weight",
+    "fontSizeTokenName": "md.sys.typescale.emphasized.display-small.size",
+    "fontTrackingTokenName": "md.sys.typescale.emphasized.display-small.tracking",
+    "lineHeightTokenName": "md.sys.typescale.emphasized.display-small.line-height"
+  },
   "md.sys.typescale.emphasized.display-small.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -140,8 +212,18 @@
     "type": "weight"
   },
   "md.sys.typescale.emphasized.display-small.size": "36",
+  "md.sys.typescale.emphasized.display-small.tracking": {
+    "value": 0,
+    "type": "tracking"
+  },
   "md.sys.typescale.emphasized.display-small.line-height": "44",
-  "md.sys.typescale.emphasized.headline-large": "40",
+  "md.sys.typescale.emphasized.headline-large": {
+    "fontNameTokenName": "md.sys.typescale.emphasized.headline-large.font",
+    "fontWeightTokenName": "md.sys.typescale.emphasized.headline-large.weight",
+    "fontSizeTokenName": "md.sys.typescale.emphasized.headline-large.size",
+    "fontTrackingTokenName": "md.sys.typescale.emphasized.headline-large.tracking",
+    "lineHeightTokenName": "md.sys.typescale.emphasized.headline-large.line-height"
+  },
   "md.sys.typescale.emphasized.headline-large.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -151,8 +233,18 @@
     "type": "weight"
   },
   "md.sys.typescale.emphasized.headline-large.size": "32",
+  "md.sys.typescale.emphasized.headline-large.tracking": {
+    "value": 0,
+    "type": "tracking"
+  },
   "md.sys.typescale.emphasized.headline-large.line-height": "40",
-  "md.sys.typescale.emphasized.headline-medium": "36",
+  "md.sys.typescale.emphasized.headline-medium": {
+    "fontNameTokenName": "md.sys.typescale.emphasized.headline-medium.font",
+    "fontWeightTokenName": "md.sys.typescale.emphasized.headline-medium.weight",
+    "fontSizeTokenName": "md.sys.typescale.emphasized.headline-medium.size",
+    "fontTrackingTokenName": "md.sys.typescale.emphasized.headline-medium.tracking",
+    "lineHeightTokenName": "md.sys.typescale.emphasized.headline-medium.line-height"
+  },
   "md.sys.typescale.emphasized.headline-medium.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -162,8 +254,18 @@
     "type": "weight"
   },
   "md.sys.typescale.emphasized.headline-medium.size": "28",
+  "md.sys.typescale.emphasized.headline-medium.tracking": {
+    "value": 0,
+    "type": "tracking"
+  },
   "md.sys.typescale.emphasized.headline-medium.line-height": "36",
-  "md.sys.typescale.emphasized.title-large": "28",
+  "md.sys.typescale.emphasized.title-large": {
+    "fontNameTokenName": "md.sys.typescale.emphasized.title-large.font",
+    "fontWeightTokenName": "md.sys.typescale.emphasized.title-large.weight",
+    "fontSizeTokenName": "md.sys.typescale.emphasized.title-large.size",
+    "fontTrackingTokenName": "md.sys.typescale.emphasized.title-large.tracking",
+    "lineHeightTokenName": "md.sys.typescale.emphasized.title-large.line-height"
+  },
   "md.sys.typescale.emphasized.title-large.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -173,8 +275,18 @@
     "type": "weight"
   },
   "md.sys.typescale.emphasized.title-large.size": "22",
+  "md.sys.typescale.emphasized.title-large.tracking": {
+    "value": 0,
+    "type": "tracking"
+  },
   "md.sys.typescale.emphasized.title-large.line-height": "28",
-  "md.sys.typescale.emphasized.title-medium": "24",
+  "md.sys.typescale.emphasized.title-medium": {
+    "fontNameTokenName": "md.sys.typescale.emphasized.title-medium.font",
+    "fontWeightTokenName": "md.sys.typescale.emphasized.title-medium.weight",
+    "fontSizeTokenName": "md.sys.typescale.emphasized.title-medium.size",
+    "fontTrackingTokenName": "md.sys.typescale.emphasized.title-medium.tracking",
+    "lineHeightTokenName": "md.sys.typescale.emphasized.title-medium.line-height"
+  },
   "md.sys.typescale.emphasized.title-medium.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -189,7 +301,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.emphasized.title-medium.line-height": "24",
-  "md.sys.typescale.emphasized.title-small": "20",
+  "md.sys.typescale.emphasized.title-small": {
+    "fontNameTokenName": "md.sys.typescale.emphasized.title-small.font",
+    "fontWeightTokenName": "md.sys.typescale.emphasized.title-small.weight",
+    "fontSizeTokenName": "md.sys.typescale.emphasized.title-small.size",
+    "fontTrackingTokenName": "md.sys.typescale.emphasized.title-small.tracking",
+    "lineHeightTokenName": "md.sys.typescale.emphasized.title-small.line-height"
+  },
   "md.sys.typescale.emphasized.title-small.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -204,7 +322,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.emphasized.title-small.line-height": "20",
-  "md.sys.typescale.emphasized.body-large": "24",
+  "md.sys.typescale.emphasized.body-large": {
+    "fontNameTokenName": "md.sys.typescale.emphasized.body-large.font",
+    "fontWeightTokenName": "md.sys.typescale.emphasized.body-large.weight",
+    "fontSizeTokenName": "md.sys.typescale.emphasized.body-large.size",
+    "fontTrackingTokenName": "md.sys.typescale.emphasized.body-large.tracking",
+    "lineHeightTokenName": "md.sys.typescale.emphasized.body-large.line-height"
+  },
   "md.sys.typescale.emphasized.body-large.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -219,7 +343,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.emphasized.body-large.line-height": "24",
-  "md.sys.typescale.emphasized.body-medium": "20",
+  "md.sys.typescale.emphasized.body-medium": {
+    "fontNameTokenName": "md.sys.typescale.emphasized.body-medium.font",
+    "fontWeightTokenName": "md.sys.typescale.emphasized.body-medium.weight",
+    "fontSizeTokenName": "md.sys.typescale.emphasized.body-medium.size",
+    "fontTrackingTokenName": "md.sys.typescale.emphasized.body-medium.tracking",
+    "lineHeightTokenName": "md.sys.typescale.emphasized.body-medium.line-height"
+  },
   "md.sys.typescale.emphasized.body-medium.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -234,7 +364,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.emphasized.body-medium.line-height": "20",
-  "md.sys.typescale.emphasized.label-large": "20",
+  "md.sys.typescale.emphasized.label-large": {
+    "fontNameTokenName": "md.sys.typescale.emphasized.label-large.font",
+    "fontWeightTokenName": "md.sys.typescale.emphasized.label-large.weight",
+    "fontSizeTokenName": "md.sys.typescale.emphasized.label-large.size",
+    "fontTrackingTokenName": "md.sys.typescale.emphasized.label-large.tracking",
+    "lineHeightTokenName": "md.sys.typescale.emphasized.label-large.line-height"
+  },
   "md.sys.typescale.emphasized.label-large.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -249,7 +385,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.emphasized.label-large.line-height": "20",
-  "md.sys.typescale.emphasized.body-small": "16",
+  "md.sys.typescale.emphasized.body-small": {
+    "fontNameTokenName": "md.sys.typescale.emphasized.body-small.font",
+    "fontWeightTokenName": "md.sys.typescale.emphasized.body-small.weight",
+    "fontSizeTokenName": "md.sys.typescale.emphasized.body-small.size",
+    "fontTrackingTokenName": "md.sys.typescale.emphasized.body-small.tracking",
+    "lineHeightTokenName": "md.sys.typescale.emphasized.body-small.line-height"
+  },
   "md.sys.typescale.emphasized.body-small.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -264,7 +406,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.emphasized.body-small.line-height": "16",
-  "md.sys.typescale.emphasized.label-medium": "16",
+  "md.sys.typescale.emphasized.label-medium": {
+    "fontNameTokenName": "md.sys.typescale.emphasized.label-medium.font",
+    "fontWeightTokenName": "md.sys.typescale.emphasized.label-medium.weight",
+    "fontSizeTokenName": "md.sys.typescale.emphasized.label-medium.size",
+    "fontTrackingTokenName": "md.sys.typescale.emphasized.label-medium.tracking",
+    "lineHeightTokenName": "md.sys.typescale.emphasized.label-medium.line-height"
+  },
   "md.sys.typescale.emphasized.label-medium.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -279,7 +427,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.emphasized.label-medium.line-height": "16",
-  "md.sys.typescale.emphasized.label-small": "16",
+  "md.sys.typescale.emphasized.label-small": {
+    "fontNameTokenName": "md.sys.typescale.emphasized.label-small.font",
+    "fontWeightTokenName": "md.sys.typescale.emphasized.label-small.weight",
+    "fontSizeTokenName": "md.sys.typescale.emphasized.label-small.size",
+    "fontTrackingTokenName": "md.sys.typescale.emphasized.label-small.tracking",
+    "lineHeightTokenName": "md.sys.typescale.emphasized.label-small.line-height"
+  },
   "md.sys.typescale.emphasized.label-small.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -294,7 +448,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.emphasized.label-small.line-height": "16",
-  "md.sys.typescale.emphasized.display-large": "64",
+  "md.sys.typescale.emphasized.display-large": {
+    "fontNameTokenName": "md.sys.typescale.emphasized.display-large.font",
+    "fontWeightTokenName": "md.sys.typescale.emphasized.display-large.weight",
+    "fontSizeTokenName": "md.sys.typescale.emphasized.display-large.size",
+    "fontTrackingTokenName": "md.sys.typescale.emphasized.display-large.tracking",
+    "lineHeightTokenName": "md.sys.typescale.emphasized.display-large.line-height"
+  },
   "md.sys.typescale.emphasized.display-large.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -309,7 +469,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.emphasized.display-large.line-height": "64",
-  "md.sys.typescale.emphasized.display-medium": "52",
+  "md.sys.typescale.emphasized.display-medium": {
+    "fontNameTokenName": "md.sys.typescale.emphasized.display-medium.font",
+    "fontWeightTokenName": "md.sys.typescale.emphasized.display-medium.weight",
+    "fontSizeTokenName": "md.sys.typescale.emphasized.display-medium.size",
+    "fontTrackingTokenName": "md.sys.typescale.emphasized.display-medium.tracking",
+    "lineHeightTokenName": "md.sys.typescale.emphasized.display-medium.line-height"
+  },
   "md.sys.typescale.emphasized.display-medium.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -319,8 +485,18 @@
     "type": "weight"
   },
   "md.sys.typescale.emphasized.display-medium.size": "45",
+  "md.sys.typescale.emphasized.display-medium.tracking": {
+    "value": 0,
+    "type": "tracking"
+  },
   "md.sys.typescale.emphasized.display-medium.line-height": "52",
-  "md.sys.typescale.emphasized.headline-small": "32",
+  "md.sys.typescale.emphasized.headline-small": {
+    "fontNameTokenName": "md.sys.typescale.emphasized.headline-small.font",
+    "fontWeightTokenName": "md.sys.typescale.emphasized.headline-small.weight",
+    "fontSizeTokenName": "md.sys.typescale.emphasized.headline-small.size",
+    "fontTrackingTokenName": "md.sys.typescale.emphasized.headline-small.tracking",
+    "lineHeightTokenName": "md.sys.typescale.emphasized.headline-small.line-height"
+  },
   "md.sys.typescale.emphasized.headline-small.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -330,8 +506,18 @@
     "type": "weight"
   },
   "md.sys.typescale.emphasized.headline-small.size": "24",
+  "md.sys.typescale.emphasized.headline-small.tracking": {
+    "value": 0,
+    "type": "tracking"
+  },
   "md.sys.typescale.emphasized.headline-small.line-height": "32",
-  "md.sys.typescale.display-small": "44",
+  "md.sys.typescale.display-small": {
+    "fontNameTokenName": "md.sys.typescale.display-small.font",
+    "fontWeightTokenName": "md.sys.typescale.display-small.weight",
+    "fontSizeTokenName": "md.sys.typescale.display-small.size",
+    "fontTrackingTokenName": "md.sys.typescale.display-small.tracking",
+    "lineHeightTokenName": "md.sys.typescale.display-small.line-height"
+  },
   "md.sys.typescale.display-small.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -341,8 +527,18 @@
     "type": "weight"
   },
   "md.sys.typescale.display-small.size": "36",
+  "md.sys.typescale.display-small.tracking": {
+    "value": 0,
+    "type": "tracking"
+  },
   "md.sys.typescale.display-small.line-height": "44",
-  "md.sys.typescale.headline-medium": "36",
+  "md.sys.typescale.headline-medium": {
+    "fontNameTokenName": "md.sys.typescale.headline-medium.font",
+    "fontWeightTokenName": "md.sys.typescale.headline-medium.weight",
+    "fontSizeTokenName": "md.sys.typescale.headline-medium.size",
+    "fontTrackingTokenName": "md.sys.typescale.headline-medium.tracking",
+    "lineHeightTokenName": "md.sys.typescale.headline-medium.line-height"
+  },
   "md.sys.typescale.headline-medium.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -352,8 +548,18 @@
     "type": "weight"
   },
   "md.sys.typescale.headline-medium.size": "28",
+  "md.sys.typescale.headline-medium.tracking": {
+    "value": 0,
+    "type": "tracking"
+  },
   "md.sys.typescale.headline-medium.line-height": "36",
-  "md.sys.typescale.title-small": "20",
+  "md.sys.typescale.title-small": {
+    "fontNameTokenName": "md.sys.typescale.title-small.font",
+    "fontWeightTokenName": "md.sys.typescale.title-small.weight",
+    "fontSizeTokenName": "md.sys.typescale.title-small.size",
+    "fontTrackingTokenName": "md.sys.typescale.title-small.tracking",
+    "lineHeightTokenName": "md.sys.typescale.title-small.line-height"
+  },
   "md.sys.typescale.title-small.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -368,7 +574,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.title-small.line-height": "20",
-  "md.sys.typescale.body-medium": "20",
+  "md.sys.typescale.body-medium": {
+    "fontNameTokenName": "md.sys.typescale.body-medium.font",
+    "fontWeightTokenName": "md.sys.typescale.body-medium.weight",
+    "fontSizeTokenName": "md.sys.typescale.body-medium.size",
+    "fontTrackingTokenName": "md.sys.typescale.body-medium.tracking",
+    "lineHeightTokenName": "md.sys.typescale.body-medium.line-height"
+  },
   "md.sys.typescale.body-medium.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -383,7 +595,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.body-medium.line-height": "20",
-  "md.sys.typescale.label-small": "16",
+  "md.sys.typescale.label-small": {
+    "fontNameTokenName": "md.sys.typescale.label-small.font",
+    "fontWeightTokenName": "md.sys.typescale.label-small.weight",
+    "fontSizeTokenName": "md.sys.typescale.label-small.size",
+    "fontTrackingTokenName": "md.sys.typescale.label-small.tracking",
+    "lineHeightTokenName": "md.sys.typescale.label-small.line-height"
+  },
   "md.sys.typescale.label-small.font": {
     "value": "\"Roboto\"",
     "type": "font"
@@ -398,7 +616,13 @@
     "type": "tracking"
   },
   "md.sys.typescale.label-small.line-height": "16",
-  "md.sys.typescale.title-large": "28",
+  "md.sys.typescale.title-large": {
+    "fontNameTokenName": "md.sys.typescale.title-large.font",
+    "fontWeightTokenName": "md.sys.typescale.title-large.weight",
+    "fontSizeTokenName": "md.sys.typescale.title-large.size",
+    "fontTrackingTokenName": "md.sys.typescale.title-large.tracking",
+    "lineHeightTokenName": "md.sys.typescale.title-large.line-height"
+  },
   "md.sys.typescale.title-large.line-height": "28",
   "md.sys.typescale.title-large.font": {
     "value": "\"Roboto\"",
@@ -408,5 +632,9 @@
     "value": 400,
     "type": "weight"
   },
-  "md.sys.typescale.title-large.size": "22"
+  "md.sys.typescale.title-large.size": "22",
+  "md.sys.typescale.title-large.tracking": {
+    "value": 0,
+    "type": "tracking"
+  }
 }

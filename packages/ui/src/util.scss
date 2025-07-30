@@ -1,7 +1,23 @@
+@use "sass:map";
+
 @mixin apply-height($value, $set-md-radius: true) {
   height: $value;
 
   @if $set-md-radius {
     --md-sys-shape-corner-full: calc(#{$value} / 2);
   }
+}
+
+@mixin apply-typescale($typescale) {
+  font-family: map.get($typescale, "font-family");
+  font-weight: map.get($typescale, "font-weight");
+  font-size: map.get($typescale, "font-size");
+  letter-spacing: map.get($typescale, "letter-spacing");
+  line-height: map.get($typescale, "line-height");
+}
+
+@mixin apply-motion($motion, $properties...) {
+  transition-property: $properties;
+  transition-duration: map.get($motion, "duration");
+  transition-timing-function: map.get($motion, "easing");
 }

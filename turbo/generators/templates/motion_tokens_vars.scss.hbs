@@ -1,0 +1,13 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Token group: {{name}} */
+
+{{#each tokens}}
+{{#if this.easing}}
+${{kebabCase @key}}: (
+  easing: {{this.easing}},
+  duration: {{this.duration}}
+);
+{{else}}
+${{kebabCase @key}}: var(--{{kebabCase @key}}, {{this}});
+{{/if}}
+{{/each}}

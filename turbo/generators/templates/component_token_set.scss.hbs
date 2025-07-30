@@ -13,7 +13,7 @@ ${{~kebabCase this.tokenName}}: {{#with this.data.token~}}
     rgba({{this.color.red}}, {{this.color.green}}, {{this.color.blue}}, {{this.color.alpha}})
   {{else if this.opacity~}}
     {{this.opacity}}
-  {{else if this.numeric~}}
+  {{~else if this.numeric~}}
     {{this.numeric}}
   {{else if this.fontWeight~}}
     {{this.fontWeight}}
@@ -27,7 +27,15 @@ ${{~kebabCase this.tokenName}}: {{#with this.data.token~}}
     {{this.lineHeight.value}}
   {{else if this.fontTracking~}}
     {{this.fontTracking.value}}
-  {{else if this.elevation~}}
+  {{~else if this.type~}}
+(
+  'font-family': ${{kebabCase this.type.fontNameTokenName}},
+  'font-weight': ${{kebabCase this.type.fontWeightTokenName}},
+  'font-size': ${{kebabCase this.type.fontSizeTokenName}},
+  'letter-spacing': ${{kebabCase this.type.fontTrackingTokenName}},
+  'line-height': ${{kebabCase this.type.lineHeightTokenName}}
+)
+  {{~else if this.elevation~}}
     {{this.elevation.value}}
   {{~else if this.shape~}}
     {{#if (eq this.shape.family "SHAPE_FAMILY_CIRCULAR")~}}

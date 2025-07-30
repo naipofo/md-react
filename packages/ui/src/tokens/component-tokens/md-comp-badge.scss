@@ -41,5 +41,11 @@ $md-comp-badge-large-label-text-tracking: $md-sys-typescale-label-small-tracking
 $md-comp-badge-large-label-text-weight: $md-sys-typescale-label-small-weight;
 
 // Badge large label text type
-$md-comp-badge-large-label-text-type: none;
+$md-comp-badge-large-label-text-type: (
+  'font-family': $md-comp-badge-large-label-text-font,
+  'font-weight': $md-comp-badge-large-label-text-weight,
+  'font-size': $md-comp-badge-large-label-text-size,
+  'letter-spacing': $md-comp-badge-large-label-text-tracking,
+  'line-height': $md-comp-badge-large-label-text-line-height
+);
 

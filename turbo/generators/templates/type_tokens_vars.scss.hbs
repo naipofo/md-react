@@ -4,11 +4,21 @@
 @use '../helpers' as *;
 
 {{#each tokens}}
-${{kebabCase @key}}: var(--{{kebabCase @key}}, {{#if this.type~}}
-  {{~#if (eq this.type "weight")}}{{{this.value}}}{{/if~}}
-  {{~#if (eq this.type "tracking")}}tracking({{{this.value}}}){{/if~}}
-  {{~#if (eq this.type "font")}}{{{this.value}}}{{/if~}}
+{{#if this.[1].fontNameTokenName}}
+${{kebabCase this.[0]}}: (
+  'font-family': ${{kebabCase this.[1].fontNameTokenName}},
+  'font-weight': ${{kebabCase this.[1].fontWeightTokenName}},
+  'font-size': ${{kebabCase this.[1].fontSizeTokenName}},
+  'letter-spacing': ${{kebabCase this.[1].fontTrackingTokenName}},
+  'line-height': ${{kebabCase this.[1].lineHeightTokenName}}
+);
+{{else}}
+${{kebabCase this.[0]}}: var(--{{kebabCase this.[0]}}, {{#if this.[1].type~}}
+  {{~#if (eq this.[1].type "weight")}}{{{this.[1].value}}}{{/if~}}
+  {{~#if (eq this.[1].type "tracking")}}tracking({{{this.[1].value}}}){{/if~}}
+  {{~#if (eq this.[1].type "font")}}{{{this.[1].value}}}{{/if~}}
 {{~else~}}
-  emsize({{{this}}})
+  emsize({{{this.[1]}}})
 {{~/if~}});
+{{/if}}
 {{/each}}

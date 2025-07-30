@@ -25,11 +25,7 @@
     white-space: nowrap;
     user-select: none;
 
-    font-family: $md-comp-badge-large-label-text-font;
-    font-size: $md-comp-badge-large-label-text-size;
-    font-weight: $md-comp-badge-large-label-text-weight;
-    line-height: $md-comp-badge-large-label-text-line-height;
-    letter-spacing: $md-comp-badge-large-label-text-tracking;
+    @include apply-typescale($md-comp-badge-large-label-text-type);
 
     &:empty {
       top: 0;
