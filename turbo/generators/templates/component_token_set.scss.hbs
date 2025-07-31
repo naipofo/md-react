@@ -4,57 +4,61 @@
 
 @use '../sys-tokens.scss' as *;
 
-{{#each tokens}}
-// {{this.displayName}}
-${{~kebabCase this.tokenName}}: {{#with this.data.token~}}
-  {{#if this.tokenName~}}
-    ${{kebabCase this.tokenName~}}
-  {{else if this.color~}}
-    rgba({{this.color.red}}, {{this.color.green}}, {{this.color.blue}}, {{this.color.alpha}})
-  {{else if this.opacity~}}
-    {{this.opacity}}
-  {{~else if this.numeric~}}
-    {{this.numeric}}
-  {{else if this.fontWeight~}}
-    {{this.fontWeight}}
-  {{else if this.fontNames~}}
-    {{#each this.fontNames.values}}{{#unless @first}}, {{/unless}}'{{this}}'{{/each}}
-  {{else if this.length~}}
-    {{this.length.value}}px
-  {{~else if this.fontSize~}}
-    {{this.fontSize.value}}
-  {{else if this.lineHeight~}}
-    {{this.lineHeight.value}}
-  {{else if this.fontTracking~}}
-    {{this.fontTracking.value}}
-  {{~else if this.type~}}
-(
-  'font-family': ${{kebabCase this.type.fontNameTokenName}},
-  'font-weight': ${{kebabCase this.type.fontWeightTokenName}},
-  'font-size': ${{kebabCase this.type.fontSizeTokenName}},
-  'letter-spacing': ${{kebabCase this.type.fontTrackingTokenName}},
-  'line-height': ${{kebabCase this.type.lineHeightTokenName}}
-)
-  {{~else if this.elevation~}}
-    {{this.elevation.value}}
-  {{~else if this.shape~}}
-    {{#if (eq this.shape.family "SHAPE_FAMILY_CIRCULAR")~}}
-      50%
-    {{else if (eq this.shape.family "SHAPE_FAMILY_ROUNDED_CORNERS")~}}
-      {{#if this.shape.defaultSize~}}
-        {{this.shape.defaultSize.value}}
-      {{else if this.shape.topLeft~}}
-        {{this.shape.topLeft.value}} {{!
-        }}{{this.shape.topRight.value}} {{!
-        }}{{this.shape.bottomRight.value}} {{!
-        }}{{this.shape.bottomLeft.value}}
-      {{else~}}
-        0
-      {{/if~}}
-    {{/if~}}
-  {{else~}}
-    none
-  {{/if}};
-{{/with}}
-
-{{/each}}
+${{kebabCase tokenSetName}}: (
+  name: {{kebabCase tokenSetName}},
+  tokens: (
+    {{#each tokens}}
+    // {{this.displayName}}
+    {{kebabCase this.tokenNameSuffix}}: {{#with this.data.token~}}
+    {{#if this.tokenName~}}
+        ${{kebabCase this.tokenName~}}
+    {{else if this.color~}}
+        rgba({{this.color.red}}, {{this.color.green}}, {{this.color.blue}}, {{this.color.alpha}})
+    {{else if this.opacity~}}
+        {{this.opacity}}
+    {{~else if this.numeric~}}
+        {{this.numeric}}
+    {{else if this.fontWeight~}}
+        {{this.fontWeight}}
+    {{else if this.fontNames~}}
+        {{#each this.fontNames.values}}{{#unless @first}}, {{/unless}}'{{this}}'{{/each}}
+    {{else if this.length~}}
+        {{this.length.value}}px
+    {{~else if this.fontSize~}}
+        {{this.fontSize.value}}
+    {{else if this.lineHeight~}}
+        {{this.lineHeight.value}}
+    {{else if this.fontTracking~}}
+        {{this.fontTracking.value}}
+    {{~else if this.type~}}
+    (
+      font-family: {{kebabCase this.type.fontNameTokenName}},
+      font-weight: {{kebabCase this.type.fontWeightTokenName}},
+      font-size: {{kebabCase this.type.fontSizeTokenName}},
+      letter-spacing: {{kebabCase this.type.fontTrackingTokenName}},
+      line-height: {{kebabCase this.type.lineHeightTokenName}}
+    )
+    {{~else if this.elevation~}}
+        {{this.elevation.value}}
+    {{~else if this.shape~}}
+        {{#if (eq this.shape.family "SHAPE_FAMILY_CIRCULAR")~}}
+        50%
+        {{else if (eq this.shape.family "SHAPE_FAMILY_ROUNDED_CORNERS")~}}
+        {{#if this.shape.defaultSize~}}
+            {{this.shape.defaultSize.value}}
+        {{else if this.shape.topLeft~}}
+            {{this.shape.topLeft.value}} {{!
+            }}{{this.shape.topRight.value}} {{!
+            }}{{this.shape.bottomRight.value}} {{!
+            }}{{this.shape.bottomLeft.value}}
+        {{else~}}
+            0
+        {{/if~}}
+        {{/if~}}
+    {{else~}}
+        none
+    {{/if}}
+    {{~/with}}{{#unless @last}},{{/unless}}
+    {{/each}}
+  )
+);

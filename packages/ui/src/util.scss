@@ -8,16 +8,27 @@
   }
 }
 
-@mixin apply-typescale($typescale) {
-  font-family: map.get($typescale, "font-family");
-  font-weight: map.get($typescale, "font-weight");
-  font-size: map.get($typescale, "font-size");
-  letter-spacing: map.get($typescale, "letter-spacing");
-  line-height: map.get($typescale, "line-height");
-}
-
 @mixin apply-motion($motion, $properties...) {
   transition-property: $properties;
   transition-duration: map.get($motion, "duration");
   transition-timing-function: map.get($motion, "easing");
+}
+
+@function get-token($set, $suffix) {
+  @return var(
+    -- + map.get($set, name) + -$suffix,
+    map.get(map.get($set, tokens), $suffix)
+  );
+}
+
+@mixin apply-typescale-token($set, $suffix) {
+  $token: map.get(map.get($set, tokens), $suffix);
+  font-family: map.get(map.get($set, tokens), map.get($token, font-family));
+  font-weight: map.get(map.get($set, tokens), map.get($token, font-weight));
+  font-size: map.get(map.get($set, tokens), map.get($token, font-size));
+  letter-spacing: map.get(
+    map.get($set, tokens),
+    map.get($token, letter-spacing)
+  );
+  line-height: map.get(map.get($set, tokens), map.get($token, line-height));
 }

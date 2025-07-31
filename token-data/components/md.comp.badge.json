@@ -4,6 +4,7 @@
   "tokens": [
     {
       "tokenName": "md.comp.badge.color",
+      "tokenNameSuffix": "color",
       "displayName": "Badge color",
       "tokenValueType": "COLOR",
       "data": {
@@ -15,6 +16,7 @@
     },
     {
       "tokenName": "md.comp.badge.shape",
+      "tokenNameSuffix": "shape",
       "displayName": "Badge shape",
       "tokenValueType": "SHAPE",
       "data": {
@@ -26,6 +28,7 @@
     },
     {
       "tokenName": "md.comp.badge.size",
+      "tokenNameSuffix": "size",
       "displayName": "Badge size",
       "tokenValueType": "LENGTH",
       "data": {
@@ -40,6 +43,7 @@
     },
     {
       "tokenName": "md.comp.badge.large.color",
+      "tokenNameSuffix": "large.color",
       "displayName": "Badge large color",
       "tokenValueType": "COLOR",
       "data": {
@@ -51,6 +55,7 @@
     },
     {
       "tokenName": "md.comp.badge.large.shape",
+      "tokenNameSuffix": "large.shape",
       "displayName": "Badge large shape",
       "tokenValueType": "SHAPE",
       "data": {
@@ -62,6 +67,7 @@
     },
     {
       "tokenName": "md.comp.badge.large.size",
+      "tokenNameSuffix": "large.size",
       "displayName": "Badge large size",
       "tokenValueType": "LENGTH",
       "data": {
@@ -76,6 +82,7 @@
     },
     {
       "tokenName": "md.comp.badge.large.label-text.color",
+      "tokenNameSuffix": "large.label-text.color",
       "displayName": "Badge large label text color",
       "tokenValueType": "COLOR",
       "data": {
@@ -87,6 +94,7 @@
     },
     {
       "tokenName": "md.comp.badge.large.label-text.font",
+      "tokenNameSuffix": "large.label-text.font",
       "displayName": "Badge large label text font",
       "tokenValueType": "FONT_NAMES",
       "data": {
@@ -98,6 +106,7 @@
     },
     {
       "tokenName": "md.comp.badge.large.label-text.line-height",
+      "tokenNameSuffix": "large.label-text.line-height",
       "displayName": "Badge large label text line height",
       "tokenValueType": "LINE_HEIGHT",
       "data": {
@@ -109,6 +118,7 @@
     },
     {
       "tokenName": "md.comp.badge.large.label-text.size",
+      "tokenNameSuffix": "large.label-text.size",
       "displayName": "Badge large label text size",
       "tokenValueType": "FONT_SIZE",
       "data": {
@@ -120,6 +130,7 @@
     },
     {
       "tokenName": "md.comp.badge.large.label-text.tracking",
+      "tokenNameSuffix": "large.label-text.tracking",
       "displayName": "Badge large label text tracking",
       "tokenValueType": "FONT_TRACKING",
       "data": {
@@ -131,6 +142,7 @@
     },
     {
       "tokenName": "md.comp.badge.large.label-text.weight",
+      "tokenNameSuffix": "large.label-text.weight",
       "displayName": "Badge large label text weight",
       "tokenValueType": "FONT_WEIGHT",
       "data": {
@@ -142,6 +154,7 @@
     },
     {
       "tokenName": "md.comp.badge.large.label-text.type",
+      "tokenNameSuffix": "large.label-text.type",
       "displayName": "Badge large label text type",
       "tokenValueType": "TYPOGRAPHY",
       "data": {

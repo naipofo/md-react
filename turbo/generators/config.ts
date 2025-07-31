@@ -2,6 +2,7 @@ import type { PlopTypes } from "@turbo/gen";
 import * as fs from "fs";
 import * as path from "path";
 import { generateSpringCss } from "./springUtils";
+import { ComponentTokenData, TokenValueType, Type } from "./types";
 
 const readTokenFile = (filePath: string): object => {
   const content = fs.readFileSync(filePath, "utf-8");
@@ -52,12 +53,26 @@ const componentTokenActions = (): PlopTypes.ActionType[] => {
   const TOKEN_DATA_DIR = "token-data/components";
   const OUTPUT_DIR = "packages/ui/src/tokens/component-tokens";
   const TEMPLATE_FILE = "templates/component_token_set.scss.hbs";
+  const INDEX_TEMPLATE_FILE = "templates/component_index.scss.hbs";
 
   const tokenFiles = getTokenDataFiles(TOKEN_DATA_DIR);
   console.log(`Found ${tokenFiles.length} component token file(s) to process.`);
 
   return tokenFiles.map((file) => {
-    const tokenData = readTokenFile(path.join(TOKEN_DATA_DIR, file));
+    const tokenData: ComponentTokenData = readTokenFile(
+      path.join(TOKEN_DATA_DIR, file),
+    ) as ComponentTokenData;
+    tokenData.tokens.forEach((e) => {
+      if (e.tokenValueType === TokenValueType.Typography && e.data.token.type) {
+        e.data.token.type = Object.fromEntries(
+          Object.entries(e.data.token.type!).map(([k, v]) => [
+            k,
+            v.substring(tokenData.tokenSetName.length + 1),
+          ]),
+        ) as Type;
+      }
+    });
+
     const name = path.basename(file, ".json");
 
     return {

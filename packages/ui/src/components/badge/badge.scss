@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../../tokens/component-tokens/md-comp-badge.scss" as *;
 @use "../../util.scss" as *;
 
@@ -11,10 +12,10 @@
 
     padding-inline: 4px;
 
-    background-color: rgb($md-comp-badge-large-color);
-    border-radius: $md-comp-badge-large-shape;
-    @include apply-height($md-comp-badge-large-size);
-    color: rgb($md-comp-badge-large-label-text-color);
+    background-color: rgb(get-token($md-comp-badge, large-color));
+    border-radius: get-token($md-comp-badge, large-shape);
+    @include apply-height(get-token($md-comp-badge, large-size));
+    color: rgb(get-token($md-comp-badge, large-label-text-color));
 
     top: #{14-16}px;
     inset-inline-end: #{12-16}px;
@@ -25,7 +26,7 @@
     white-space: nowrap;
     user-select: none;
 
-    @include apply-typescale($md-comp-badge-large-label-text-type);
+    @include apply-typescale-token($md-comp-badge, large-label-text-type);
 
     &:empty {
       top: 0;

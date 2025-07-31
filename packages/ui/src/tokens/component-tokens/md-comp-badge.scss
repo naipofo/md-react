@@ -4,48 +4,40 @@
 
 @use '../sys-tokens.scss' as *;
 
-// Badge color
-$md-comp-badge-color: $md-sys-color-error;
-
-// Badge shape
-$md-comp-badge-shape: $md-sys-shape-corner-full;
-
-// Badge size
-$md-comp-badge-size: 6px;
-
-// Badge large color
-$md-comp-badge-large-color: $md-sys-color-error;
-
-// Badge large shape
-$md-comp-badge-large-shape: $md-sys-shape-corner-full;
-
-// Badge large size
-$md-comp-badge-large-size: 16px;
-
-// Badge large label text color
-$md-comp-badge-large-label-text-color: $md-sys-color-on-error;
-
-// Badge large label text font
-$md-comp-badge-large-label-text-font: $md-sys-typescale-label-small-font;
-
-// Badge large label text line height
-$md-comp-badge-large-label-text-line-height: $md-sys-typescale-label-small-line-height;
-
-// Badge large label text size
-$md-comp-badge-large-label-text-size: $md-sys-typescale-label-small-size;
-
-// Badge large label text tracking
-$md-comp-badge-large-label-text-tracking: $md-sys-typescale-label-small-tracking;
-
-// Badge large label text weight
-$md-comp-badge-large-label-text-weight: $md-sys-typescale-label-small-weight;
-
-// Badge large label text type
-$md-comp-badge-large-label-text-type: (
-  'font-family': $md-comp-badge-large-label-text-font,
-  'font-weight': $md-comp-badge-large-label-text-weight,
-  'font-size': $md-comp-badge-large-label-text-size,
-  'letter-spacing': $md-comp-badge-large-label-text-tracking,
-  'line-height': $md-comp-badge-large-label-text-line-height
+$md-comp-badge: (
+  name: md-comp-badge,
+  tokens: (
+    // Badge color
+    color: $md-sys-color-error,
+    // Badge shape
+    shape: $md-sys-shape-corner-full,
+    // Badge size
+    size: 6px,
+    // Badge large color
+    large-color: $md-sys-color-error,
+    // Badge large shape
+    large-shape: $md-sys-shape-corner-full,
+    // Badge large size
+    large-size: 16px,
+    // Badge large label text color
+    large-label-text-color: $md-sys-color-on-error,
+    // Badge large label text font
+    large-label-text-font: $md-sys-typescale-label-small-font,
+    // Badge large label text line height
+    large-label-text-line-height: $md-sys-typescale-label-small-line-height,
+    // Badge large label text size
+    large-label-text-size: $md-sys-typescale-label-small-size,
+    // Badge large label text tracking
+    large-label-text-tracking: $md-sys-typescale-label-small-tracking,
+    // Badge large label text weight
+    large-label-text-weight: $md-sys-typescale-label-small-weight,
+    // Badge large label text type
+    large-label-text-type: (
+      font-family: large-label-text-font,
+      font-weight: large-label-text-weight,
+      font-size: large-label-text-size,
+      letter-spacing: large-label-text-tracking,
+      line-height: large-label-text-line-height
+    )
+  )
 );
-
