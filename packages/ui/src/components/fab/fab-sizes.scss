@@ -1,0 +1,25 @@
+@use "sass:map";
+@use "../../tokens/component-tokens/md-comp-fab.scss" as *;
+@use "../../tokens/component-tokens/md-comp-fab-medium.scss" as *;
+@use "../../tokens/component-tokens/md-comp-fab-large.scss" as *;
+@use "../../util.scss" as *;
+
+@mixin fab-sizes {
+  $sizes: (
+    baseline: $md-comp-fab,
+    medium: $md-comp-fab-medium,
+    large: $md-comp-fab-large
+  );
+
+  @each $name, $token in $sizes {
+    &.MdcFab-#{$name} {
+      @include apply-height(get-token($token, container-height));
+      width: get-token($token, container-width);
+      border-radius: get-token($token, container-shape);
+
+      & .MdcFab-icon {
+        width: get-token($token, icon-size);
+      }
+    }
+  }
+}

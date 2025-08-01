@@ -1,0 +1,19 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: FAB - Size - Baseline */
+/* Token set name: md.comp.fab */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-fab: (
+  name: md-comp-fab,
+  tokens: (
+    // FAB container height
+    container-height: 56px,
+    // FAB container width
+    container-width: 56px,
+    // FAB icon size
+    icon-size: 24px,
+    // FAB container shape
+    container-shape: $md-sys-shape-corner-large
+  )
+);

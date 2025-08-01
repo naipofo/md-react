@@ -1,0 +1,19 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: FAB - Size - Medium */
+/* Token set name: md.comp.fab.medium */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-fab-medium: (
+  name: md-comp-fab-medium,
+  tokens: (
+    // FAB medium container height
+    container-height: 80px,
+    // FAB medium container width
+    container-width: 80px,
+    // FAB medium icon size
+    icon-size: 28px,
+    // FAB medium container shape
+    container-shape: $md-sys-shape-corner-large-increased
+  )
+);

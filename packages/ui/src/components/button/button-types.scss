@@ -18,8 +18,15 @@
     background-color: rgb(get-token($token, container-color, transparent));
     color: rgb(get-token($token, label-text-color));
     border-color: rgb(get-token($token, outline-color));
-    --elevation-layer-level: #{get-token($token, container-elevation, 0)};
-    --elevation-layer-color: #{get-token($token, container-shadow-color)};
+    --md-runtime-elevation-layer-level: #{get-token(
+        $token,
+        container-elevation,
+        0
+      )};
+    --md-runtime-elevation-layer-color: #{get-token(
+        $token,
+        container-shadow-color
+      )};
   }
 
   & .MdcButton-icon {
@@ -66,7 +73,7 @@
 
       border-color: rgb(get-token($token, "#{$state}-outline-color"));
 
-      --elevation-layer-level: #{get-token(
+      --md-runtime-elevation-layer-level: #{get-token(
           $token,
           "#{$state}-container-elevation",
           0
@@ -121,7 +128,7 @@
         get-token($token, disabled-label-text-opacity)
     );
 
-    --elevation-layer-level: #{get-token(
+    --md-runtime-elevation-layer-level: #{get-token(
         $token,
         disabled-container-elevation,
         0

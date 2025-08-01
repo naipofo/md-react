@@ -1,5 +1,6 @@
 @use "sass:map";
 
+/* TODO: full corners on other axis and vertical-rl support */
 @mixin apply-height($value, $set-md-radius: true) {
   height: $value;
 

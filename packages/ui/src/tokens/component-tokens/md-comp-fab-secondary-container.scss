@@ -1,0 +1,43 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: FAB - Color - Tonal secondary */
+/* Token set name: md.comp.fab.secondary-container */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-fab-secondary-container: (
+  name: md-comp-fab-secondary-container,
+  tokens: (
+    // FAB tonal secondary container color
+    container-color: $md-sys-color-secondary-container,
+    // FAB tonal secondary container shadow color
+    container-shadow-color: $md-sys-color-shadow,
+    // FAB tonal secondary container elevation
+    container-elevation: $md-sys-elevation-level3,
+    // FAB tonal secondary icon color
+    icon-color: $md-sys-color-on-secondary-container,
+    // FAB tonal secondary hovered container elevation
+    hovered-container-elevation: $md-sys-elevation-level4,
+    // FAB tonal secondary hovered state layer color
+    hovered-state-layer-color: $md-sys-color-on-secondary-container,
+    // FAB tonal secondary hovered state layer opacity
+    hovered-state-layer-opacity: $md-sys-state-hover-state-layer-opacity,
+    // FAB tonal secondary hovered icon color
+    hovered-icon-color: $md-sys-color-on-secondary-container,
+    // FAB tonal secondary focused container elevation
+    focused-container-elevation: $md-sys-elevation-level3,
+    // FAB tonal secondary focused state layer color
+    focused-state-layer-color: $md-sys-color-on-secondary-container,
+    // FAB tonal secondary focused state layer opacity
+    focused-state-layer-opacity: $md-sys-state-focus-state-layer-opacity,
+    // FAB tonal secondary focused icon color
+    focused-icon-color: $md-sys-color-on-secondary-container,
+    // FAB tonal secondary pressed container elevation
+    pressed-container-elevation: $md-sys-elevation-level3,
+    // FAB tonal secondary pressed state layer color
+    pressed-state-layer-color: $md-sys-color-on-secondary-container,
+    // FAB tonal secondary pressed state layer opacity
+    pressed-state-layer-opacity: $md-sys-state-pressed-state-layer-opacity,
+    // FAB tonal secondary pressed icon color
+    pressed-icon-color: $md-sys-color-on-secondary-container
+  )
+);

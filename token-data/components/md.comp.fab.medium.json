@@ -1,0 +1,63 @@
+{
+  "displayName": "FAB - Size - Medium",
+  "tokenSetName": "md.comp.fab.medium",
+  "tokens": [
+    {
+      "tokenName": "md.comp.fab.medium.container.height",
+      "tokenNameSuffix": "container.height",
+      "displayName": "FAB medium container height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 80,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.medium.container.width",
+      "tokenNameSuffix": "container.width",
+      "displayName": "FAB medium container width",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 80,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.medium.icon.size",
+      "tokenNameSuffix": "icon.size",
+      "displayName": "FAB medium icon size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 28,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.medium.container.shape",
+      "tokenNameSuffix": "container.shape",
+      "displayName": "FAB medium container shape",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.large-increased",
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

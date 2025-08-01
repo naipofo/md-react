@@ -1,0 +1,84 @@
+@use "sass:map";
+@use "../../tokens/component-tokens/md-comp-fab-primary.scss" as *;
+@use "../../tokens/component-tokens/md-comp-fab-secondary.scss" as *;
+@use "../../tokens/component-tokens/md-comp-fab-tertiary.scss" as *;
+@use "../../tokens/component-tokens/md-comp-fab-primary-container.scss" as *;
+@use "../../tokens/component-tokens/md-comp-fab-secondary-container.scss" as *;
+@use "../../tokens/component-tokens/md-comp-fab-tertiary-container.scss" as *;
+@use "../../util.scss" as *;
+
+@mixin apply-fab-base($token) {
+  & {
+    background-color: rgb(get-token($token, container-color));
+    --md-runtime-elevation-layer-level: #{get-token(
+        $token,
+        container-elevation
+      )};
+    --md-runtime-elevation-layer-color: #{get-token(
+        $token,
+        container-shadow-color
+      )};
+  }
+
+  & .MdcFab-icon {
+    color: rgb(get-token($token, icon-color));
+  }
+}
+
+@mixin apply-fab-interactive-states($token) {
+  $state-pseudo-map: (
+    "hovered": "hover",
+    "focused": "focus-visible",
+    "pressed": "active",
+  );
+
+  @each $state, $pseudo-class in $state-pseudo-map {
+    &:#{$pseudo-class} {
+      & .MdcFab-icon {
+        color: rgb(get-token($token, "#{$state}-icon-color"));
+      }
+
+      & > .MdcStateLayer {
+        background: rgb(get-token($token, "#{$state}-state-layer-color"));
+        opacity: get-token($token, "#{$state}-state-layer-opacity");
+      }
+
+      --md-runtime-elevation-layer-level: #{get-token(
+          $token,
+          "#{$state}-container-elevation"
+        )};
+    }
+  }
+}
+
+@mixin fab-types {
+  &.MdcFab-primary {
+    @include apply-fab-base($md-comp-fab-primary);
+    @include apply-fab-interactive-states($md-comp-fab-primary);
+  }
+
+  &.MdcFab-secondary {
+    @include apply-fab-base($md-comp-fab-secondary);
+    @include apply-fab-interactive-states($md-comp-fab-secondary);
+  }
+
+  &.MdcFab-tertiary {
+    @include apply-fab-base($md-comp-fab-tertiary);
+    @include apply-fab-interactive-states($md-comp-fab-tertiary);
+  }
+
+  &.MdcFab-primary-tonal {
+    @include apply-fab-base($md-comp-fab-primary-container);
+    @include apply-fab-interactive-states($md-comp-fab-primary-container);
+  }
+
+  &.MdcFab-secondary-tonal {
+    @include apply-fab-base($md-comp-fab-secondary-container);
+    @include apply-fab-interactive-states($md-comp-fab-secondary-container);
+  }
+
+  &.MdcFab-tertiary-tonal {
+    @include apply-fab-base($md-comp-fab-tertiary-container);
+    @include apply-fab-interactive-states($md-comp-fab-tertiary-container);
+  }
+}

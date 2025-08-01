@@ -1,0 +1,52 @@
+@use "../../util.scss" as *;
+@use "../../tokens/sys-tokens.scss" as *;
+
+.MdcElevationLayer,
+.MdcElevationLayer::before,
+.MdcElevationLayer::after {
+  position: absolute;
+  display: block;
+  inset: 0;
+  pointer-events: none;
+  background-color: transparent;
+  border-radius: inherit;
+  @include apply-motion(
+    $md-sys-motion-spring-fast-effects,
+    opacity,
+    box-shadow
+  );
+
+  --_level: var(--md-runtime-elevation-layer-level, 0);
+}
+
+.MdcElevationLayer::before {
+  content: "";
+  $level1-y: clamp(0, var(--_level), 1);
+  $level4-y: clamp(0, var(--_level) - 3, 1);
+  $level5-y: calc(2 * clamp(0, var(--_level) - 4, 1));
+  $y: calc(1px * ($level1-y + $level4-y + $level5-y));
+  $level1-blur: calc(2 * clamp(0, var(--_level), 1));
+  $level3-blur: clamp(0, var(--_level) - 2, 1);
+  $level5-blur: clamp(0, var(--_level) - 4, 1);
+  $blur: calc(1px * ($level1-blur + $level3-blur + $level5-blur));
+
+  box-shadow: 0px $y $blur 0px rgb(var(--md-runtime-elevation-layer-color));
+  opacity: 0.3;
+}
+
+.MdcElevationLayer::after {
+  content: "";
+  $level1-y: clamp(0, var(--_level), 1);
+  $level2-y: clamp(0, var(--_level) - 1, 1);
+  $level3to5-y: calc(2 * clamp(0, var(--_level) - 2, 3));
+  $y: calc(1px * ($level1-y + $level2-y + $level3to5-y));
+  $level1to2-blur: calc(3 * clamp(0, var(--_level), 2));
+  $level3to5-blur: calc(2 * clamp(0, var(--_level) - 2, 3));
+  $blur: calc(1px * ($level1to2-blur + $level3to5-blur));
+  $level1to4-spread: clamp(0, var(--_level), 4);
+  $level5-spread: calc(2 * clamp(0, var(--_level) - 4, 1));
+  $spread: calc(1px * ($level1to4-spread + $level5-spread));
+
+  box-shadow: 0px $y $blur $spread rgb(var(--md-runtime-elevation-layer-color));
+  opacity: 0.15;
+}

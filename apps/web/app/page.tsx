@@ -1,5 +1,6 @@
 import { Badge } from "@repo/ui/components/badge/Badge";
 import { Button } from "@repo/ui/components/button/Button";
+import { Fab } from "@repo/ui/components/fab/Fab";
 
 export default function Home() {
   return (
@@ -60,6 +61,26 @@ export default function Home() {
             ),
           ),
         ),
+      )}
+      <h1>Fab</h1>
+      {(
+        [
+          "primary",
+          "secondary",
+          "tertiary",
+          "primary-tonal",
+          "secondary-tonal",
+          "tertiary-tonal",
+        ] as const
+      ).map((variant) =>
+        (["baseline", "medium", "large"] as const).map((size) => (
+          <Fab
+            icon="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"
+            size={size}
+            variant={variant}
+            key={`${size}-${variant}`}
+          />
+        )),
       )}
     </main>
   );

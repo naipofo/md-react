@@ -1,0 +1,435 @@
+{
+  "displayName": "FAB - Primary",
+  "tokenSetName": "md.comp.fab.primary",
+  "tokens": [
+    {
+      "tokenName": "md.comp.fab.primary.container.color",
+      "tokenNameSuffix": "container.color",
+      "displayName": "FAB primary container color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.container.shadow-color",
+      "tokenNameSuffix": "container.shadow-color",
+      "displayName": "FAB primary container shadow color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.shadow",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.container.elevation",
+      "tokenNameSuffix": "container.elevation",
+      "displayName": "FAB primary container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level3",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.icon.color",
+      "tokenNameSuffix": "icon.color",
+      "displayName": "FAB primary icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.hovered.container.elevation",
+      "tokenNameSuffix": "hovered.container.elevation",
+      "displayName": "FAB primary hovered container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level4",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.hovered.state-layer.color",
+      "tokenNameSuffix": "hovered.state-layer.color",
+      "displayName": "FAB primary hovered state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.hovered.state-layer.opacity",
+      "tokenNameSuffix": "hovered.state-layer.opacity",
+      "displayName": "FAB primary hovered state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.hover.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.hovered.icon.color",
+      "tokenNameSuffix": "hovered.icon.color",
+      "displayName": "FAB primary hovered icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.focused.container.elevation",
+      "tokenNameSuffix": "focused.container.elevation",
+      "displayName": "FAB primary focused container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level3",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.focused.state-layer.color",
+      "tokenNameSuffix": "focused.state-layer.color",
+      "displayName": "FAB primary focused state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.focused.state-layer.opacity",
+      "tokenNameSuffix": "focused.state-layer.opacity",
+      "displayName": "FAB primary focused state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.focus.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.focused.icon.color",
+      "tokenNameSuffix": "focused.icon.color",
+      "displayName": "FAB primary focused icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.pressed.container.elevation",
+      "tokenNameSuffix": "pressed.container.elevation",
+      "displayName": "FAB primary pressed container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level3",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.pressed.state-layer.color",
+      "tokenNameSuffix": "pressed.state-layer.color",
+      "displayName": "FAB primary pressed state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.pressed.state-layer.opacity",
+      "tokenNameSuffix": "pressed.state-layer.opacity",
+      "displayName": "FAB primary pressed state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.pressed.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.pressed.icon.color",
+      "tokenNameSuffix": "pressed.icon.color",
+      "displayName": "FAB primary pressed icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.container.shape",
+      "tokenNameSuffix": "container.shape",
+      "displayName": "FAB (primary) container shape",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.large",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.container.width",
+      "tokenNameSuffix": "container.width",
+      "displayName": "FAB (primary) container width",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 56,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.container.height",
+      "tokenNameSuffix": "container.height",
+      "displayName": "FAB (primary) container height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 56,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.lowered.container.elevation",
+      "tokenNameSuffix": "lowered.container.elevation",
+      "displayName": "FAB (primary) lowered container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level1",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.icon.size",
+      "tokenNameSuffix": "icon.size",
+      "displayName": "FAB (primary) icon size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 24,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.hover.container.elevation",
+      "tokenNameSuffix": "hover.container.elevation",
+      "displayName": "FAB (primary) hover container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level4",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.lowered.hover.container.elevation",
+      "tokenNameSuffix": "lowered.hover.container.elevation",
+      "displayName": "FAB (primary) lowered hover container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level2",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.hover.state-layer.color",
+      "tokenNameSuffix": "hover.state-layer.color",
+      "displayName": "FAB (primary) hover state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-primary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.hover.state-layer.opacity",
+      "tokenNameSuffix": "hover.state-layer.opacity",
+      "displayName": "FAB (primary) hover state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.hover.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.hover.icon.color",
+      "tokenNameSuffix": "hover.icon.color",
+      "displayName": "FAB (primary) hover icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-primary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.focus.indicator.color",
+      "tokenNameSuffix": "focus.indicator.color",
+      "displayName": "FAB (primary) focus indicator color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.secondary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.focus.indicator.thickness",
+      "tokenNameSuffix": "focus.indicator.thickness",
+      "displayName": "FAB (primary) focus indicator thickness",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.focus-indicator.thickness",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.focus.indicator.outline.offset",
+      "tokenNameSuffix": "focus.indicator.outline.offset",
+      "displayName": "FAB (primary) focus indicator offset",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.focus-indicator.outer-offset",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.focus.container.elevation",
+      "tokenNameSuffix": "focus.container.elevation",
+      "displayName": "FAB (primary) focus container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level3",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.lowered.focus.container.elevation",
+      "tokenNameSuffix": "lowered.focus.container.elevation",
+      "displayName": "FAB (primary) lowered focus container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level1",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.focus.state-layer.color",
+      "tokenNameSuffix": "focus.state-layer.color",
+      "displayName": "FAB (primary) focus state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-primary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.focus.state-layer.opacity",
+      "tokenNameSuffix": "focus.state-layer.opacity",
+      "displayName": "FAB (primary) focus state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.focus.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.focus.icon.color",
+      "tokenNameSuffix": "focus.icon.color",
+      "displayName": "FAB (primary) focus icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-primary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab.primary.lowered.pressed.container.elevation",
+      "tokenNameSuffix": "lowered.pressed.container.elevation",
+      "displayName": "FAB (primary) lowered pressed container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level1",
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

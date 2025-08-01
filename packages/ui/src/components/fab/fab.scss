@@ -1,0 +1,22 @@
+@use "../../tokens/sys-tokens.scss" as *;
+@use "../../util.scss" as *;
+@use "./fab-sizes.scss" as *;
+@use "./fab-types.scss" as *;
+
+.MdcFab {
+  border: none;
+  @include apply-motion($md-sys-motion-spring-fast-spatial, border-radius);
+
+  position: relative;
+
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include fab-sizes;
+  @include fab-types;
+}

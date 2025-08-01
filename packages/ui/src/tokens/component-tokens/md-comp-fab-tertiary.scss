@@ -1,0 +1,81 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: FAB - Tertiary */
+/* Token set name: md.comp.fab.tertiary */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-fab-tertiary: (
+  name: md-comp-fab-tertiary,
+  tokens: (
+    // FAB tertiary container color
+    container-color: $md-sys-color-tertiary,
+    // FAB tertiary container shadow color
+    container-shadow-color: $md-sys-color-shadow,
+    // FAB tertiary container elevation
+    container-elevation: $md-sys-elevation-level3,
+    // FAB tertiary icon color
+    icon-color: $md-sys-color-on-tertiary,
+    // FAB tertiary hovered container elevation
+    hovered-container-elevation: $md-sys-elevation-level4,
+    // FAB tonal tertiary hovered state layer color
+    hovered-state-layer-color: $md-sys-color-on-tertiary,
+    // FAB tertiary hovered state layer opacity
+    hovered-state-layer-opacity: $md-sys-state-hover-state-layer-opacity,
+    // FAB tertiary hovered icon color
+    hovered-icon-color: $md-sys-color-on-tertiary,
+    // FAB tertiary focused container elevation
+    focused-container-elevation: $md-sys-elevation-level3,
+    // FAB tertiary focused state layer color
+    focused-state-layer-color: $md-sys-color-on-tertiary,
+    // FAB tertiary focused state layer opacity
+    focused-state-layer-opacity: $md-sys-state-focus-state-layer-opacity,
+    // FAB tertiary focused icon color
+    focused-icon-color: $md-sys-color-on-tertiary,
+    // FAB tertiary pressed container elevation
+    pressed-container-elevation: $md-sys-elevation-level3,
+    // FAB tertiary pressed state layer color
+    pressed-state-layer-color: $md-sys-color-on-tertiary,
+    // FAB tertiary pressed state layer opacity
+    pressed-state-layer-opacity: $md-sys-state-pressed-state-layer-opacity,
+    // FAB tertiary pressed icon color
+    pressed-icon-color: $md-sys-color-on-tertiary,
+    // FAB (tertiary) lowered container elevation
+    lowered-container-elevation: $md-sys-elevation-level1,
+    // FAB (tertiary) container height
+    container-height: 56px,
+    // FAB (tertiary) container shape
+    container-shape: $md-sys-shape-corner-large,
+    // FAB (tertiary) container width
+    container-width: 56px,
+    // FAB (tertiary) icon size
+    icon-size: 24px,
+    // FAB (tertiary) hover container elevation
+    hover-container-elevation: $md-sys-elevation-level4,
+    // FAB (tertiary) lowered hover container elevation
+    lowered-hover-container-elevation: $md-sys-elevation-level2,
+    // FAB (tertiary) hover state layer color
+    hover-state-layer-color: $md-sys-color-on-tertiary-container,
+    // FAB (tertiary) hover state layer opacity
+    hover-state-layer-opacity: $md-sys-state-hover-state-layer-opacity,
+    // FAB (tertiary) hover icon color
+    hover-icon-color: $md-sys-color-on-tertiary-container,
+    // FAB (tertiary) focus indicator color
+    focus-indicator-color: $md-sys-color-secondary,
+    // FAB (tertiary) focus indicator thickness
+    focus-indicator-thickness: $md-sys-state-focus-indicator-thickness,
+    // FAB (tertiary) focus indicator offset
+    focus-indicator-outline-offset: $md-sys-state-focus-indicator-outer-offset,
+    // FAB (tertiary) focus container elevation
+    focus-container-elevation: $md-sys-elevation-level3,
+    // FAB (tertiary) lowered focus container elevation
+    lowered-focus-container-elevation: $md-sys-elevation-level1,
+    // FAB (tertiary) focus state layer color
+    focus-state-layer-color: $md-sys-color-on-tertiary-container,
+    // FAB (tertiary) focus state layer opacity
+    focus-state-layer-opacity: $md-sys-state-focus-state-layer-opacity,
+    // FAB (tertiary) focus icon color
+    focus-icon-color: $md-sys-color-on-tertiary-container,
+    // FAB (tertiary) lowered pressed container elevation
+    lowered-pressed-container-elevation: $md-sys-elevation-level1
+  )
+);
