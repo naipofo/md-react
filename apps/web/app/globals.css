@@ -7,3 +7,9 @@ body {
 body {
   background: rgb(240 244 249);
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

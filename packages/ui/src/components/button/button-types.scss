@@ -1,0 +1,193 @@
+@use "sass:map";
+@use "../../tokens/component-tokens/md-comp-button-elevated.scss" as *;
+@use "../../tokens/component-tokens/md-comp-button-filled.scss" as *;
+@use "../../tokens/component-tokens/md-comp-button-outlined.scss" as *;
+@use "../../tokens/component-tokens/md-comp-button-text.scss" as *;
+@use "../../tokens/component-tokens/md-comp-button-tonal.scss" as *;
+@use "../../util.scss" as *;
+
+@mixin toggle-exclusive($token) {
+  @if (map.get($token, name) != md-comp-button-text) {
+    @content;
+  }
+}
+
+@mixin apply-button-base($token) {
+  & {
+    @include apply-if-token-present(background-color, $token, container-color);
+    background-color: rgb(get-token($token, container-color, transparent));
+    color: rgb(get-token($token, label-text-color));
+    border-color: rgb(get-token($token, outline-color));
+    --elevation-layer-level: #{get-token($token, container-elevation, 0)};
+    --elevation-layer-color: #{get-token($token, container-shadow-color)};
+  }
+
+  & .MdcButton-icon {
+    color: rgb(get-token($token, icon-color));
+  }
+
+  @include toggle-exclusive($token) {
+    &.MdcButton-toggle:not(:disabled) {
+      background: rgb(get-token($token, unselected-container-color));
+      color: rgb(get-token($token, unselected-label-text-color));
+      & .MdcButton-icon {
+        color: rgb(get-token($token, unselected-icon-color));
+      }
+      &.MdcButton-selected {
+        background: rgb(get-token($token, selected-container-color));
+        color: rgb(get-token($token, selected-label-text-color));
+        & .MdcButton-icon {
+          color: rgb(get-token($token, selected-icon-color));
+        }
+      }
+    }
+  }
+}
+
+@mixin apply-button-interactive-states($token) {
+  $state-pseudo-map: (
+    "hovered": "hover",
+    "focused": "focus-visible",
+    "pressed": "active",
+  );
+
+  @each $state, $pseudo-class in $state-pseudo-map {
+    &:#{$pseudo-class} {
+      color: rgb(get-token($token, "#{$state}-label-text-color"));
+
+      & .MdcButton-icon {
+        color: rgb(get-token($token, "#{$state}-icon-color"));
+      }
+
+      & > .MdcStateLayer {
+        background: rgb(get-token($token, "#{$state}-state-layer-color"));
+        opacity: get-token($token, "#{$state}-state-layer-opacity");
+      }
+
+      border-color: rgb(get-token($token, "#{$state}-outline-color"));
+
+      --elevation-layer-level: #{get-token(
+          $token,
+          "#{$state}-container-elevation",
+          0
+        )};
+
+      @include toggle-exclusive($token) {
+        &.MdcButton-toggle:not(:disabled) {
+          color: rgb(
+            get-token($token, "unselected-#{$state}-label-text-color")
+          );
+
+          & .MdcButton-icon {
+            color: rgb(get-token($token, "unselected-#{$state}-icon-color"));
+          }
+
+          & > .MdcStateLayer {
+            background: get-token(
+              $token,
+              "unselected-#{$state}-state-layer-color"
+            );
+          }
+
+          &.MdcButton-selected {
+            color: rgb(
+              get-token($token, "selected-#{$state}-label-text-color")
+            );
+
+            & .MdcButton-icon {
+              color: rgb(get-token($token, "selected-#{$state}-icon-color"));
+            }
+
+            & > .MdcStateLayer {
+              background: rgb(
+                get-token($token, "selected-#{$state}-state-layer-color")
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin apply-button-disabled-state($token) {
+  &:disabled {
+    background-color: rgb(
+      get-token($token, disabled-container-color, transparent) /
+        get-token($token, disabled-container-opacity)
+    );
+    color: rgb(
+      get-token($token, disabled-label-text-color) /
+        get-token($token, disabled-label-text-opacity)
+    );
+
+    --elevation-layer-level: #{get-token(
+        $token,
+        disabled-container-elevation,
+        0
+      )};
+
+    border-color: rgb(get-token($token, disabled-outline-color));
+
+    & .MdcButton-icon {
+      color: rgb(get-token($token, disabled-icon-color));
+      opacity: get-token($token, disabled-icon-opacity);
+    }
+
+    /* Token exists, but seem to not make sense? */
+    /* screens on on m3.material.io also disagrees  */
+    /* @if (has-token($token, selected-disabled-container-color)) {
+      @include toggle-exclusive($token) {
+        &.MdcButton-toggle {
+          &.MdcButton-selected {
+            background-color: rgb(
+              get-token($token, selected-disabled-container-color)
+            );
+          }
+        }
+      }
+    } */
+  }
+}
+
+@mixin button-types {
+  &.MdcButton-elevated {
+    @include apply-border-width(0px);
+
+    @include apply-button-base($md-comp-button-elevated);
+    @include apply-button-interactive-states($md-comp-button-elevated);
+    @include apply-button-disabled-state($md-comp-button-elevated);
+  }
+
+  &.MdcButton-filled {
+    @include apply-border-width(0px);
+
+    @include apply-button-base($md-comp-button-filled);
+    @include apply-button-interactive-states($md-comp-button-filled);
+    @include apply-button-disabled-state($md-comp-button-filled);
+  }
+
+  &.MdcButton-outlined {
+    border-style: solid;
+
+    @include apply-button-base($md-comp-button-outlined);
+    @include apply-button-interactive-states($md-comp-button-outlined);
+    @include apply-button-disabled-state($md-comp-button-outlined);
+  }
+
+  &.MdcButton-text {
+    @include apply-border-width(0px);
+
+    @include apply-button-base($md-comp-button-text);
+    @include apply-button-interactive-states($md-comp-button-text);
+    @include apply-button-disabled-state($md-comp-button-text);
+  }
+
+  &.MdcButton-tonal {
+    @include apply-border-width(0px);
+
+    @include apply-button-base($md-comp-button-tonal);
+    @include apply-button-interactive-states($md-comp-button-tonal);
+    @include apply-button-disabled-state($md-comp-button-tonal);
+  }
+}

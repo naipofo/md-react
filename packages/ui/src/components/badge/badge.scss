@@ -26,7 +26,7 @@
     white-space: nowrap;
     user-select: none;
 
-    @include apply-typescale-token($md-comp-badge, large-label-text-type);
+    @include apply-local-typescale-token($md-comp-badge, large-label-text-type);
 
     &:empty {
       top: 0;

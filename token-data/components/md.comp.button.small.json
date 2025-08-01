@@ -1,0 +1,192 @@
+{
+  "displayName": "Button - Size - Small",
+  "tokenSetName": "md.comp.button.small",
+  "tokens": [
+    {
+      "tokenName": "md.comp.button.small.container.height",
+      "tokenNameSuffix": "container.height",
+      "displayName": "Button small container height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 40,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button.small.outlined.outline.width",
+      "tokenNameSuffix": "outlined.outline.width",
+      "displayName": "Button small outline width",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 1,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button.small.label-text",
+      "tokenNameSuffix": "label-text",
+      "displayName": "Button small label size",
+      "tokenValueType": "TYPOGRAPHY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.label-large",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button.small.icon.size",
+      "tokenNameSuffix": "icon.size",
+      "displayName": "Button small icon size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 20,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button.small.container.shape.round",
+      "tokenNameSuffix": "container.shape.round",
+      "displayName": "Button small shape round",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.full",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button.small.container.shape.square",
+      "tokenNameSuffix": "container.shape.square",
+      "displayName": "Button small shape square",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.medium",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button.small.leading-space",
+      "tokenNameSuffix": "leading-space",
+      "displayName": "Button small leading space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 16,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button.small.icon-label-space",
+      "tokenNameSuffix": "icon-label-space",
+      "displayName": "Button small between icon label space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 8,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button.small.trailing-space",
+      "tokenNameSuffix": "trailing-space",
+      "displayName": "Button small trailing space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 16,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button.small.pressed.container.shape",
+      "tokenNameSuffix": "pressed.container.shape",
+      "displayName": "Button small shape pressed morph",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.small",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button.small.pressed.container.corner-size.motion.spring.damping",
+      "tokenNameSuffix": "pressed.container.corner-size.motion.spring.damping",
+      "displayName": "Button small shape spring animation damping",
+      "tokenValueType": "DURATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.motion.spring.fast.spatial.damping",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button.small.pressed.container.corner-size.motion.spring.stiffness",
+      "tokenNameSuffix": "pressed.container.corner-size.motion.spring.stiffness",
+      "displayName": "Button small shape spring animation stiffness",
+      "tokenValueType": "DURATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.motion.spring.fast.spatial.stiffness",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button.small.selected.container.shape.round",
+      "tokenNameSuffix": "selected.container.shape.round",
+      "displayName": "Button small selected container shape round",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.medium",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button.small.selected.container.shape.square",
+      "tokenNameSuffix": "selected.container.shape.square",
+      "displayName": "Button small selected container shape square",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.full",
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

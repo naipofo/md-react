@@ -1,0 +1,39 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Button - Size - Xsmall */
+/* Token set name: md.comp.button.xsmall */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-button-xsmall: (
+  name: md-comp-button-xsmall,
+  tokens: (
+    // Button xsmall container height
+    container-height: 32px,
+    // Button xsmall outline width
+    outlined-outline-width: 1px,
+    // Button xsmall label size
+    label-text: $md-sys-typescale-label-large,
+    // Button xsmall icon size
+    icon-size: 20px,
+    // Button xsmall shape round
+    container-shape-round: $md-sys-shape-corner-full,
+    // Button xsmall shape square
+    container-shape-square: $md-sys-shape-corner-medium,
+    // Button xsmall leading space
+    leading-space: 12px,
+    // Button xsmall between icon label space
+    icon-label-space: 8px,
+    // Button xsmall trailing space
+    trailing-space: 12px,
+    // Button xsmall shape pressed morph
+    pressed-container-shape: $md-sys-shape-corner-small,
+    // Button xsmall shape spring animation damping
+    pressed-container-corner-size-motion-spring-damping: $md-sys-motion-spring-fast-spatial-damping,
+    // Button xsmall shape spring animation stiffness
+    pressed-container-corner-size-motion-spring-stiffness: $md-sys-motion-spring-fast-spatial-stiffness,
+    // Button xsmall selected container shape round
+    selected-container-shape-round: $md-sys-shape-corner-medium,
+    // Button xsmall selected container shape square
+    selected-container-shape-square: $md-sys-shape-corner-full
+  )
+);

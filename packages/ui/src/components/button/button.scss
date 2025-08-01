@@ -1,0 +1,133 @@
+@use "../../tokens/component-tokens/md-comp-button.scss" as *;
+@use "../../util.scss" as *;
+@use "../../tokens/sys-tokens.scss" as *;
+@use "./button-sizes.scss" as *;
+@use "./button-types.scss" as *;
+
+/* TODO: correct animation easings */
+/* TODO: separate state layers & ripples into separate components */
+/* TODO: old ripple spec used? */
+
+.MdcButton {
+  border: none;
+  @include apply-motion($md-sys-motion-spring-fast-spatial, border-radius);
+
+  position: relative;
+
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+
+  display: flex;
+  align-items: center;
+  gap: get-token($md-comp-button, icon-label-space);
+
+  & > .MdcStateLayer {
+    position: absolute;
+    inset: calc(var(--md-runtime-ripple-border-width) * -1);
+    pointer-events: none;
+    background-color: var(--state-layer-color, none);
+    opacity: var(--state-layer-opacity, 0);
+    border-radius: inherit;
+    border-width: inherit;
+    border-color: transparent;
+    @include apply-motion($md-sys-motion-spring-fast-effects, opacity);
+  }
+
+  & > .MdcRippleLayer {
+    position: absolute;
+    inset: calc(var(--md-runtime-ripple-border-width) * -1);
+    pointer-events: none;
+    overflow: hidden;
+    border-radius: inherit;
+    border-width: inherit;
+    border-color: transparent;
+  }
+
+  & .MdcElevationLayer,
+  & .MdcElevationLayer::before,
+  & .MdcElevationLayer::after {
+    position: absolute;
+    display: block;
+    inset: calc(var(--md-runtime-ripple-border-width) * -1);
+    pointer-events: none;
+    background-color: transparent;
+    border-radius: inherit;
+    border-width: inherit;
+    border-color: transparent;
+    @include apply-motion(
+      $md-sys-motion-spring-fast-effects,
+      opacity,
+      box-shadow
+    );
+
+    --_level: var(--elevation-layer-level, 0);
+  }
+  & .MdcElevationLayer::before {
+    content: "";
+    $level1-y: clamp(0, var(--_level), 1);
+    $level4-y: clamp(0, var(--_level) - 3, 1);
+    $level5-y: calc(2 * clamp(0, var(--_level) - 4, 1));
+    $y: calc(1px * ($level1-y + $level4-y + $level5-y));
+    $level1-blur: calc(2 * clamp(0, var(--_level), 1));
+    $level3-blur: clamp(0, var(--_level) - 2, 1);
+    $level5-blur: clamp(0, var(--_level) - 4, 1);
+    $blur: calc(1px * ($level1-blur + $level3-blur + $level5-blur));
+
+    box-shadow: 0px $y $blur 0px rgb(var(--elevation-layer-color));
+    opacity: 0.3;
+  }
+
+  & .MdcElevationLayer::after {
+    content: "";
+    $level1-y: clamp(0, var(--_level), 1);
+    $level2-y: clamp(0, var(--_level) - 1, 1);
+    $level3to5-y: calc(2 * clamp(0, var(--_level) - 2, 3));
+    $y: calc(1px * ($level1-y + $level2-y + $level3to5-y));
+    $level1to2-blur: calc(3 * clamp(0, var(--_level), 2));
+    $level3to5-blur: calc(2 * clamp(0, var(--_level) - 2, 3));
+    $blur: calc(1px * ($level1to2-blur + $level3to5-blur));
+    $level1to4-spread: clamp(0, var(--_level), 4);
+    $level5-spread: calc(2 * clamp(0, var(--_level) - 4, 1));
+    $spread: calc(1px * ($level1to4-spread + $level5-spread));
+
+    box-shadow: 0px $y $blur $spread rgb(var(--elevation-layer-color));
+    opacity: 0.15;
+  }
+
+  & .MdcRipple {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    transition:
+      opacity,
+      transform 0ms cubic-bezier(0, 0, 0.2, 1);
+    background-color: rgba(#000, 0.1);
+    transform: scale(1);
+    opacity: 1;
+    width: var(--ripple-size);
+    height: var(--ripple-size);
+    left: var(--ripple-position-x);
+    top: var(--ripple-position-y);
+    @include apply-motion(
+      $md-sys-motion-spring-slow-effects,
+      transform,
+      opacity
+    );
+
+    @starting-style {
+      transform: scale(0);
+    }
+
+    &.MdcRipple-fading-out {
+      opacity: 0;
+    }
+  }
+
+  &.MdcButton-disabled {
+    pointer-events: none;
+  }
+
+  @include button-sizes;
+  @include button-types;
+}

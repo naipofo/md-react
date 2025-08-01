@@ -8,27 +8,55 @@
   }
 }
 
+@mixin apply-border-width($value) {
+  border-width: $value;
+  --md-runtime-ripple-border-width: #{$value};
+}
+
 @mixin apply-motion($motion, $properties...) {
   transition-property: $properties;
   transition-duration: map.get($motion, "duration");
   transition-timing-function: map.get($motion, "easing");
 }
 
-@function get-token($set, $suffix) {
-  @return var(
-    -- + map.get($set, name) + -$suffix,
-    map.get(map.get($set, tokens), $suffix)
-  );
+@function has-token($set, $suffix) {
+  @return map.has-key(map.get($set, tokens), $suffix);
 }
 
-@mixin apply-typescale-token($set, $suffix) {
-  $token: map.get(map.get($set, tokens), $suffix);
-  font-family: map.get(map.get($set, tokens), map.get($token, font-family));
-  font-weight: map.get(map.get($set, tokens), map.get($token, font-weight));
-  font-size: map.get(map.get($set, tokens), map.get($token, font-size));
-  letter-spacing: map.get(
-    map.get($set, tokens),
-    map.get($token, letter-spacing)
-  );
-  line-height: map.get(map.get($set, tokens), map.get($token, line-height));
+@function get-token-raw($set, $suffix) {
+  @return map.get(map.get($set, tokens), $suffix);
+}
+
+@function get-token($set, $suffix, $default: unset) {
+  $token: get-token-raw($set, $suffix);
+  $final-value: $default;
+  @if (has-token($set, $suffix)) {
+    $final-value: get-token-raw($set, $suffix);
+  }
+  @return var(--#{map.get($set, name)}-#{$suffix}, $final-value);
+}
+
+@mixin apply-if-token-present($attribute, $set, $suffix) {
+  $token: get-token-raw($set, $suffix);
+  @if ($token) {
+    #{$attribute}: get-token($set, $suffix);
+  }
+}
+
+@mixin apply-local-typescale-token($set, $suffix) {
+  $token: get-token-raw($set, $suffix);
+  font-family: get-token($set, map.get($token, font-family));
+  font-weight: get-token($set, map.get($token, font-weight));
+  font-size: get-token($set, map.get($token, font-size));
+  letter-spacing: get-token($set, map.get($token, letter-spacing));
+  line-height: get-token($set, map.get($token, line-height));
+}
+
+@mixin apply-typescale($set, $suffix) {
+  $token: get-token-raw($set, $suffix);
+  font-family: map.get($token, font-family);
+  font-weight: map.get($token, font-weight);
+  font-size: map.get($token, font-size);
+  letter-spacing: map.get($token, letter-spacing);
+  line-height: map.get($token, line-height);
 }

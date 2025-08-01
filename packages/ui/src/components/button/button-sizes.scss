@@ -1,0 +1,47 @@
+@use "sass:map";
+@use "../../tokens/component-tokens/md-comp-button-xsmall.scss" as *;
+@use "../../tokens/component-tokens/md-comp-button-small.scss" as *;
+@use "../../tokens/component-tokens/md-comp-button-medium.scss" as *;
+@use "../../tokens/component-tokens/md-comp-button-large.scss" as *;
+@use "../../tokens/component-tokens/md-comp-button-xlarge.scss" as *;
+@use "../../util.scss" as *;
+
+@mixin button-sizes {
+  $sizes: (
+    xsmall: $md-comp-button-xsmall,
+    small: $md-comp-button-small,
+    medium: $md-comp-button-medium,
+    large: $md-comp-button-large,
+    xlarge: $md-comp-button-xlarge,
+  );
+
+  @each $name, $token in $sizes {
+    &.MdcButton-#{$name} {
+      @include apply-typescale($token, label-text);
+      @include apply-height(get-token($token, container-height));
+      @include apply-border-width(get-token($token, outlined-outline-width, 0));
+      padding-inline-start: get-token($token, leading-space);
+      padding-inline-end: get-token($token, trailing-space);
+      gap: get-token($token, icon-label-space);
+
+      border-radius: get-token($token, container-shape-square);
+      &.MdcButton-toggle.MdcButton-selected {
+        border-radius: get-token($token, selected-container-shape-square);
+      }
+
+      &.MdcButton-round {
+        border-radius: get-token($token, container-shape-round);
+        &.MdcButton-toggle.MdcButton-selected {
+          border-radius: get-token($token, selected-container-shape-round);
+        }
+      }
+      &:active {
+        border-radius: get-token($token, pressed-container-shape);
+      }
+
+      & > .MdcButton-icon {
+        width: get-token($token, icon-size);
+      }
+    }
+  }
+}

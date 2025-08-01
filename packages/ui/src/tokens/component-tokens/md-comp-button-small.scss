@@ -1,0 +1,39 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Button - Size - Small */
+/* Token set name: md.comp.button.small */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-button-small: (
+  name: md-comp-button-small,
+  tokens: (
+    // Button small container height
+    container-height: 40px,
+    // Button small outline width
+    outlined-outline-width: 1px,
+    // Button small label size
+    label-text: $md-sys-typescale-label-large,
+    // Button small icon size
+    icon-size: 20px,
+    // Button small shape round
+    container-shape-round: $md-sys-shape-corner-full,
+    // Button small shape square
+    container-shape-square: $md-sys-shape-corner-medium,
+    // Button small leading space
+    leading-space: 16px,
+    // Button small between icon label space
+    icon-label-space: 8px,
+    // Button small trailing space
+    trailing-space: 16px,
+    // Button small shape pressed morph
+    pressed-container-shape: $md-sys-shape-corner-small,
+    // Button small shape spring animation damping
+    pressed-container-corner-size-motion-spring-damping: $md-sys-motion-spring-fast-spatial-damping,
+    // Button small shape spring animation stiffness
+    pressed-container-corner-size-motion-spring-stiffness: $md-sys-motion-spring-fast-spatial-stiffness,
+    // Button small selected container shape round
+    selected-container-shape-round: $md-sys-shape-corner-medium,
+    // Button small selected container shape square
+    selected-container-shape-square: $md-sys-shape-corner-full
+  )
+);

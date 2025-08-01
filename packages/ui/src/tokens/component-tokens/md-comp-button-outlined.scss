@@ -1,0 +1,115 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Button - Color - Outlined */
+/* Token set name: md.comp.button.outlined */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-button-outlined: (
+  name: md-comp-button-outlined,
+  tokens: (
+    // Button outlined outline color
+    outline-color: $md-sys-color-outline-variant,
+    // Button outlined container color - toggle (selected)
+    selected-container-color: $md-sys-color-inverse-surface,
+    // Button outlined label color
+    label-text-color: $md-sys-color-on-surface-variant,
+    // Button outlined label color - toggle (unselected)
+    unselected-label-text-color: $md-sys-color-on-surface-variant,
+    // Button outlined label color - toggle (selected)
+    selected-label-text-color: $md-sys-color-inverse-on-surface,
+    // Button outlined icon color
+    icon-color: $md-sys-color-on-surface-variant,
+    // Button outlined icon color - toggle (unselected)
+    unselected-icon-color: $md-sys-color-on-surface-variant,
+    // Button outlined icon color - toggle (selected)
+    selected-icon-color: $md-sys-color-inverse-on-surface,
+    // Button outlined disabled outline color
+    disabled-outline-color: $md-sys-color-outline-variant,
+    // Button outlined disabled outline color (unselected)
+    unselected-disabled-outline-color: $md-sys-color-outline-variant,
+    // Button outlined disabled container color (selected)
+    selected-disabled-container-color: $md-sys-color-on-surface,
+    // Button outlined disabled container opacity
+    disabled-container-opacity: 0.1,
+    // Button outlined disabled label color
+    disabled-label-text-color: $md-sys-color-on-surface,
+    // Button outlined disabled label opacity
+    disabled-label-text-opacity: 0.38,
+    // Button outlined disabled icon color
+    disabled-icon-color: $md-sys-color-on-surface,
+    // Button outlined disabled icon opacity
+    disabled-icon-opacity: 0.38,
+    // Button outlined hovered state layer color
+    hovered-state-layer-color: $md-sys-color-on-surface-variant,
+    // Button outlined hovered state layer color - toggle (unselected)
+    unselected-hovered-state-layer-color: $md-sys-color-on-surface-variant,
+    // Button outlined hovered state layer color - toggle (selected)
+    selected-hovered-state-layer-color: $md-sys-color-inverse-on-surface,
+    // Button outlined hovered state layer opacity
+    hovered-state-layer-opacity: $md-sys-state-hover-state-layer-opacity,
+    // Button outlined hovered outline color
+    hovered-outline-color: $md-sys-color-outline-variant,
+    // Button outlined hovered outline color - toggle (unselected)
+    unselected-hovered-outline-color: $md-sys-color-outline-variant,
+    // Button outlined hovered label color
+    hovered-label-text-color: $md-sys-color-on-surface-variant,
+    // Button outlined hovered label color - toggle (unselected)
+    unselected-hovered-label-text-color: $md-sys-color-on-surface-variant,
+    // Button outlined hovered label color - toggle (selected)
+    selected-hovered-label-text-color: $md-sys-color-inverse-on-surface,
+    // Button outlined hovered icon color
+    hovered-icon-color: $md-sys-color-on-surface-variant,
+    // Button outlined hovered icon color - toggle (unselected)
+    unselected-hovered-icon-color: $md-sys-color-on-surface-variant,
+    // Button outlined hovered icon color - toggle (selected)
+    selected-hovered-icon-color: $md-sys-color-inverse-on-surface,
+    // Button outlined focused container state layer color
+    focused-state-layer-color: $md-sys-color-on-surface-variant,
+    // Button outlined focused container state layer color - toggle (unselected)
+    unselected-focused-state-layer-color: $md-sys-color-on-surface-variant,
+    // Button outlined focused container state layer color - toggle (selected)
+    selected-focused-state-layer-color: $md-sys-color-inverse-on-surface,
+    // Button outlined focused container state layer opacity
+    focused-state-layer-opacity: $md-sys-state-focus-state-layer-opacity,
+    // Button outlined focused outline color
+    focused-outline-color: $md-sys-color-outline-variant,
+    // Button outlined focused outline color - toggle (unselected)
+    unselected-focused-outline-color: $md-sys-color-outline-variant,
+    // Button outlined focused label color
+    focused-label-text-color: $md-sys-color-on-surface-variant,
+    // Button outlined focused label color - toggle (unselected)
+    unselected-focused-label-text-color: $md-sys-color-on-surface-variant,
+    // Button outlined focused label color - toggle (selected)
+    selected-focused-label-text-color: $md-sys-color-inverse-on-surface,
+    // Button outlined focused icon color
+    focused-icon-color: $md-sys-color-on-surface-variant,
+    // Button outlined focused icon color - toggle (unselected)
+    unselected-focused-icon-color: $md-sys-color-on-surface-variant,
+    // Button outlined focused icon color - toggle (selected)
+    selected-focused-icon-color: $md-sys-color-inverse-on-surface,
+    // Button outlined pressed container state layer color
+    pressed-state-layer-color: $md-sys-color-on-surface-variant,
+    // Button outlined pressed container state layer color - toggle (unselected)
+    unselected-pressed-state-layer-color: $md-sys-color-on-surface-variant,
+    // Button outlined pressed container state layer color - toggle (selected)
+    selected-pressed-state-layer-color: $md-sys-color-inverse-on-surface,
+    // Button outlined pressed container state layer opacity
+    pressed-state-layer-opacity: $md-sys-state-pressed-state-layer-opacity,
+    // Button outlined pressed outline color
+    pressed-outline-color: $md-sys-color-outline-variant,
+    // Button outlined pressed outline color - toggle (unselected)
+    unselected-pressed-outline-color: $md-sys-color-outline-variant,
+    // Button outlined pressed label color
+    pressed-label-text-color: $md-sys-color-on-surface-variant,
+    // Button outlined pressed label color - toggle (unselected)
+    unselected-pressed-label-text-color: $md-sys-color-on-surface-variant,
+    // Button outlined pressed label color - toggle (selected)
+    selected-pressed-label-text-color: $md-sys-color-inverse-on-surface,
+    // Button outlined pressed icon color
+    pressed-icon-color: $md-sys-color-on-surface-variant,
+    // Button outlined pressed icon color - toggle (unselected)
+    unselected-pressed-icon-color: $md-sys-color-on-surface-variant,
+    // Button outlined pressed icon color - toggle (selected)
+    selected-pressed-icon-color: $md-sys-color-inverse-on-surface
+  )
+);
