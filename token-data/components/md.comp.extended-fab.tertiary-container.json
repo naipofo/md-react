@@ -1,0 +1,246 @@
+{
+  "displayName": "Extended FAB - Color - Tonal tertiary",
+  "tokenSetName": "md.comp.extended-fab.tertiary-container",
+  "tokens": [
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.container.color",
+      "tokenNameSuffix": "container.color",
+      "displayName": "Extended FAB tonal tertiary container color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.container.elevation",
+      "tokenNameSuffix": "container.elevation",
+      "displayName": "Extended FAB tonal tertiary container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level3",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.container.shadow-color",
+      "tokenNameSuffix": "container.shadow-color",
+      "displayName": "Extended FAB tonal tertiary container shadow color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.shadow",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.label-text.color",
+      "tokenNameSuffix": "label-text.color",
+      "displayName": "Extended FAB tonal tertiary label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.icon.color",
+      "tokenNameSuffix": "icon.color",
+      "displayName": "Extended FAB tonal tertiary container icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.hovered.container.elevation",
+      "tokenNameSuffix": "hovered.container.elevation",
+      "displayName": "Extended FAB tonal tertiary hovered container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level4",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.hovered.state-layer.color",
+      "tokenNameSuffix": "hovered.state-layer.color",
+      "displayName": "Extended FAB tonal tertiary hovered state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.hovered.state-layer.opacity",
+      "tokenNameSuffix": "hovered.state-layer.opacity",
+      "displayName": "Extended FAB tonal tertiary hovered state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.hover.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.hovered.label-text.color",
+      "tokenNameSuffix": "hovered.label-text.color",
+      "displayName": "Extended FAB tonal tertiary hovered label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.hovered.icon.color",
+      "tokenNameSuffix": "hovered.icon.color",
+      "displayName": "Extended FAB tonal tertiary hovered icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.focused.container.elevation",
+      "tokenNameSuffix": "focused.container.elevation",
+      "displayName": "Extended FAB tonal tertiary focused container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level3",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.focused.state-layer.color",
+      "tokenNameSuffix": "focused.state-layer.color",
+      "displayName": "Extended FAB tonal tertiary focused state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.focused.state-layer.opacity",
+      "tokenNameSuffix": "focused.state-layer.opacity",
+      "displayName": "Extended FAB tonal tertiary focused state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.focus.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.focused.label-text.color",
+      "tokenNameSuffix": "focused.label-text.color",
+      "displayName": "Extended FAB tonal tertiary focused label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.focused.icon.color",
+      "tokenNameSuffix": "focused.icon.color",
+      "displayName": "Extended FAB tonal tertiary focused icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.pressed.container.elevation",
+      "tokenNameSuffix": "pressed.container.elevation",
+      "displayName": "Extended FAB tonal tertiary pressed container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level3",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.pressed.state-layer.color",
+      "tokenNameSuffix": "pressed.state-layer.color",
+      "displayName": "Extended FAB tonal tertiary pressed state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.pressed.state-layer.opacity",
+      "tokenNameSuffix": "pressed.state-layer.opacity",
+      "displayName": "Extended FAB tonal tertiary pressed state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.pressed.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.pressed.label-text.color",
+      "tokenNameSuffix": "pressed.label-text.color",
+      "displayName": "Extended FAB tonal tertiary pressed label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary-container.pressed.icon.color",
+      "tokenNameSuffix": "pressed.icon.color",
+      "displayName": "Extended FAB tonal tertiary pressed icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

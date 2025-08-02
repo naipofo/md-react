@@ -1,0 +1,25 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Extended FAB - Size - Small */
+/* Token set name: md.comp.extended-fab.small */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-extended-fab-small: (
+  name: md-comp-extended-fab-small,
+  tokens: (
+    // Extended FAB small container height
+    container-height: 56px,
+    // Extended FAB small label text
+    label-text: $md-sys-typescale-title-medium,
+    // Extended FAB small icon size
+    icon-size: 24px,
+    // Extended FAB small container shape
+    container-shape: $md-sys-shape-corner-large,
+    // Extended FAB small leading space
+    leading-space: 16px,
+    // Extended FAB small icon label space
+    icon-label-space: 8px,
+    // Extended FAB small trailing space
+    trailing-space: 16px
+  )
+);

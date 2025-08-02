@@ -1,0 +1,105 @@
+{
+  "displayName": "Extended FAB - Size - Medium",
+  "tokenSetName": "md.comp.extended-fab.medium",
+  "tokens": [
+    {
+      "tokenName": "md.comp.extended-fab.medium.container.height",
+      "tokenNameSuffix": "container.height",
+      "displayName": "Extended FAB medium container height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 80,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.medium.label-text",
+      "tokenNameSuffix": "label-text",
+      "displayName": "Extended FAB medium label text",
+      "tokenValueType": "TYPOGRAPHY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.title-large",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.medium.icon.size",
+      "tokenNameSuffix": "icon.size",
+      "displayName": "Extended FAB medium icon size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 28,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.medium.container.shape",
+      "tokenNameSuffix": "container.shape",
+      "displayName": "Extended FAB medium container shape",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.large-increased",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.medium.leading-space",
+      "tokenNameSuffix": "leading-space",
+      "displayName": "Extended FAB medium leading space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 26,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.medium.icon-label-space",
+      "tokenNameSuffix": "icon-label-space",
+      "displayName": "Extended FAB medium icon label space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 12,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.medium.trailing-space",
+      "tokenNameSuffix": "trailing-space",
+      "displayName": "Extended FAB medium trailing space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 26,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,570 @@
+{
+  "displayName": "Extended FAB - Tertiary",
+  "tokenSetName": "md.comp.extended-fab.tertiary",
+  "tokens": [
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.container.color",
+      "tokenNameSuffix": "container.color",
+      "displayName": "Extended FAB tertiary container color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.tertiary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.container.elevation",
+      "tokenNameSuffix": "container.elevation",
+      "displayName": "Extended FAB tertiary container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level3",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.container.shadow-color",
+      "tokenNameSuffix": "container.shadow-color",
+      "displayName": "Extended FAB tertiary container shadow color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.shadow",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.label-text.color",
+      "tokenNameSuffix": "label-text.color",
+      "displayName": "Extended FAB tertiary label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.icon.color",
+      "tokenNameSuffix": "icon.color",
+      "displayName": "Extended FAB tertiary container icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.hovered.container.elevation",
+      "tokenNameSuffix": "hovered.container.elevation",
+      "displayName": "Extended FAB tertiary hovered container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level4",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.hovered.state-layer.color",
+      "tokenNameSuffix": "hovered.state-layer.color",
+      "displayName": "Extended FAB tertiary hovered state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.hovered.state-layer.opacity",
+      "tokenNameSuffix": "hovered.state-layer.opacity",
+      "displayName": "Extended FAB tertiary hovered state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.hover.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.hovered.label-text.color",
+      "tokenNameSuffix": "hovered.label-text.color",
+      "displayName": "Extended FAB tertiary hovered label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.hovered.icon.color",
+      "tokenNameSuffix": "hovered.icon.color",
+      "displayName": "Extended FAB tertiary hovered icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.focused.container.elevation",
+      "tokenNameSuffix": "focused.container.elevation",
+      "displayName": "Extended FAB tertiary focused container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level3",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.focused.state-layer.color",
+      "tokenNameSuffix": "focused.state-layer.color",
+      "displayName": "Extended FAB tertiary focused state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.focused.state-layer.opacity",
+      "tokenNameSuffix": "focused.state-layer.opacity",
+      "displayName": "Extended FAB tertiary focused state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.focus.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.focused.label-text.color",
+      "tokenNameSuffix": "focused.label-text.color",
+      "displayName": "Extended FAB tertiary focused label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.focused.icon.color",
+      "tokenNameSuffix": "focused.icon.color",
+      "displayName": "Extended FAB tertiary focused icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.pressed.container.elevation",
+      "tokenNameSuffix": "pressed.container.elevation",
+      "displayName": "Extended FAB tertiary pressed container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level3",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.pressed.state-layer.color",
+      "tokenNameSuffix": "pressed.state-layer.color",
+      "displayName": "Extended FAB tertiary pressed state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.pressed.state-layer.opacity",
+      "tokenNameSuffix": "pressed.state-layer.opacity",
+      "displayName": "Extended FAB tertiary pressed state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.pressed.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.pressed.label-text.color",
+      "tokenNameSuffix": "pressed.label-text.color",
+      "displayName": "Extended FAB tertiary pressed label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.pressed.icon.color",
+      "tokenNameSuffix": "pressed.icon.color",
+      "displayName": "Extended FAB tertiary pressed icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.lowered.container.elevation",
+      "tokenNameSuffix": "lowered.container.elevation",
+      "displayName": "Extended FAB (tertiary) lowered container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level1",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.container.height",
+      "tokenNameSuffix": "container.height",
+      "displayName": "Extended FAB (tertiary) container height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 56,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.container.shape",
+      "tokenNameSuffix": "container.shape",
+      "displayName": "Extended FAB (tertiary) container shape",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.large",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.label-text.font",
+      "tokenNameSuffix": "label-text.font",
+      "displayName": "Extended FAB (tertiary) label text font",
+      "tokenValueType": "FONT_NAMES",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.label-large.font",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.label-text.line-height",
+      "tokenNameSuffix": "label-text.line-height",
+      "displayName": "Extended FAB (tertiary) label text line height",
+      "tokenValueType": "LINE_HEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.label-large.line-height",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.label-text.size",
+      "tokenNameSuffix": "label-text.size",
+      "displayName": "Extended FAB (tertiary) label text size",
+      "tokenValueType": "FONT_SIZE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.label-large.size",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.label-text.tracking",
+      "tokenNameSuffix": "label-text.tracking",
+      "displayName": "Extended FAB (tertiary) label text tracking",
+      "tokenValueType": "FONT_TRACKING",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.label-large.tracking",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.label-text.weight",
+      "tokenNameSuffix": "label-text.weight",
+      "displayName": "Extended FAB (tertiary) label text weight",
+      "tokenValueType": "FONT_WEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.label-large.weight",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.label-text.type",
+      "tokenNameSuffix": "label-text.type",
+      "displayName": "Label text type style",
+      "tokenValueType": "TYPOGRAPHY",
+      "data": {
+        "token": {
+          "type": {
+            "fontNameTokenName": "md.comp.extended-fab.tertiary.label-text.font",
+            "fontWeightTokenName": "md.comp.extended-fab.tertiary.label-text.weight",
+            "fontSizeTokenName": "md.comp.extended-fab.tertiary.label-text.size",
+            "fontTrackingTokenName": "md.comp.extended-fab.tertiary.label-text.tracking",
+            "lineHeightTokenName": "md.comp.extended-fab.tertiary.label-text.line-height"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.icon.size",
+      "tokenNameSuffix": "icon.size",
+      "displayName": "Extended FAB (tertiary) icon size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 24,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.hover.container.elevation",
+      "tokenNameSuffix": "hover.container.elevation",
+      "displayName": "Extended FAB (tertiary) hover container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level4",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.lowered.hover.container.elevation",
+      "tokenNameSuffix": "lowered.hover.container.elevation",
+      "displayName": "Extended FAB (tertiary) lowered hover container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level2",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.hover.label-text.color",
+      "tokenNameSuffix": "hover.label-text.color",
+      "displayName": "Extended FAB (tertiary) hover label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.hover.state-layer.color",
+      "tokenNameSuffix": "hover.state-layer.color",
+      "displayName": "Extended FAB (tertiary) hover state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.hover.state-layer.opacity",
+      "tokenNameSuffix": "hover.state-layer.opacity",
+      "displayName": "Extended FAB (tertiary) hover state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.hover.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.hover.icon.color",
+      "tokenNameSuffix": "hover.icon.color",
+      "displayName": "Extended FAB (tertiary) hover icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.focus.indicator.color",
+      "tokenNameSuffix": "focus.indicator.color",
+      "displayName": "Extended FAB (tertiary) focus indicator color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.secondary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.focus.indicator.thickness",
+      "tokenNameSuffix": "focus.indicator.thickness",
+      "displayName": "Extended FAB (tertiary) focus indicator thickness",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.focus-indicator.thickness",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.focus.indicator.outline.offset",
+      "tokenNameSuffix": "focus.indicator.outline.offset",
+      "displayName": "Extended FAB (tertiary) focus indicator offset",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.focus-indicator.outer-offset",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.focus.container.elevation",
+      "tokenNameSuffix": "focus.container.elevation",
+      "displayName": "Extended FAB (tertiary) focus container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level3",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.lowered.focus.container.elevation",
+      "tokenNameSuffix": "lowered.focus.container.elevation",
+      "displayName": "Extended FAB (tertiary) lowered focus container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level1",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.focus.label-text.color",
+      "tokenNameSuffix": "focus.label-text.color",
+      "displayName": "Extended FAB (tertiary) focus label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.focus.state-layer.color",
+      "tokenNameSuffix": "focus.state-layer.color",
+      "displayName": "Extended FAB (tertiary) focus state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.focus.state-layer.opacity",
+      "tokenNameSuffix": "focus.state-layer.opacity",
+      "displayName": "Extended FAB (tertiary) focus state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.focus.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.focus.icon.color",
+      "tokenNameSuffix": "focus.icon.color",
+      "displayName": "Extended FAB (tertiary) focus icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-tertiary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.tertiary.lowered.pressed.container.elevation",
+      "tokenNameSuffix": "lowered.pressed.container.elevation",
+      "displayName": "Extended FAB (tertiary) lowered pressed container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level1",
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

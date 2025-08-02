@@ -5,6 +5,15 @@
 @use "../../tokens/component-tokens/md-comp-fab-primary-container.scss" as *;
 @use "../../tokens/component-tokens/md-comp-fab-secondary-container.scss" as *;
 @use "../../tokens/component-tokens/md-comp-fab-tertiary-container.scss" as *;
+@use "../../tokens/component-tokens/md-comp-extended-fab-primary.scss" as *;
+@use "../../tokens/component-tokens/md-comp-extended-fab-secondary.scss" as *;
+@use "../../tokens/component-tokens/md-comp-extended-fab-tertiary.scss" as *;
+@use "../../tokens/component-tokens/md-comp-extended-fab-primary-container.scss"
+  as *;
+@use "../../tokens/component-tokens/md-comp-extended-fab-secondary-container.scss"
+  as *;
+@use "../../tokens/component-tokens/md-comp-extended-fab-tertiary-container.scss"
+  as *;
 @use "../../util.scss" as *;
 
 @mixin apply-fab-base($token) {
@@ -51,34 +60,73 @@
   }
 }
 
+@mixin apply-extended-fab-base($token) {
+  @include apply-fab-base($token);
+
+  & .MdcFab-label {
+    color: rgb(get-token($token, label-text-color));
+  }
+}
+
+@mixin apply-extended-fab-interactive-states($token) {
+  @include apply-fab-interactive-states($token);
+
+  $state-pseudo-map: (
+    "hovered": "hover",
+    "focused": "focus-visible",
+    "pressed": "active",
+  );
+
+  @each $state, $pseudo-class in $state-pseudo-map {
+    &:#{$pseudo-class} {
+      & .MdcFab-label {
+        color: rgb(get-token($token, "#{$state}-label-text-color"));
+      }
+    }
+  }
+}
+
 @mixin fab-types {
-  &.MdcFab-primary {
-    @include apply-fab-base($md-comp-fab-primary);
-    @include apply-fab-interactive-states($md-comp-fab-primary);
-  }
+  $fab-variants: (
+    "primary": (
+      "regular": $md-comp-fab-primary,
+      "extended": $md-comp-extended-fab-primary,
+    ),
+    "secondary": (
+      "regular": $md-comp-fab-secondary,
+      "extended": $md-comp-extended-fab-secondary,
+    ),
+    "tertiary": (
+      "regular": $md-comp-fab-tertiary,
+      "extended": $md-comp-extended-fab-tertiary,
+    ),
+    "primary-tonal": (
+      "regular": $md-comp-fab-primary-container,
+      "extended": $md-comp-extended-fab-primary-container,
+    ),
+    "secondary-tonal": (
+      "regular": $md-comp-fab-secondary-container,
+      "extended": $md-comp-extended-fab-secondary-container,
+    ),
+    "tertiary-tonal": (
+      "regular": $md-comp-fab-tertiary-container,
+      "extended": $md-comp-extended-fab-tertiary-container,
+    ),
+  );
 
-  &.MdcFab-secondary {
-    @include apply-fab-base($md-comp-fab-secondary);
-    @include apply-fab-interactive-states($md-comp-fab-secondary);
-  }
+  @each $name, $tokens in $fab-variants {
+    &.MdcFab-#{$name} {
+      &:not(.MdcFab-extended) {
+        @include apply-fab-base(map.get($tokens, "regular"));
+        @include apply-fab-interactive-states(map.get($tokens, "regular"));
+      }
 
-  &.MdcFab-tertiary {
-    @include apply-fab-base($md-comp-fab-tertiary);
-    @include apply-fab-interactive-states($md-comp-fab-tertiary);
-  }
-
-  &.MdcFab-primary-tonal {
-    @include apply-fab-base($md-comp-fab-primary-container);
-    @include apply-fab-interactive-states($md-comp-fab-primary-container);
-  }
-
-  &.MdcFab-secondary-tonal {
-    @include apply-fab-base($md-comp-fab-secondary-container);
-    @include apply-fab-interactive-states($md-comp-fab-secondary-container);
-  }
-
-  &.MdcFab-tertiary-tonal {
-    @include apply-fab-base($md-comp-fab-tertiary-container);
-    @include apply-fab-interactive-states($md-comp-fab-tertiary-container);
+      &.MdcFab-extended {
+        @include apply-extended-fab-base(map.get($tokens, "extended"));
+        @include apply-extended-fab-interactive-states(
+          map.get($tokens, "extended")
+        );
+      }
+    }
   }
 }

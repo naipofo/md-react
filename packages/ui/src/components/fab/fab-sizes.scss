@@ -2,23 +2,53 @@
 @use "../../tokens/component-tokens/md-comp-fab.scss" as *;
 @use "../../tokens/component-tokens/md-comp-fab-medium.scss" as *;
 @use "../../tokens/component-tokens/md-comp-fab-large.scss" as *;
+@use "../../tokens/component-tokens/md-comp-extended-fab-small.scss" as *;
+@use "../../tokens/component-tokens/md-comp-extended-fab-medium.scss" as *;
+@use "../../tokens/component-tokens/md-comp-extended-fab-large.scss" as *;
 @use "../../util.scss" as *;
 
 @mixin fab-sizes {
+  // Regular FAB sizes
   $sizes: (
     baseline: $md-comp-fab,
     medium: $md-comp-fab-medium,
-    large: $md-comp-fab-large
+    large: $md-comp-fab-large,
   );
 
   @each $name, $token in $sizes {
-    &.MdcFab-#{$name} {
+    &.MdcFab-#{$name}:not(.MdcFab-extended) {
       @include apply-height(get-token($token, container-height));
       width: get-token($token, container-width);
       border-radius: get-token($token, container-shape);
 
       & .MdcFab-icon {
         width: get-token($token, icon-size);
+      }
+    }
+  }
+
+  // Extended FAB sizes
+  $extended-sizes: (
+    baseline: $md-comp-extended-fab-small,
+    medium: $md-comp-extended-fab-medium,
+    large: $md-comp-extended-fab-large,
+  );
+
+  @each $name, $token in $extended-sizes {
+    &.MdcFab-#{$name}.MdcFab-extended {
+      @include apply-height(get-token($token, container-height));
+      border-radius: get-token($token, container-shape);
+
+      padding-inline-start: get-token($token, leading-space);
+      padding-inline-end: get-token($token, trailing-space);
+      gap: get-token($token, icon-label-space);
+
+      & .MdcFab-icon {
+        width: get-token($token, icon-size);
+      }
+
+      & .MdcFab-label {
+        @include apply-typescale($token, label-text);
       }
     }
   }

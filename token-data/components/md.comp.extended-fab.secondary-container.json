@@ -1,0 +1,246 @@
+{
+  "displayName": "Extended FAB - Color - Tonal secondary",
+  "tokenSetName": "md.comp.extended-fab.secondary-container",
+  "tokens": [
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.container.color",
+      "tokenNameSuffix": "container.color",
+      "displayName": "Extended FAB tonal secondary container color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.secondary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.container.elevation",
+      "tokenNameSuffix": "container.elevation",
+      "displayName": "Extended FAB tonal secondary container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level3",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.container.shadow-color",
+      "tokenNameSuffix": "container.shadow-color",
+      "displayName": "Extended FAB tonal secondary container shadow color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.shadow",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.label-text.color",
+      "tokenNameSuffix": "label-text.color",
+      "displayName": "Extended FAB tonal secondary label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-secondary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.icon.color",
+      "tokenNameSuffix": "icon.color",
+      "displayName": "Extended FAB tonal secondary container icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-secondary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.hovered.container.elevation",
+      "tokenNameSuffix": "hovered.container.elevation",
+      "displayName": "Extended FAB tonal secondary hovered container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level4",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.hovered.state-layer.color",
+      "tokenNameSuffix": "hovered.state-layer.color",
+      "displayName": "Extended FAB tonal secondary hovered state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-secondary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.hovered.state-layer.opacity",
+      "tokenNameSuffix": "hovered.state-layer.opacity",
+      "displayName": "Extended FAB tonal secondary hovered state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.hover.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.hovered.label-text.color",
+      "tokenNameSuffix": "hovered.label-text.color",
+      "displayName": "Extended FAB tonal secondary hovered label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-secondary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.hovered.icon.color",
+      "tokenNameSuffix": "hovered.icon.color",
+      "displayName": "Extended FAB tonal secondary hovered icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-secondary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.focused.container.elevation",
+      "tokenNameSuffix": "focused.container.elevation",
+      "displayName": "Extended FAB tonal secondary focused container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level3",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.focused.state-layer.color",
+      "tokenNameSuffix": "focused.state-layer.color",
+      "displayName": "Extended FAB tonal secondary focused state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-secondary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.focused.state-layer.opacity",
+      "tokenNameSuffix": "focused.state-layer.opacity",
+      "displayName": "Extended FAB tonal secondary focused state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.focus.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.focused.label-text.color",
+      "tokenNameSuffix": "focused.label-text.color",
+      "displayName": "Extended FAB tonal secondary focused label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-secondary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.focused.icon.color",
+      "tokenNameSuffix": "focused.icon.color",
+      "displayName": "Extended FAB tonal secondary focused icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-secondary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.pressed.container.elevation",
+      "tokenNameSuffix": "pressed.container.elevation",
+      "displayName": "Extended FAB tonal secondary pressed container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level3",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.pressed.state-layer.color",
+      "tokenNameSuffix": "pressed.state-layer.color",
+      "displayName": "Extended FAB tonal secondary pressed state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-secondary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.pressed.state-layer.opacity",
+      "tokenNameSuffix": "pressed.state-layer.opacity",
+      "displayName": "Extended FAB tonal secondary pressed state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.pressed.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.pressed.label-text.color",
+      "tokenNameSuffix": "pressed.label-text.color",
+      "displayName": "Extended FAB tonal secondary pressed label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-secondary-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.extended-fab.secondary-container.pressed.icon.color",
+      "tokenNameSuffix": "pressed.icon.color",
+      "displayName": "Extended FAB tonal secondary pressed icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-secondary-container",
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

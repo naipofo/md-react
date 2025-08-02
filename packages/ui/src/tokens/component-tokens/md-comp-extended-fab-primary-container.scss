@@ -1,0 +1,51 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Extended FAB - Color - Tonal primary */
+/* Token set name: md.comp.extended-fab.primary-container */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-extended-fab-primary-container: (
+  name: md-comp-extended-fab-primary-container,
+  tokens: (
+    // Extended FAB tonal primary container color
+    container-color: $md-sys-color-primary-container,
+    // Extended FAB tonal primary container elevation
+    container-elevation: $md-sys-elevation-level3,
+    // Extended FAB tonal primary container shadow color
+    container-shadow-color: $md-sys-color-shadow,
+    // Extended FAB tonal primary label text color
+    label-text-color: $md-sys-color-on-primary-container,
+    // Extended FAB tonal primary container icon color
+    icon-color: $md-sys-color-on-primary-container,
+    // Extended FAB tonal primary hovered container elevation
+    hovered-container-elevation: $md-sys-elevation-level4,
+    // Extended FAB tonal primary hovered state layer color
+    hovered-state-layer-color: $md-sys-color-on-primary-container,
+    // Extended FAB tonal primary hovered state layer opacity
+    hovered-state-layer-opacity: $md-sys-state-hover-state-layer-opacity,
+    // Extended FAB tonal primary hovered label text color
+    hovered-label-text-color: $md-sys-color-on-primary-container,
+    // Extended FAB tonal primary hovered icon color
+    hovered-icon-color: $md-sys-color-on-primary-container,
+    // Extended FAB tonal primary focused container elevation
+    focused-container-elevation: $md-sys-elevation-level3,
+    // Extended FAB tonal primary focused state layer color
+    focused-state-layer-color: $md-sys-color-on-primary-container,
+    // Extended FAB tonal primary focused state layer opacity
+    focused-state-layer-opacity: $md-sys-state-focus-state-layer-opacity,
+    // Extended FAB tonal primary focused label text color
+    focused-label-text-color: $md-sys-color-on-primary-container,
+    // Extended FAB tonal primary focused icon color
+    focused-icon-color: $md-sys-color-on-primary-container,
+    // Extended FAB tonal primary pressed container elevation
+    pressed-container-elevation: $md-sys-elevation-level3,
+    // Extended FAB tonal primary pressed state layer color
+    pressed-state-layer-color: $md-sys-color-on-primary-container,
+    // Extended FAB tonal primary pressed state layer opacity
+    pressed-state-layer-opacity: $md-sys-state-pressed-state-layer-opacity,
+    // Extended FAB tonal primary pressed label text color
+    pressed-label-text-color: $md-sys-color-on-primary-container,
+    // Extended FAB tonal primary pressed icon color
+    pressed-icon-color: $md-sys-color-on-primary-container
+  )
+);

@@ -1,0 +1,25 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Extended FAB - Size - Medium */
+/* Token set name: md.comp.extended-fab.medium */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-extended-fab-medium: (
+  name: md-comp-extended-fab-medium,
+  tokens: (
+    // Extended FAB medium container height
+    container-height: 80px,
+    // Extended FAB medium label text
+    label-text: $md-sys-typescale-title-large,
+    // Extended FAB medium icon size
+    icon-size: 28px,
+    // Extended FAB medium container shape
+    container-shape: $md-sys-shape-corner-large-increased,
+    // Extended FAB medium leading space
+    leading-space: 26px,
+    // Extended FAB medium icon label space
+    icon-label-space: 12px,
+    // Extended FAB medium trailing space
+    trailing-space: 26px
+  )
+);
