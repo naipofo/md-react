@@ -1,0 +1,75 @@
+{
+  "displayName": "Button group standard - Size - Xsmall",
+  "tokenSetName": "md.comp.button-group.standard.xsmall",
+  "tokens": [
+    {
+      "tokenName": "md.comp.button-group.standard.xsmall.container.height",
+      "tokenNameSuffix": "container.height",
+      "displayName": "Button group xsmall container height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 32,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button-group.standard.xsmall.between-space",
+      "tokenNameSuffix": "between-space",
+      "displayName": "Button group xsmall between space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 18,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button-group.standard.xsmall.pressed.item.width.motion.spring.dampening",
+      "tokenNameSuffix": "pressed.item.width.motion.spring.dampening",
+      "displayName": "Button group xsmall pressed motion spring dampening",
+      "tokenValueType": "DURATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.motion.spring.fast.spatial.damping",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button-group.standard.xsmall.pressed.item.width.motion.spring.stiffness",
+      "tokenNameSuffix": "pressed.item.width.motion.spring.stiffness",
+      "displayName": "Button group xsmall pressed motion spring stiffness",
+      "tokenValueType": "DURATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.motion.spring.fast.spatial.stiffness",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button-group.standard.xsmall.pressed.item.width.multiplier",
+      "tokenNameSuffix": "pressed.item.width.multiplier",
+      "displayName": "Button group xsmall pressed width multiplier",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 15,
+            "unit": "PERCENT"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

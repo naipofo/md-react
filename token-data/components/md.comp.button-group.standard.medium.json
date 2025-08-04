@@ -1,0 +1,75 @@
+{
+  "displayName": "Button group standard - Size - Medium",
+  "tokenSetName": "md.comp.button-group.standard.medium",
+  "tokens": [
+    {
+      "tokenName": "md.comp.button-group.standard.medium.container.height",
+      "tokenNameSuffix": "container.height",
+      "displayName": "Button group medium container height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 56,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button-group.standard.medium.between-space",
+      "tokenNameSuffix": "between-space",
+      "displayName": "Button group medium between space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 8,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button-group.standard.medium.pressed.item.width.motion.spring.dampening",
+      "tokenNameSuffix": "pressed.item.width.motion.spring.dampening",
+      "displayName": "Button group medium pressed motion spring dampening",
+      "tokenValueType": "DURATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.motion.spring.fast.spatial.damping",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button-group.standard.medium.pressed.item.width.motion.spring.stiffness",
+      "tokenNameSuffix": "pressed.item.width.motion.spring.stiffness",
+      "displayName": "Button group medium pressed motion spring stiffness",
+      "tokenValueType": "DURATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.motion.spring.fast.spatial.stiffness",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button-group.standard.medium.pressed.item.width.multiplier",
+      "tokenNameSuffix": "pressed.item.width.multiplier",
+      "displayName": "Button group medium pressed width multiplier",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 15,
+            "unit": "PERCENT"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

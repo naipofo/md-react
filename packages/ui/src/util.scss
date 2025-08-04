@@ -61,3 +61,52 @@
   letter-spacing: map.get($token, letter-spacing);
   line-height: map.get($token, line-height);
 }
+
+@mixin apply-button-group-aware-padding(
+  $set,
+  $leading-suffix,
+  $trailing-suffix
+) {
+  $padding-leading: calc(
+    get-token($set, $leading-suffix) - var(
+        --md-runtime-ripple-border-width,
+        0px
+      )
+  );
+  $padding-trailing: calc(
+    get-token($set, $trailing-suffix) - var(
+        --md-runtime-ripple-border-width,
+        0px
+      )
+  );
+  padding-inline-start: $padding-leading;
+  padding-inline-end: $padding-trailing;
+
+  $smaller-of-padding: min($padding-leading, $padding-trailing);
+
+  .MdcButtonGroup.MdcButtonGroup-standard *:active + &,
+  .MdcButtonGroup.MdcButtonGroup-standard &:has(+ *:active) {
+    padding-inline-start: calc(
+      $padding-leading - var(--md-runtime-group-padding-shrink)
+    );
+    padding-inline-end: calc(
+      $padding-trailing - var(--md-runtime-group-padding-shrink)
+    );
+  }
+
+  .MdcButtonGroup.MdcButtonGroup-standard &:active {
+    padding-inline-start: calc(
+      $padding-leading + var(--md-runtime-group-padding-grow)
+    );
+    padding-inline-end: calc(
+      $padding-trailing + var(--md-runtime-group-padding-grow)
+    );
+  }
+
+  & + * {
+    --md-runtime-group-padding-from-left: #{$smaller-of-padding};
+  }
+  :has(+ &) {
+    --md-runtime-group-padding-from-right: #{$smaller-of-padding};
+  }
+}

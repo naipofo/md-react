@@ -25,46 +25,24 @@
       }
 
       &.MdcIconButton-narrow {
-        /* TODO: helpers for padding */
-        padding-inline-start: calc(
-          get-token($token, narrow-leading-space) - var(
-              --md-runtime-ripple-border-width,
-              0px
-            )
-        );
-        padding-inline-end: calc(
-          get-token($token, narrow-trailing-space) - var(
-              --md-runtime-ripple-border-width,
-              0px
-            )
+        @include apply-button-group-aware-padding(
+          $token,
+          narrow-leading-space,
+          narrow-trailing-space
         );
       }
       &.MdcIconButton-default {
-        padding-inline-start: calc(
-          get-token($token, default-leading-space) - var(
-              --md-runtime-ripple-border-width,
-              0px
-            )
-        );
-        padding-inline-end: calc(
-          get-token($token, default-trailing-space) - var(
-              --md-runtime-ripple-border-width,
-              0px
-            )
+        @include apply-button-group-aware-padding(
+          $token,
+          default-leading-space,
+          default-trailing-space
         );
       }
       &.MdcIconButton-wide {
-        padding-inline-start: calc(
-          get-token($token, wide-leading-space) - var(
-              --md-runtime-ripple-border-width,
-              0px
-            )
-        );
-        padding-inline-end: calc(
-          get-token($token, wide-trailing-space) - var(
-              --md-runtime-ripple-border-width,
-              0px
-            )
+        @include apply-button-group-aware-padding(
+          $token,
+          wide-leading-space,
+          wide-trailing-space
         );
       }
 

@@ -7,16 +7,18 @@ More like a wishlist than a commitment, but I hope I can implement most of those
 ### Actions
 
 - [ ] Button groups
-- [ ] Buttons
-- [ ] Extended FAB
+  - [x] Standard
+  - [ ] Connected
+- [x] Buttons
+- [x] Extended FAB
 - [ ] FAB menu
-- [ ] Floating action buttons
-- [ ] Icon buttons
+- [x] Floating action buttons
+- [x] Icon buttons
 - [ ] Split buttons
 
 ### Communication
 
-- [ ] Badges
+- [x] Badges
 - [ ] Loading indicator
   - [ ] Linear
   - [ ] Circular

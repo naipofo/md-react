@@ -1,12 +1,13 @@
 "use client";
 
-import { ReactNode } from "react";
+import { ReactNode, useRef } from "react";
 
 import "./button.scss";
 import { useRipple } from "../../component-utils/ripple/Ripple";
 import { ElevationLayer } from "../../component-utils/elevation/ElevationLayer";
 import { StateLayer } from "../../component-utils/state-layer/StateLayer";
 import { OverlayContainer } from "../../component-utils/overlay-container/OverlayContainer";
+import { useButtonGroupAware } from "../button-group/useButtonGroupAware";
 
 interface ButtonProps {
   children: ReactNode;
@@ -32,7 +33,9 @@ export const Button = ({
   startIcon = undefined,
   endIcon = undefined,
 }: ButtonProps) => {
-  const { rippleLayer, rippleTarget } = useRipple<HTMLButtonElement>();
+  const buttonRef = useRef(null);
+  const { rippleLayer } = useRipple<HTMLButtonElement>(buttonRef);
+  useButtonGroupAware(buttonRef);
 
   const classNames = ["MdcButton"];
 
@@ -56,7 +59,7 @@ export const Button = ({
       className={classNames.join(" ")}
       disabled={disabled}
       aria-pressed={toggle ? selected : undefined}
-      ref={rippleTarget}
+      ref={buttonRef}
     >
       <ElevationLayer />
       <OverlayContainer>

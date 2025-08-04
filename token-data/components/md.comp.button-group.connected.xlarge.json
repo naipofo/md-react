@@ -1,0 +1,87 @@
+{
+  "displayName": "Button group connected - Size - Xlarge",
+  "tokenSetName": "md.comp.button-group.connected.xlarge",
+  "tokens": [
+    {
+      "tokenName": "md.comp.button-group.connected.xlarge.container.height",
+      "tokenNameSuffix": "container.height",
+      "displayName": "Button group connected xlarge container height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 136,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button-group.connected.xlarge.between-space",
+      "tokenNameSuffix": "between-space",
+      "displayName": "Button group connected xlarge space between buttons",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 2,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button-group.connected.xlarge.container.shape",
+      "tokenNameSuffix": "container.shape",
+      "displayName": "Button group connected xlarge container shape",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.full",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button-group.connected.xlarge.inner-corner.corner-size",
+      "tokenNameSuffix": "inner-corner.corner-size",
+      "displayName": "Button group connected xlarge inner corner size",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner-value.large-increased",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button-group.connected.xlarge.pressed.inner-corner.corner-size",
+      "tokenNameSuffix": "pressed.inner-corner.corner-size",
+      "displayName": "Button group connected xlarge pressed inner corner size",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner-value.large",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.button-group.connected.xlarge.selected.inner-corner.corner-size",
+      "tokenNameSuffix": "selected.inner-corner.corner-size",
+      "displayName": "Button group connected xlarge selected inner corner size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 50,
+            "unit": "PERCENT"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

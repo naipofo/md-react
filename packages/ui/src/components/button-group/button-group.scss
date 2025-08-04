@@ -1,0 +1,84 @@
+@use "../../tokens/sys-tokens.scss" as *;
+@use "../../util.scss" as *;
+@use "../../tokens/component-tokens/md-comp-button-group-standard-xsmall.scss"
+  as *;
+@use "../../tokens/component-tokens/md-comp-button-group-standard-small.scss"
+  as *;
+@use "../../tokens/component-tokens/md-comp-button-group-standard-medium.scss"
+  as *;
+@use "../../tokens/component-tokens/md-comp-button-group-standard-large.scss"
+  as *;
+@use "../../tokens/component-tokens/md-comp-button-group-standard-xlarge.scss"
+  as *;
+@use "../../tokens/component-tokens/md-comp-button-group-connected-xsmall.scss"
+  as *;
+@use "../../tokens/component-tokens/md-comp-button-group-connected-small.scss"
+  as *;
+@use "../../tokens/component-tokens/md-comp-button-group-connected-medium.scss"
+  as *;
+@use "../../tokens/component-tokens/md-comp-button-group-connected-large.scss"
+  as *;
+@use "../../tokens/component-tokens/md-comp-button-group-connected-xlarge.scss"
+  as *;
+
+/* define properties to get the computed style in js */
+
+@property --md-runtime-group-padding-from-left {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+@property --md-runtime-group-padding-from-right {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+@property --md-runtime-group-padding-shrink {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+@property ---md-runtime-group-padding-grow {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+@mixin button-group-gap {
+  $standard-sizes: (
+    xsmall: $md-comp-button-group-standard-xsmall,
+    small: $md-comp-button-group-standard-small,
+    medium: $md-comp-button-group-standard-medium,
+    large: $md-comp-button-group-standard-large,
+    xlarge: $md-comp-button-group-standard-xlarge,
+  );
+  $connected-sizes: (
+    xsmall: $md-comp-button-group-connected-xsmall,
+    small: $md-comp-button-group-connected-small,
+    medium: $md-comp-button-group-connected-medium,
+    large: $md-comp-button-group-connected-large,
+    xlarge: $md-comp-button-group-connected-xlarge,
+  );
+
+  @each $name, $token in $standard-sizes {
+    &.MdcButtonGroup-standard.MdcButtonGroup-#{$name} {
+      gap: get-token($token, between-space);
+    }
+  }
+
+  @each $name, $token in $connected-sizes {
+    &.MdcButtonGroup-connected.MdcButtonGroup-#{$name} {
+      gap: get-token($token, between-space);
+    }
+  }
+}
+
+.MdcButtonGroup {
+  display: flex;
+  width: min-content;
+
+  @include button-group-gap;
+}

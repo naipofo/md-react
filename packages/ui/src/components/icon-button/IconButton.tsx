@@ -5,6 +5,8 @@ import { useRipple } from "../../component-utils/ripple/Ripple";
 import { ElevationLayer } from "../../component-utils/elevation/ElevationLayer";
 import { StateLayer } from "../../component-utils/state-layer/StateLayer";
 import { OverlayContainer } from "../../component-utils/overlay-container/OverlayContainer";
+import { useRef } from "react";
+import { useButtonGroupAware } from "../button-group/useButtonGroupAware";
 
 interface IconButtonProps {
   shape?: "square" | "round";
@@ -31,7 +33,9 @@ export const IconButton = ({
   outlinedIcon,
   filledIcon,
 }: IconButtonProps) => {
-  const { rippleLayer, rippleTarget } = useRipple<HTMLButtonElement>();
+  const buttonRef = useRef(null);
+  const { rippleLayer } = useRipple<HTMLButtonElement>(buttonRef);
+  useButtonGroupAware(buttonRef);
 
   const classNames = ["MdcIconButton"];
 
@@ -56,7 +60,7 @@ export const IconButton = ({
       className={classNames.join(" ")}
       disabled={disabled}
       aria-pressed={toggle ? selected : undefined}
-      ref={rippleTarget}
+      ref={buttonRef}
     >
       <ElevationLayer />
       <OverlayContainer>

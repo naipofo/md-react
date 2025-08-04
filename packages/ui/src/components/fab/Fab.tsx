@@ -4,7 +4,7 @@ import "./fab.scss";
 import { useRipple } from "../../component-utils/ripple/Ripple";
 import { ElevationLayer } from "../../component-utils/elevation/ElevationLayer";
 import { StateLayer } from "../../component-utils/state-layer/StateLayer";
-import { ReactNode } from "react";
+import { ReactNode, useRef } from "react";
 import { OverlayContainer } from "../../component-utils/overlay-container/OverlayContainer";
 
 interface FabProps {
@@ -26,7 +26,8 @@ export const Fab = ({
   variant = "primary",
   size = "baseline",
 }: FabProps) => {
-  const { rippleLayer, rippleTarget } = useRipple<HTMLButtonElement>();
+  const buttonRef = useRef(null);
+  const { rippleLayer } = useRipple<HTMLButtonElement>(buttonRef);
 
   const classNames = ["MdcFab"];
   classNames.push(`MdcFab-${variant}`);
@@ -36,7 +37,7 @@ export const Fab = ({
   }
 
   return (
-    <button className={classNames.join(" ")} ref={rippleTarget}>
+    <button className={classNames.join(" ")} ref={buttonRef}>
       <ElevationLayer />
       <OverlayContainer>
         <StateLayer />

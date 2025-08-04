@@ -1,0 +1,23 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Button group connected - Size - Xsmall */
+/* Token set name: md.comp.button-group.connected.xsmall */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-button-group-connected-xsmall: (
+  name: md-comp-button-group-connected-xsmall,
+  tokens: (
+    // Button group connected xsmall container height
+    container-height: 32px,
+    // Button group connected xsmall space between buttons
+    between-space: 2px,
+    // Button group connected xsmall container shape
+    container-shape: $md-sys-shape-corner-full,
+    // Button group connected xsmall inner corner size
+    inner-corner-corner-size: $md-sys-shape-corner-value-small,
+    // Button group connected xsmall pressed inner corner size
+    pressed-inner-corner-corner-size: $md-sys-shape-corner-value-extra-small,
+    // Button group connected xsmall selected inner corner size
+    selected-inner-corner-corner-size: 50px
+  )
+);

@@ -11,8 +11,9 @@ function distanceToFurthestCorner(x: number, y: number, rect: DOMRect) {
 
 // TODO: Manual ripple on eg. keyboard
 
-export const useRipple = <T extends HTMLElement>() => {
-  const elementRef = useRef<T>(null);
+export const useRipple = <T extends HTMLElement>(
+  elementRef: React.RefObject<T | null>,
+) => {
   const rippleLayer = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -62,7 +63,6 @@ export const useRipple = <T extends HTMLElement>() => {
   }, [elementRef, rippleLayer]);
 
   return {
-    rippleTarget: elementRef,
     rippleLayer: <div className="MdcRippleLayer" ref={rippleLayer} />,
   };
 };
