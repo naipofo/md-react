@@ -1,0 +1,43 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Icon button - Size - Xsmall */
+/* Token set name: md.comp.icon-button.xsmall */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-icon-button-xsmall: (
+  name: md-comp-icon-button-xsmall,
+  tokens: (
+    // Icon button xsmall container height
+    container-height: 32px,
+    // Icon button xsmall icon size
+    icon-size: 20px,
+    // Icon button xsmall narrow leading space
+    narrow-leading-space: 4px,
+    // Icon button xsmall narrow trailing space
+    narrow-trailing-space: 4px,
+    // Icon button xsmall default leading space
+    default-leading-space: 6px,
+    // Icon button xsmall default trailing space
+    default-trailing-space: 6px,
+    // Icon button xsmall wide leading space
+    wide-leading-space: 10px,
+    // Icon button xsmall wide trailing space
+    wide-trailing-space: 10px,
+    // Icon button xsmall container shape round
+    container-shape-round: $md-sys-shape-corner-full,
+    // Icon button xsmall container shape square
+    container-shape-square: $md-sys-shape-corner-medium,
+    // Icon button xsmall outline width
+    outlined-outline-width: 1px,
+    // Icon button xsmall shape pressed morph
+    pressed-container-shape: $md-sys-shape-corner-small,
+    // Icon button xsmall shape spring animation damping
+    pressed-container-corner-size-motion-spring-damping: $md-sys-motion-spring-fast-spatial-damping,
+    // Icon button xsmall shape spring animation stiffness
+    pressed-container-corner-size-motion-spring-stiffness: $md-sys-motion-spring-fast-spatial-stiffness,
+    // Icon button xsmall selected container shape round
+    selected-container-shape-round: $md-sys-shape-corner-medium,
+    // Icon button xsmall selected container shape square
+    selected-container-shape-square: $md-sys-shape-corner-full
+  )
+);

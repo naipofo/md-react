@@ -1,0 +1,402 @@
+{
+  "displayName": "Icon button - Color - Outlined",
+  "tokenSetName": "md.comp.icon-button.outlined",
+  "tokens": [
+    {
+      "tokenName": "md.comp.icon-button.outlined.outline.color",
+      "tokenNameSuffix": "outline.color",
+      "displayName": "Icon button outlined color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.outline-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.unselected.outline.color",
+      "tokenNameSuffix": "unselected.outline.color",
+      "displayName": "Icon button outlined color - toggle (unselected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.outline-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.selected.container.color",
+      "tokenNameSuffix": "selected.container.color",
+      "displayName": "Icon button container color - toggle (selected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.icon.color",
+      "tokenNameSuffix": "icon.color",
+      "displayName": "Icon button outlined icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.unselected.icon.color",
+      "tokenNameSuffix": "unselected.icon.color",
+      "displayName": "Icon button outlined icon color - toggle (unselected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.selected.icon.color",
+      "tokenNameSuffix": "selected.icon.color",
+      "displayName": "Icon button outlined icon color - toggle (selected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.disabled.outline.color",
+      "tokenNameSuffix": "disabled.outline.color",
+      "displayName": "Icon button outlined disabled outline color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.outline-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.unselected.disabled.outline.color",
+      "tokenNameSuffix": "unselected.disabled.outline.color",
+      "displayName": "Icon button outlined disabled outline color (unselected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.outline-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.selected.disabled.container.color",
+      "tokenNameSuffix": "selected.disabled.container.color",
+      "displayName": "Icon button outlined disabled container color (selected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.selected.disabled.container.opacity",
+      "tokenNameSuffix": "selected.disabled.container.opacity",
+      "displayName": "Icon button outlined disabled container opacity (selected)",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "opacity": 0.1,
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.disabled.icon.color",
+      "tokenNameSuffix": "disabled.icon.color",
+      "displayName": "Icon button outlined disabled icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.disabled.icon.opacity",
+      "tokenNameSuffix": "disabled.icon.opacity",
+      "displayName": "Icon button outlined disabled icon opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "opacity": 0.38,
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.hovered.state-layer.color",
+      "tokenNameSuffix": "hovered.state-layer.color",
+      "displayName": "Icon button outlined hovered state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.unselected.hovered.state-layer.color",
+      "tokenNameSuffix": "unselected.hovered.state-layer.color",
+      "displayName": "Icon button outlined hovered state layer color - toggle (unselected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.selected.hovered.state-layer.color",
+      "tokenNameSuffix": "selected.hovered.state-layer.color",
+      "displayName": "Icon button outlined hovered state layer color - toggle (selected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.hovered.state-layer.opacity",
+      "tokenNameSuffix": "hovered.state-layer.opacity",
+      "displayName": "Icon button outlined hovered state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.hover.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.hovered.icon.color",
+      "tokenNameSuffix": "hovered.icon.color",
+      "displayName": "Icon button outlined hovered icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.unselected.hovered.icon.color",
+      "tokenNameSuffix": "unselected.hovered.icon.color",
+      "displayName": "Icon button outlined hovered icon color - toggle (unselected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.selected.hovered.icon.color",
+      "tokenNameSuffix": "selected.hovered.icon.color",
+      "displayName": "Icon button outlined hovered icon color - toggle (selected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.focused.state-layer.color",
+      "tokenNameSuffix": "focused.state-layer.color",
+      "displayName": "Icon button outlined focused state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.unselected.focused.state-layer.color",
+      "tokenNameSuffix": "unselected.focused.state-layer.color",
+      "displayName": "Icon button outlined focused state layer color - toggle (unselected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.selected.focused.state-layer.color",
+      "tokenNameSuffix": "selected.focused.state-layer.color",
+      "displayName": "Icon button outlined focused state layer color - toggle (selected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.focused.state-layer.opacity",
+      "tokenNameSuffix": "focused.state-layer.opacity",
+      "displayName": "Icon button outlined focused state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.focus.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.focused.icon.color",
+      "tokenNameSuffix": "focused.icon.color",
+      "displayName": "Icon button outlined focused icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.unselected.focused.icon.color",
+      "tokenNameSuffix": "unselected.focused.icon.color",
+      "displayName": "Icon button outlined focused icon color - toggle (unselected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.selected.focused.icon.color",
+      "tokenNameSuffix": "selected.focused.icon.color",
+      "displayName": "Icon button outlined focused icon color - toggle (selected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.pressed.state-layer.color",
+      "tokenNameSuffix": "pressed.state-layer.color",
+      "displayName": "Icon button outlined pressed state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.unselected.pressed.state-layer.color",
+      "tokenNameSuffix": "unselected.pressed.state-layer.color",
+      "displayName": "Icon button outlined pressed state layer color - toggle (unselected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.selected.pressed.state-layer.color",
+      "tokenNameSuffix": "selected.pressed.state-layer.color",
+      "displayName": "Icon button outlined pressed state layer color - toggle (selected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.pressed.state-layer.opacity",
+      "tokenNameSuffix": "pressed.state-layer.opacity",
+      "displayName": "Icon button outlined pressed state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.pressed.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.pressed.icon.color",
+      "tokenNameSuffix": "pressed.icon.color",
+      "displayName": "Icon button outlined pressed icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.unselected.pressed.icon.color",
+      "tokenNameSuffix": "unselected.pressed.icon.color",
+      "displayName": "Icon button outlined pressed icon color - toggle (unselected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.icon-button.outlined.selected.pressed.icon.color",
+      "tokenNameSuffix": "selected.pressed.icon.color",
+      "displayName": "Icon button outlined pressed icon color - toggle (selected)",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

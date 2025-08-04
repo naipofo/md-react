@@ -1,0 +1,30 @@
+@use "../../tokens/component-tokens/md-comp-icon-button.scss" as *;
+@use "../../util.scss" as *;
+@use "../../tokens/sys-tokens.scss" as *;
+@use "./icon-button-sizes.scss" as *;
+@use "./icon-button-types.scss" as *;
+
+/* TODO: correct animation easings */
+.MdcIconButton {
+  border: none;
+  @include apply-motion($md-sys-motion-spring-fast-spatial, border-radius);
+
+  position: relative;
+
+  padding: 0;
+
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.MdcIconButton-disabled {
+    pointer-events: none;
+  }
+
+  @include icon-button-sizes;
+  @include icon-button-types;
+}

@@ -1,0 +1,138 @@
+@use "sass:map";
+@use "../../tokens/component-tokens/md-comp-icon-button-filled.scss" as *;
+@use "../../tokens/component-tokens/md-comp-icon-button-outlined.scss" as *;
+@use "../../tokens/component-tokens/md-comp-icon-button-standard.scss" as *;
+@use "../../tokens/component-tokens/md-comp-icon-button-tonal.scss" as *;
+@use "../../util.scss" as *;
+
+@mixin apply-icon-button-base($token) {
+  & {
+    @include apply-if-token-present(background-color, $token, container-color);
+    background-color: rgb(get-token($token, container-color, transparent));
+    color: rgb(get-token($token, icon-color));
+    border-color: rgb(get-token($token, outline-color, transparent));
+  }
+
+  &.MdcIconButton-toggle:not(:disabled) {
+    background-color: rgb(
+      get-token($token, unselected-container-color, transparent)
+    );
+    color: rgb(get-token($token, unselected-icon-color));
+    border-color: rgb(get-token($token, unselected-outline-color, transparent));
+    &.MdcIconButton-selected {
+      background-color: rgb(
+        get-token($token, selected-container-color, transparent)
+      );
+      color: rgb(get-token($token, selected-icon-color));
+    }
+  }
+}
+
+@mixin apply-icon-button-interactive-states($token) {
+  $state-pseudo-map: (
+    "hovered": "hover",
+    "focused": "focus-visible",
+    "pressed": "active",
+  );
+
+  @each $state, $pseudo-class in $state-pseudo-map {
+    &:#{$pseudo-class} {
+      color: rgb(get-token($token, "#{$state}-icon-color"));
+
+      & .MdcStateLayer {
+        background: rgb(get-token($token, "#{$state}-state-layer-color"));
+        opacity: get-token($token, "#{$state}-state-layer-opacity");
+      }
+
+      &.MdcIconButton-toggle:not(:disabled) {
+        color: rgb(get-token($token, "unselected-#{$state}-icon-color"));
+
+        & .MdcStateLayer {
+          background: get-token(
+            $token,
+            "unselected-#{$state}-state-layer-color"
+          );
+        }
+
+        &.MdcIconButton-selected {
+          color: rgb(get-token($token, "selected-#{$state}-icon-color"));
+
+          & .MdcStateLayer {
+            background: rgb(
+              get-token($token, "selected-#{$state}-state-layer-color")
+            );
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin apply-icon-button-disabled-state($token) {
+  &:disabled {
+    background-color: rgb(
+      get-token($token, disabled-container-color, transparent) /
+        get-token($token, disabled-container-opacity, 1)
+    );
+    color: rgb(
+      get-token($token, disabled-icon-color) /
+        get-token($token, disabled-icon-opacity, 1)
+    );
+
+    border-color: rgb(get-token($token, disabled-outline-color, transparent));
+
+    @if (has-token($token, selected-disabled-container-color)) {
+      &.MdcIconButton-toggle {
+        &.MdcIconButton-selected {
+          background-color: rgb(
+            get-token($token, selected-disabled-container-color) /
+              get-token($token, selected-disabled-container-opacity, 1)
+          );
+          border-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+@mixin icon-button-types {
+  &.MdcIconButton-filled {
+    @include apply-border-width(0px);
+
+    @include apply-icon-button-base($md-comp-icon-button-filled);
+    @include apply-icon-button-interactive-states($md-comp-icon-button-filled);
+    @include apply-icon-button-disabled-state($md-comp-icon-button-filled);
+  }
+
+  &.MdcIconButton-tonal {
+    @include apply-border-width(0px);
+
+    @include apply-icon-button-base($md-comp-icon-button-tonal);
+    @include apply-icon-button-interactive-states($md-comp-icon-button-tonal);
+    @include apply-icon-button-disabled-state($md-comp-icon-button-tonal);
+  }
+
+  &.MdcIconButton-outlined {
+    border-style: solid;
+
+    @include apply-icon-button-base($md-comp-icon-button-outlined);
+    @include apply-icon-button-interactive-states(
+      $md-comp-icon-button-outlined
+    );
+    @include apply-icon-button-disabled-state($md-comp-icon-button-outlined);
+
+    &.MdcIconButton-toggle.MdcIconButton-selected:not(:disabled) {
+      border-color: transparent;
+    }
+  }
+
+  &.MdcIconButton-standard {
+    @include apply-border-width(0px);
+
+    @include apply-icon-button-base($md-comp-icon-button-standard);
+    @include apply-icon-button-interactive-states(
+      $md-comp-icon-button-standard
+    );
+    @include apply-icon-button-disabled-state($md-comp-icon-button-standard);
+  }
+}

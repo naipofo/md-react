@@ -1,0 +1,43 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Icon button - Size - Medium */
+/* Token set name: md.comp.icon-button.medium */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-icon-button-medium: (
+  name: md-comp-icon-button-medium,
+  tokens: (
+    // Icon button medium container height
+    container-height: 56px,
+    // Icon button medium icon size
+    icon-size: 24px,
+    // Icon button medium narrow leading space
+    narrow-leading-space: 12px,
+    // Icon button medium narrow trailing space
+    narrow-trailing-space: 12px,
+    // Icon button medium default leading space
+    default-leading-space: 16px,
+    // Icon button medium default trailing space
+    default-trailing-space: 16px,
+    // Icon button medium wide leading space
+    wide-leading-space: 24px,
+    // Icon button medium wide trailing space
+    wide-trailing-space: 24px,
+    // Icon button medium container shape round
+    container-shape-round: $md-sys-shape-corner-full,
+    // Icon button medium container shape square
+    container-shape-square: $md-sys-shape-corner-large,
+    // Icon button medium outline width
+    outlined-outline-width: 1px,
+    // Icon button medium shape pressed morph
+    pressed-container-shape: $md-sys-shape-corner-medium,
+    // Icon button medium shape spring animation damping
+    pressed-container-corner-size-motion-spring-damping: $md-sys-motion-spring-fast-spatial-damping,
+    // Icon button medium shape spring animation stiffness
+    pressed-container-corner-size-motion-spring-stiffness: $md-sys-motion-spring-fast-spatial-stiffness,
+    // Icon button medium selected container shape round
+    selected-container-shape-round: $md-sys-shape-corner-large,
+    // Icon button medium selected container shape square
+    selected-container-shape-square: $md-sys-shape-corner-full
+  )
+);

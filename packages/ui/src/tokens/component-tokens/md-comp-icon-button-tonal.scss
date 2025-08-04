@@ -1,0 +1,73 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Icon button - Color - Tonal */
+/* Token set name: md.comp.icon-button.tonal */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-icon-button-tonal: (
+  name: md-comp-icon-button-tonal,
+  tokens: (
+    // Icon button tonal container color
+    container-color: $md-sys-color-secondary-container,
+    // Icon button tonal container color - toggle (unselected)
+    unselected-container-color: $md-sys-color-secondary-container,
+    // Icon button tonal container color - toggle (selected)
+    selected-container-color: $md-sys-color-secondary,
+    // Icon button tonal icon color
+    icon-color: $md-sys-color-on-secondary-container,
+    // Icon button tonal icon color - toggle (unselected)
+    unselected-icon-color: $md-sys-color-on-secondary-container,
+    // Icon button tonal icon color - toggle (selected)
+    selected-icon-color: $md-sys-color-on-secondary,
+    // Icon button tonal disabled container color
+    disabled-container-color: $md-sys-color-on-surface,
+    // Icon button tonal disabled container opacity
+    disabled-container-opacity: 0.1,
+    // Icon button tonal disabled icon color
+    disabled-icon-color: $md-sys-color-on-surface,
+    // Icon button tonal disabled icon opacity
+    disabled-icon-opacity: 0.38,
+    // Icon button tonal hovered state layer color
+    hovered-state-layer-color: $md-sys-color-on-secondary-container,
+    // Icon button tonal hovered state layer color - toggle (unselected)
+    unselected-hovered-state-layer-color: $md-sys-color-on-secondary-container,
+    // Icon button tonal hovered state layer color - toggle (selected)
+    selected-hovered-state-layer-color: $md-sys-color-on-secondary,
+    // Icon button tonal hovered state layer opacity
+    hovered-state-layer-opacity: $md-sys-state-hover-state-layer-opacity,
+    // Icon button tonal hovered icon color
+    hovered-icon-color: $md-sys-color-on-secondary-container,
+    // Icon button tonal hovered icon color - toggle (unselected)
+    unselected-hovered-icon-color: $md-sys-color-on-secondary-container,
+    // Icon button tonal hovered icon color - toggle (selected)
+    selected-hovered-icon-color: $md-sys-color-on-secondary,
+    // Icon button tonal focused state layer color
+    focused-state-layer-color: $md-sys-color-on-secondary-container,
+    // Icon button tonal focused state layer color - toggle (unselected)
+    unselected-focused-state-layer-color: $md-sys-color-on-secondary-container,
+    // Icon button tonal focused state layer color - toggle (selected)
+    selected-focused-state-layer-color: $md-sys-color-on-secondary,
+    // Icon button tonal focused state layer opacity
+    focused-state-layer-opacity: $md-sys-state-focus-state-layer-opacity,
+    // Icon button tonal focused icon color
+    focused-icon-color: $md-sys-color-on-secondary-container,
+    // Icon button tonal focused icon color - toggle (unselected)
+    unselected-focused-icon-color: $md-sys-color-on-secondary-container,
+    // Icon button tonal focused icon color - toggle (selected)
+    selected-focused-icon-color: $md-sys-color-on-secondary,
+    // Icon button tonal pressed state layer color
+    pressed-state-layer-color: $md-sys-color-on-secondary-container,
+    // Icon button tonal pressed state layer color - toggle (unselected)
+    unselected-pressed-state-layer-color: $md-sys-color-on-secondary-container,
+    // Icon button tonal pressed state layer color - toggle (selected)
+    selected-pressed-state-layer-color: $md-sys-color-on-secondary,
+    // Icon button tonal pressed state layer opacity
+    pressed-state-layer-opacity: $md-sys-state-pressed-state-layer-opacity,
+    // Icon button tonal pressed icon color
+    pressed-icon-color: $md-sys-color-on-secondary-container,
+    // Icon button tonal pressed icon color - toggle (unselected)
+    unselected-pressed-icon-color: $md-sys-color-on-secondary-container,
+    // Icon button tonal pressed icon color - toggle (selected)
+    selected-pressed-icon-color: $md-sys-color-on-secondary
+  )
+);

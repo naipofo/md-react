@@ -1,0 +1,63 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Icon button - Color - Standard */
+/* Token set name: md.comp.icon-button.standard */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-icon-button-standard: (
+  name: md-comp-icon-button-standard,
+  tokens: (
+    // Icon button icon color
+    icon-color: $md-sys-color-on-surface-variant,
+    // Icon button icon color - toggle (unselected)
+    unselected-icon-color: $md-sys-color-on-surface-variant,
+    // Icon button icon color - toggle (selected)
+    selected-icon-color: $md-sys-color-primary,
+    // Icon button disabled icon color
+    disabled-icon-color: $md-sys-color-on-surface,
+    // Icon button disabled opacity
+    disabled-icon-opacity: 0.38,
+    // Icon button hovered state layer color
+    hovered-state-layer-color: $md-sys-color-on-surface-variant,
+    // Icon button hovered state layer color - toggle (unselected)
+    unselected-hovered-state-layer-color: $md-sys-color-on-surface-variant,
+    // Icon button hovered state layer color - toggle (selected)
+    selected-hovered-state-layer-color: $md-sys-color-primary,
+    // Icon button hovered state layer opacity
+    hovered-state-layer-opacity: $md-sys-state-hover-state-layer-opacity,
+    // Icon button hovered icon color
+    hovered-icon-color: $md-sys-color-on-surface-variant,
+    // Icon button hovered icon color - toggle (unselected)
+    unselected-hovered-icon-color: $md-sys-color-on-surface-variant,
+    // Icon button hovered icon color - toggle (selected)
+    selected-hovered-icon-color: $md-sys-color-primary,
+    // Icon button focused state layer color
+    focused-state-layer-color: $md-sys-color-on-surface-variant,
+    // Icon button focused state layer color - toggle (unselected)
+    unselected-focused-state-layer-color: $md-sys-color-on-surface-variant,
+    // Icon button focused state layer color - toggle (selected)
+    selected-focused-state-layer-color: $md-sys-color-primary,
+    // Icon button focused state layer opacity
+    focused-state-layer-opacity: $md-sys-state-focus-state-layer-opacity,
+    // Icon button focused icon color
+    focused-icon-color: $md-sys-color-on-surface-variant,
+    // Icon button focused icon color - toggle (unselected)
+    unselected-focused-icon-color: $md-sys-color-on-surface-variant,
+    // Icon button focused icon color - toggle (selected)
+    selected-focused-icon-color: $md-sys-color-primary,
+    // Icon button pressed state layer color
+    pressed-state-layer-color: $md-sys-color-on-surface-variant,
+    // Icon button pressed state layer color - toggle (unselected)
+    unselected-pressed-state-layer-color: $md-sys-color-on-surface-variant,
+    // Icon button pressed state layer color - toggle (selected)
+    selected-pressed-state-layer-color: $md-sys-color-primary,
+    // Icon button pressed state layer opacity
+    pressed-state-layer-opacity: $md-sys-state-pressed-state-layer-opacity,
+    // Icon button pressed icon color
+    pressed-icon-color: $md-sys-color-on-surface-variant,
+    // Icon button pressed icon color - toggle (unselected)
+    unselected-pressed-icon-color: $md-sys-color-on-surface-variant,
+    // Icon button pressed icon color - toggle (selected)
+    selected-pressed-icon-color: $md-sys-color-primary
+  )
+);

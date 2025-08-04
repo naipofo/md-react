@@ -1,0 +1,43 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Icon button - Size - Large */
+/* Token set name: md.comp.icon-button.large */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-icon-button-large: (
+  name: md-comp-icon-button-large,
+  tokens: (
+    // Icon button large container height
+    container-height: 96px,
+    // Icon button large icon size
+    icon-size: 32px,
+    // Icon button large narrow leading space
+    narrow-leading-space: 16px,
+    // Icon button large narrow trailing space
+    narrow-trailing-space: 16px,
+    // Icon button large default leading space
+    default-leading-space: 32px,
+    // Icon button large default trailing space
+    default-trailing-space: 32px,
+    // Icon button large wide leading space
+    wide-leading-space: 48px,
+    // Icon button large wide trailing space
+    wide-trailing-space: 48px,
+    // Icon button large container shape round
+    container-shape-round: $md-sys-shape-corner-full,
+    // Icon button large container shape square
+    container-shape-square: $md-sys-shape-corner-extra-large,
+    // Icon button large outline width
+    outlined-outline-width: 2px,
+    // Icon button large shape pressed morph
+    pressed-container-shape: $md-sys-shape-corner-large,
+    // Icon button large shape spring animation damping
+    pressed-container-corner-size-motion-spring-damping: $md-sys-motion-spring-fast-spatial-damping,
+    // Icon button large shape spring animation stiffness
+    pressed-container-corner-size-motion-spring-stiffness: $md-sys-motion-spring-fast-spatial-stiffness,
+    // Icon button large selected container shape round
+    selected-container-shape-round: $md-sys-shape-corner-extra-large,
+    // Icon button large selected container shape square
+    selected-container-shape-square: $md-sys-shape-corner-full
+  )
+);
