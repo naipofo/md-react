@@ -65,20 +65,35 @@
 
   @each $name, $token in $standard-sizes {
     &.MdcButtonGroup-standard.MdcButtonGroup-#{$name} {
+      @include apply-height(get-token($token, container-height));
       gap: get-token($token, between-space);
     }
   }
 
   @each $name, $token in $connected-sizes {
     &.MdcButtonGroup-connected.MdcButtonGroup-#{$name} {
+      @include apply-height(get-token($token, container-height));
       gap: get-token($token, between-space);
+      --md-runtime-group-outer-corner: #{get-token($token, container-shape)};
+      --md-runtime-group-inner-corner: #{get-token(
+          $token,
+          inner-corner-corner-size
+        )};
+      --md-runtime-group-pressed-corner: #{get-token(
+          $token,
+          pressed-inner-corner-corner-size
+        )};
+
+      /* instead of selected-inner-corner-corner-size token */
+      --md-runtime-group-selected-corner-size: #{$md-sys-shape-corner-full};
     }
   }
 }
 
 .MdcButtonGroup {
   display: flex;
-  width: min-content;
+  width: max-content;
+  height: min-content;
 
   @include button-group-gap;
 }

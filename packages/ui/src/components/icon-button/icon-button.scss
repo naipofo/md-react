@@ -31,4 +31,6 @@
 
   @include icon-button-sizes;
   @include icon-button-types;
+
+  @include connected-button-group-corners(MdcIconButton-toggle);
 }

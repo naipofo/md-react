@@ -29,4 +29,6 @@
 
   @include button-sizes;
   @include button-types;
+
+  @include connected-button-group-corners(MdcButton-toggle);
 }

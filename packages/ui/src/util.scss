@@ -1,12 +1,11 @@
 @use "sass:map";
 
 /* TODO: full corners on other axis and vertical-rl support */
-@mixin apply-height($value, $set-md-radius: true) {
+/* TODO: animating from n to full-corner should not overshoot! -
+ it causes problems with the other side of the element! */
+@mixin apply-height($value) {
   height: $value;
-
-  @if $set-md-radius {
-    --md-sys-shape-corner-full: calc(#{$value} / 2);
-  }
+  --md-sys-shape-corner-full: calc(#{$value} / 2);
 }
 
 @mixin apply-border-width($value) {
@@ -108,5 +107,27 @@
   }
   :has(+ &) {
     --md-runtime-group-padding-from-right: #{$smaller-of-padding};
+  }
+}
+
+@mixin connected-button-group-corners($toggleClass) {
+  .MdcButtonGroup.MdcButtonGroup-connected &.#{$toggleClass} {
+    border-radius: var(--md-runtime-group-inner-corner);
+
+    &.MdcButton-selected {
+      border-radius: var(--md-runtime-group-selected-corner-size);
+    }
+    &:active {
+      border-radius: var(--md-runtime-group-pressed-corner);
+    }
+
+    &:last-of-type {
+      border-top-right-radius: var(--md-runtime-group-outer-corner);
+      border-bottom-right-radius: var(--md-runtime-group-outer-corner);
+    }
+    &:first-of-type {
+      border-top-left-radius: var(--md-runtime-group-outer-corner);
+      border-bottom-left-radius: var(--md-runtime-group-outer-corner);
+    }
   }
 }
