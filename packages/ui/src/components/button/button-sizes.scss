@@ -20,8 +20,18 @@
       @include apply-typescale($token, label-text);
       @include apply-height(get-token($token, container-height));
       @include apply-border-width(get-token($token, outlined-outline-width, 0));
-      padding-inline-start: get-token($token, leading-space);
-      padding-inline-end: get-token($token, trailing-space);
+      padding-inline-start: calc(
+        get-token($token, leading-space) - var(
+            --md-runtime-ripple-border-width,
+            0px
+          )
+      );
+      padding-inline-end: calc(
+        get-token($token, trailing-space) - var(
+            --md-runtime-ripple-border-width,
+            0px
+          )
+      );
       gap: get-token($token, icon-label-space);
 
       border-radius: get-token($token, container-shape-square);

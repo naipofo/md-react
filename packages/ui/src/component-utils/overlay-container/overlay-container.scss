@@ -1,0 +1,18 @@
+@use "../../util.scss" as *;
+@use "../../tokens/sys-tokens.scss" as *;
+
+.MdcOverlayContainer {
+  position: absolute;
+  display: block;
+  inset: calc(var(--md-runtime-ripple-border-width, 0px) * -1);
+  border: var(--md-runtime-ripple-border-width, 0px) solid transparent;
+  border-radius: inherit;
+
+  background-color: transparent;
+
+  contain: layout size;
+  overflow: hidden;
+
+  /* TODO: probably should cascade if this element will be used in different elements? */
+  @include apply-motion($md-sys-motion-spring-fast-effects, box-shadow);
+}

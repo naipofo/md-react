@@ -4,12 +4,8 @@
 /* TODO: deduplicate positioning in layers */
 .MdcStateLayer {
   position: absolute;
-  inset: calc(var(--md-runtime-ripple-border-width, 0px) * -1);
-  pointer-events: none;
+  inset: 0;
   background-color: var(--state-layer-color, none);
   opacity: var(--state-layer-opacity, 0);
-  border-radius: inherit;
-  border-width: inherit;
-  border-color: transparent;
   @include apply-motion($md-sys-motion-spring-fast-effects, opacity);
 }

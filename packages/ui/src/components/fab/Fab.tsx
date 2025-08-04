@@ -5,6 +5,7 @@ import { useRipple } from "../../component-utils/ripple/Ripple";
 import { ElevationLayer } from "../../component-utils/elevation/ElevationLayer";
 import { StateLayer } from "../../component-utils/state-layer/StateLayer";
 import { ReactNode } from "react";
+import { OverlayContainer } from "../../component-utils/overlay-container/OverlayContainer";
 
 interface FabProps {
   icon: string;
@@ -36,9 +37,11 @@ export const Fab = ({
 
   return (
     <button className={classNames.join(" ")} ref={rippleTarget}>
-      <StateLayer />
       <ElevationLayer />
-      {rippleLayer}
+      <OverlayContainer>
+        <StateLayer />
+        {rippleLayer}
+      </OverlayContainer>
       <svg viewBox="0 0 24 24" className="MdcFab-icon">
         <path fill="currentColor" d={icon} />
       </svg>

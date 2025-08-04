@@ -6,10 +6,13 @@
 .MdcElevationLayer::after {
   position: absolute;
   display: block;
-  inset: 0;
+
+  inset: calc(var(--md-runtime-ripple-border-width, 0px) * -1);
+  border-radius: inherit;
+
   pointer-events: none;
   background-color: transparent;
-  border-radius: inherit;
+
   @include apply-motion(
     $md-sys-motion-spring-fast-effects,
     opacity,

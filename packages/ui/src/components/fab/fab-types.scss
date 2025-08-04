@@ -47,7 +47,7 @@
         color: rgb(get-token($token, "#{$state}-icon-color"));
       }
 
-      & > .MdcStateLayer {
+      & .MdcStateLayer {
         background: rgb(get-token($token, "#{$state}-state-layer-color"));
         opacity: get-token($token, "#{$state}-state-layer-opacity");
       }

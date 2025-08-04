@@ -6,6 +6,7 @@ import "./button.scss";
 import { useRipple } from "../../component-utils/ripple/Ripple";
 import { ElevationLayer } from "../../component-utils/elevation/ElevationLayer";
 import { StateLayer } from "../../component-utils/state-layer/StateLayer";
+import { OverlayContainer } from "../../component-utils/overlay-container/OverlayContainer";
 
 interface ButtonProps {
   children: ReactNode;
@@ -57,9 +58,11 @@ export const Button = ({
       aria-pressed={toggle ? selected : undefined}
       ref={rippleTarget}
     >
-      <StateLayer />
       <ElevationLayer />
-      {rippleLayer}
+      <OverlayContainer>
+        <StateLayer />
+        {rippleLayer}
+      </OverlayContainer>
       {startIcon && (
         <svg viewBox="0 0 24 24" className="MdcButton-icon">
           <path fill="currentColor" d={startIcon} />
