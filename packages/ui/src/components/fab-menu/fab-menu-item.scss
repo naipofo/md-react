@@ -1,0 +1,107 @@
+@use "sass:map";
+@use "../../tokens/component-tokens/md-comp-fab-menu.scss" as *;
+@use "../../tokens/component-tokens/md-comp-fab-menu-primary-container.scss"
+  as *;
+@use "../../tokens/component-tokens/md-comp-fab-menu-secondary-container.scss"
+  as *;
+@use "../../tokens/component-tokens/md-comp-fab-menu-tertiary-container.scss"
+  as *;
+@use "../../util.scss" as *;
+
+@mixin apply-fab-menu-item-base($token) {
+  background-color: rgb(get-token($token, list-item-container-color));
+  /* TODO: tonal elevation */
+  /* --md-runtime-elevation-layer-level: #{get-token(
+        $token,
+        list-item-container-elevation,
+        0
+        )};
+    --md-runtime-elevation-layer-color: #{get-token(
+        $token,
+        list-item-container-shadow-color
+        )}; */
+
+  & .MdcFabMenuItem-icon {
+    color: rgb(get-token($token, list-item-icon-color));
+  }
+
+  & .MdcFabMenuItem-label {
+    color: rgb(get-token($token, list-item-label-text-color));
+  }
+}
+
+@mixin apply-fab-menu-item-interactive-states($token) {
+  $state-pseudo-map: (
+    "hovered": "hover",
+    "focused": "focus-visible",
+    "pressed": "active",
+  );
+
+  @each $state, $pseudo-class in $state-pseudo-map {
+    &:#{$pseudo-class} {
+      & .MdcFabMenuItem-icon {
+        color: rgb(get-token($token, "list-item-#{$state}-icon-color"));
+      }
+
+      & .MdcFabMenuItem-label {
+        color: rgb(get-token($token, "list-item-#{$state}-label-text-color"));
+      }
+
+      & .MdcStateLayer {
+        background: rgb(
+          get-token($token, "list-item-#{$state}-state-layer-color")
+        );
+        opacity: get-token($token, "list-item-#{$state}-state-layer-opacity");
+      }
+
+      --md-runtime-elevation-layer-level: #{get-token(
+          $token,
+          "list-item-#{$state}-container-elevation"
+        )};
+    }
+  }
+}
+
+@mixin fab-menu-item-types {
+  $fab-menu-item-variants: (
+    "primary": $md-comp-fab-menu-primary-container,
+    "secondary": $md-comp-fab-menu-secondary-container,
+    "tertiary": $md-comp-fab-menu-tertiary-container,
+  );
+
+  @each $name, $token in $fab-menu-item-variants {
+    &.MdcFabMenuItem-#{$name} {
+      @include apply-fab-menu-item-base($token);
+      @include apply-fab-menu-item-interactive-states($token);
+    }
+  }
+}
+
+.MdcFabMenuItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  width: max-content;
+
+  @include apply-height(
+    get-token($md-comp-fab-menu, menu-item-container-height)
+  );
+  border-radius: get-token($md-comp-fab-menu, menu-item-container-shape);
+  padding-inline-start: get-token($md-comp-fab-menu, menu-item-leading-space);
+  padding-inline-end: get-token($md-comp-fab-menu, menu-item-trailing-space);
+  gap: get-token($md-comp-fab-menu, menu-item-icon-label-space);
+
+  & .MdcFabMenuItem-icon {
+    width: get-token($md-comp-fab-menu, menu-item-icon-size);
+  }
+
+  & .MdcFabMenuItem-label {
+    @include apply-typescale($md-comp-fab-menu, menu-item-label-text);
+  }
+
+  @include fab-menu-item-types;
+}

@@ -1,0 +1,216 @@
+{
+  "displayName": "FAB menu - Common",
+  "tokenSetName": "md.comp.fab-menu",
+  "tokens": [
+    {
+      "tokenName": "md.comp.fab-menu.close-button.container.height",
+      "tokenNameSuffix": "close-button.container.height",
+      "displayName": "FAB menu close button container height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 56,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab-menu.close-button.container.width",
+      "tokenNameSuffix": "close-button.container.width",
+      "displayName": "FAB menu close width",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 56,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab-menu.close-button.icon.size",
+      "tokenNameSuffix": "close-button.icon.size",
+      "displayName": "FAB menu close button icon size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 20,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab-menu.close-button.container.elevation",
+      "tokenNameSuffix": "close-button.container.elevation",
+      "displayName": "FAB menu close button container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level3",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab-menu.close-button.container.shape",
+      "tokenNameSuffix": "close-button.container.shape",
+      "displayName": "FAB menu close button container shape",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.full",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab-menu.close-button.between-space",
+      "tokenNameSuffix": "close-button.between-space",
+      "displayName": "FAB menu close button between space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 8,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab-menu.menu-item.container.height",
+      "tokenNameSuffix": "menu-item.container.height",
+      "displayName": "FAB menu - menu item container height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 56,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab-menu.menu-item.label-text",
+      "tokenNameSuffix": "menu-item.label-text",
+      "displayName": "FAB menu - menu item label text",
+      "tokenValueType": "TYPOGRAPHY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.title-medium",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab-menu.menu-item.icon.size",
+      "tokenNameSuffix": "menu-item.icon.size",
+      "displayName": "FAB menu - menu item icon size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 24,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab-menu.menu-item.container.elevation",
+      "tokenNameSuffix": "menu-item.container.elevation",
+      "displayName": "FAB menu - menu item container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level0",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab-menu.menu-item.container.shape",
+      "tokenNameSuffix": "menu-item.container.shape",
+      "displayName": "FAB menu - menu item container shape",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.full",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab-menu.menu-item.leading-space",
+      "tokenNameSuffix": "menu-item.leading-space",
+      "displayName": "FAB menu - menu item leading space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 24,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab-menu.menu-item.icon-label-space",
+      "tokenNameSuffix": "menu-item.icon-label-space",
+      "displayName": "FAB menu - menu item icon label space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 8,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab-menu.menu-item.trailing-space",
+      "tokenNameSuffix": "menu-item.trailing-space",
+      "displayName": "FAB menu - menu item trailing space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 24,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.fab-menu.menu-item.between-space",
+      "tokenNameSuffix": "menu-item.between-space",
+      "displayName": "FAB menu - menu item between space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 4,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

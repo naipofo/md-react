@@ -1,0 +1,16 @@
+@use "../../tokens/component-tokens/md-comp-fab-menu.scss" as *;
+@use "../../util.scss" as *;
+
+.MdcFabMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: get-token($md-comp-fab-menu, close-button-between-space);
+
+  & > .MdcFabMenu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: get-token($md-comp-fab-menu, menu-item-between-space);
+  }
+}

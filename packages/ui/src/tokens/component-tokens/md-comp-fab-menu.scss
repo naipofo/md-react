@@ -1,0 +1,41 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: FAB menu - Common */
+/* Token set name: md.comp.fab-menu */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-fab-menu: (
+  name: md-comp-fab-menu,
+  tokens: (
+    // FAB menu close button container height
+    close-button-container-height: 56px,
+    // FAB menu close width
+    close-button-container-width: 56px,
+    // FAB menu close button icon size
+    close-button-icon-size: 20px,
+    // FAB menu close button container elevation
+    close-button-container-elevation: $md-sys-elevation-level3,
+    // FAB menu close button container shape
+    close-button-container-shape: $md-sys-shape-corner-full,
+    // FAB menu close button between space
+    close-button-between-space: 8px,
+    // FAB menu - menu item container height
+    menu-item-container-height: 56px,
+    // FAB menu - menu item label text
+    menu-item-label-text: $md-sys-typescale-title-medium,
+    // FAB menu - menu item icon size
+    menu-item-icon-size: 24px,
+    // FAB menu - menu item container elevation
+    menu-item-container-elevation: $md-sys-elevation-level0,
+    // FAB menu - menu item container shape
+    menu-item-container-shape: $md-sys-shape-corner-full,
+    // FAB menu - menu item leading space
+    menu-item-leading-space: 24px,
+    // FAB menu - menu item icon label space
+    menu-item-icon-label-space: 8px,
+    // FAB menu - menu item trailing space
+    menu-item-trailing-space: 24px,
+    // FAB menu - menu item between space
+    menu-item-between-space: 4px
+  )
+);

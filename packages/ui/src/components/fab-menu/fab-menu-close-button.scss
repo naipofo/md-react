@@ -1,0 +1,92 @@
+@use "sass:map";
+@use "../../tokens/component-tokens/md-comp-fab-menu.scss" as *;
+@use "../../tokens/component-tokens/md-comp-fab-menu-primary-close-button.scss"
+  as *;
+@use "../../tokens/component-tokens/md-comp-fab-menu-secondary-close-button.scss"
+  as *;
+@use "../../tokens/component-tokens/md-comp-fab-menu-tertiary-close-button.scss"
+  as *;
+@use "../../util.scss" as *;
+
+@mixin apply-fab-menu-close-button-base($token) {
+  & {
+    background-color: rgb(get-token($token, container-color));
+    --md-runtime-elevation-layer-level: #{get-token(
+        $md-comp-fab-menu,
+        close-button-container-elevation
+      )};
+    --md-runtime-elevation-layer-color: #{get-token(
+        $token,
+        container-shadow-color
+      )};
+  }
+
+  & .MdcFabMenuCloseButton-icon {
+    color: rgb(get-token($token, icon-color));
+  }
+}
+
+@mixin apply-fab-menu-close-button-interactive-states($token) {
+  $state-pseudo-map: (
+    "hovered": "hover",
+    "focused": "focus-visible",
+    "pressed": "active",
+  );
+
+  @each $state, $pseudo-class in $state-pseudo-map {
+    &:#{$pseudo-class} {
+      & .MdcFabMenuCloseButton-icon {
+        color: rgb(get-token($token, "#{$state}-icon-color"));
+      }
+
+      & .MdcStateLayer {
+        background: rgb(get-token($token, "#{$state}-state-layer-color"));
+        opacity: get-token($token, "#{$state}-state-layer-opacity");
+      }
+
+      --md-runtime-elevation-layer-level: #{get-token(
+          $token,
+          "#{$state}-container-elevation"
+        )};
+    }
+  }
+}
+
+@mixin fab-menu-close-button-types {
+  $fab-menu-close-button-variants: (
+    primary: $md-comp-fab-menu-primary-close-button,
+    secondary: $md-comp-fab-menu-secondary-close-button,
+    tertiary: $md-comp-fab-menu-tertiary-close-button,
+  );
+
+  @each $name, $token in $fab-menu-close-button-variants {
+    &.MdcFabMenuCloseButton-#{$name} {
+      @include apply-fab-menu-close-button-base($token);
+      @include apply-fab-menu-close-button-interactive-states($token);
+    }
+  }
+}
+
+.MdcFabMenuCloseButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  width: max-content;
+
+  @include apply-height(
+    get-token($md-comp-fab-menu, close-button-container-height)
+  );
+  width: get-token($md-comp-fab-menu, close-button-container-width);
+  border-radius: get-token($md-comp-fab-menu, close-button-container-shape);
+
+  & .MdcFabMenuCloseButton-icon {
+    width: get-token($md-comp-fab-menu, close-button-icon-size);
+  }
+
+  @include fab-menu-close-button-types;
+}

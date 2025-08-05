@@ -1,0 +1,49 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: FAB menu list items - Color - Primary */
+/* Token set name: md.comp.fab-menu.primary-container */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-fab-menu-primary-container: (
+  name: md-comp-fab-menu-primary-container,
+  tokens: (
+    // FAB menu primary list item container color
+    list-item-container-color: $md-sys-color-primary-container,
+    // FAB menu primary list item container shadow color
+    list-item-container-shadow-color: $md-sys-color-shadow,
+    // FAB menu primary list item icon color
+    list-item-icon-color: $md-sys-color-on-primary-container,
+    // FAB menu primary list item label text color
+    list-item-label-text-color: $md-sys-color-on-primary-container,
+    // FAB menu primary list item hovered container elevation
+    list-item-hovered-container-elevation: $md-sys-elevation-level4,
+    // FAB menu primary list item hovered state layer color
+    list-item-hovered-state-layer-color: $md-sys-color-on-primary-container,
+    // FAB menu primary list item hovered state layer opacity
+    list-item-hovered-state-layer-opacity: $md-sys-state-hover-state-layer-opacity,
+    // FAB menu primary list item hovered icon color
+    list-item-hovered-icon-color: $md-sys-color-on-primary-container,
+    // FAB menu primary list item hovered label text color
+    list-item-hovered-label-text-color: $md-sys-color-on-primary-container,
+    // FAB menu primary list item focused container elevation
+    list-item-focused-container-elevation: $md-sys-elevation-level3,
+    // FAB menu primary list item focused state layer color
+    list-item-focused-state-layer-color: $md-sys-color-on-primary-container,
+    // FAB menu primary list item focused state layer opacity
+    list-item-focused-state-layer-opacity: $md-sys-state-focus-state-layer-opacity,
+    // FAB menu primary list item focused icon color
+    list-item-focused-icon-color: $md-sys-color-on-primary-container,
+    // FAB menu primary list item focused label text color
+    list-item-focused-label-text-color: $md-sys-color-on-primary-container,
+    // FAB menu primary list item pressed container elevation
+    list-item-pressed-container-elevation: $md-sys-elevation-level3,
+    // FAB menu primary list item pressed state layer color
+    list-item-pressed-state-layer-color: $md-sys-color-on-primary-container,
+    // FAB menu primary list item pressed state layer opacity
+    list-item-pressed-state-layer-opacity: $md-sys-state-pressed-state-layer-opacity,
+    // FAB menu primary list item pressed icon color
+    list-item-pressed-icon-color: $md-sys-color-on-primary-container,
+    // FAB menu primary list item pressed label text color
+    list-item-pressed-label-text-color: $md-sys-color-on-primary-container
+  )
+);
