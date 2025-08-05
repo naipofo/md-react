@@ -1,0 +1,96 @@
+@use "../../util.scss" as *;
+@use "../../tokens/sys-tokens.scss" as *;
+@use "../../tokens/component-tokens/md-comp-split-button-xsmall.scss" as *;
+@use "../../tokens/component-tokens/md-comp-split-button-small.scss" as *;
+@use "../../tokens/component-tokens/md-comp-split-button-medium.scss" as *;
+@use "../../tokens/component-tokens/md-comp-split-button-large.scss" as *;
+@use "../../tokens/component-tokens/md-comp-split-button-xlarge.scss" as *;
+
+@mixin button-sizes {
+  $sizes: (
+    xsmall: $md-comp-split-button-xsmall,
+    small: $md-comp-split-button-small,
+    medium: $md-comp-split-button-medium,
+    large: $md-comp-split-button-large,
+    xlarge: $md-comp-split-button-xlarge,
+  );
+
+  @each $name, $token in $sizes {
+    &.MdcSplitButton-#{$name} {
+      @include apply-height(get-token($token, container-height));
+      gap: get-token($token, between-space);
+
+      & > button:first-child {
+        padding-inline-start: get-token($token, leading-button-leading-space);
+        padding-inline-end: get-token($token, leading-button-trailing-space);
+        border-top-left-radius: get-token($token, container-shape);
+        border-bottom-left-radius: get-token($token, container-shape);
+        border-top-right-radius: get-token($token, inner-corner-corner-size);
+        border-bottom-right-radius: get-token($token, inner-corner-corner-size);
+        &:hover {
+          border-top-right-radius: get-token(
+            $token,
+            inner-corner-hovered-corner-size
+          );
+          border-bottom-right-radius: get-token(
+            $token,
+            inner-corner-hovered-corner-size
+          );
+        }
+        &:active {
+          border-top-right-radius: get-token(
+            $token,
+            inner-corner-pressed-corner-size
+          );
+          border-bottom-right-radius: get-token(
+            $token,
+            inner-corner-pressed-corner-size
+          );
+        }
+      }
+      & > button:last-child {
+        padding-inline-start: get-token($token, trailing-button-leading-space);
+        padding-inline-end: get-token($token, trailing-button-trailing-space);
+        border-top-left-radius: get-token($token, inner-corner-corner-size);
+        border-bottom-left-radius: get-token($token, inner-corner-corner-size);
+        border-top-right-radius: get-token($token, container-shape);
+        border-bottom-right-radius: get-token($token, container-shape);
+        & > .MdcButton-icon {
+          width: get-token($token, trailing-button-icon-size);
+        }
+        &:hover {
+          border-top-left-radius: get-token(
+            $token,
+            inner-corner-hovered-corner-size
+          );
+          border-bottom-left-radius: get-token(
+            $token,
+            inner-corner-hovered-corner-size
+          );
+        }
+        &:active {
+          border-top-left-radius: get-token(
+            $token,
+            inner-corner-pressed-corner-size
+          );
+          border-bottom-left-radius: get-token(
+            $token,
+            inner-corner-pressed-corner-size
+          );
+        }
+      }
+      &.MdcSplitButton-selected > button:last-child {
+        /* instead of trailing-button-inner-corner-selected-corner-size token */
+        border-radius: $md-sys-shape-corner-full;
+      }
+    }
+  }
+}
+
+.MdcSplitButton {
+  display: flex;
+  width: max-content;
+  height: min-content;
+
+  @include button-sizes;
+}

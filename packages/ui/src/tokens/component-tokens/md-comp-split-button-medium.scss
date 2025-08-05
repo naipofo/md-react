@@ -1,0 +1,35 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Split button - Size - Medium */
+/* Token set name: md.comp.split-button.medium */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-split-button-medium: (
+  name: md-comp-split-button-medium,
+  tokens: (
+    // Split button medium container height
+    container-height: 56px,
+    // Split button medium between space
+    between-space: 2px,
+    // Split button medium container shape
+    container-shape: $md-sys-shape-corner-full,
+    // Split button medium inner corner size
+    inner-corner-corner-size: $md-sys-shape-corner-value-extra-small,
+    // Split button medium leading button leading space
+    leading-button-leading-space: 24px,
+    // Split button medium leading button trailing space
+    leading-button-trailing-space: 24px,
+    // Split button medium trailing button icon size
+    trailing-button-icon-size: 26px,
+    // Split button medium trailing button leading space
+    trailing-button-leading-space: 15px,
+    // Split button medium trailing button trailing space
+    trailing-button-trailing-space: 15px,
+    // Split button medium inner corner hovered size
+    inner-corner-hovered-corner-size: $md-sys-shape-corner-value-medium,
+    // Split button medium inner corner pressed size
+    inner-corner-pressed-corner-size: $md-sys-shape-corner-value-medium,
+    // Split button medium trailing button inner corner selected size
+    trailing-button-inner-corner-selected-corner-size: 50px
+  )
+);

@@ -1,0 +1,174 @@
+{
+  "displayName": "Split button - Size - Small",
+  "tokenSetName": "md.comp.split-button.small",
+  "tokens": [
+    {
+      "tokenName": "md.comp.split-button.small.container.height",
+      "tokenNameSuffix": "container.height",
+      "displayName": "Split button small container height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 40,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.split-button.small.between-space",
+      "tokenNameSuffix": "between-space",
+      "displayName": "Split button small between space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 2,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.split-button.small.container.shape",
+      "tokenNameSuffix": "container.shape",
+      "displayName": "Split button small container shape",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.full",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.split-button.small.inner-corner.corner-size",
+      "tokenNameSuffix": "inner-corner.corner-size",
+      "displayName": "Split button small inner corner size",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner-value.extra-small",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.split-button.small.leading-button.leading-space",
+      "tokenNameSuffix": "leading-button.leading-space",
+      "displayName": "Split button small leading button leading space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 16,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.split-button.small.leading-button.trailing-space",
+      "tokenNameSuffix": "leading-button.trailing-space",
+      "displayName": "Split button small leading button trailing space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 12,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.split-button.small.trailing-button.icon.size",
+      "tokenNameSuffix": "trailing-button.icon.size",
+      "displayName": "Split button small trailing button icon size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 22,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.split-button.small.trailing-button.leading-space",
+      "tokenNameSuffix": "trailing-button.leading-space",
+      "displayName": "Split button small trailing button leading space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 13,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.split-button.small.trailing-button.trailing-space",
+      "tokenNameSuffix": "trailing-button.trailing-space",
+      "displayName": "Split button small trailing button trailing space",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 13,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.split-button.small.inner-corner.hovered.corner-size",
+      "tokenNameSuffix": "inner-corner.hovered.corner-size",
+      "displayName": "Split button small inner corner hovered size",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner-value.medium",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.split-button.small.inner-corner.pressed.corner-size",
+      "tokenNameSuffix": "inner-corner.pressed.corner-size",
+      "displayName": "Split button small inner corner pressed size",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner-value.medium",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.split-button.small.trailing-button.inner-corner.selected.corner-size",
+      "tokenNameSuffix": "trailing-button.inner-corner.selected.corner-size",
+      "displayName": "Split button small trailing button inner corner selected size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 50,
+            "unit": "PERCENT"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

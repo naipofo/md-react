@@ -1,0 +1,37 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Split button - Size - Xsmall */
+/* Token set name: md.comp.split-button.xsmall */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-split-button-xsmall: (
+  name: md-comp-split-button-xsmall,
+  tokens: (
+    // Split button xsmall container height
+    container-height: 32px,
+    // Split button xsmall between space
+    between-space: 2px,
+    // Split button xsmall container shape
+    container-shape: $md-sys-shape-corner-full,
+    // Split button xsmall inner corner size
+    inner-corner-corner-size: $md-sys-shape-corner-value-extra-small,
+    // Split button xsmall outer corner size
+    outer-corner-corner-size: 50px,
+    // Split button xsmall leading button leading space
+    leading-button-leading-space: 12px,
+    // Split button xsmall leading button trailing space
+    leading-button-trailing-space: 10px,
+    // Split button xsmall trailing button icon size
+    trailing-button-icon-size: 22px,
+    // Split button xsmall trailing button leading space
+    trailing-button-leading-space: 13px,
+    // Split button xsmall trailing button trailing space
+    trailing-button-trailing-space: 13px,
+    // Split button xsmall inner corner hovered size
+    inner-corner-hovered-corner-size: $md-sys-shape-corner-value-small,
+    // Split button xsmall inner corner pressed size
+    inner-corner-pressed-corner-size: $md-sys-shape-corner-value-small,
+    // Split button xsmall trailing button inner corner selected size
+    trailing-button-inner-corner-selected-corner-size: 50px
+  )
+);

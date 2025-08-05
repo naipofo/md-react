@@ -10,7 +10,7 @@ import { OverlayContainer } from "../../component-utils/overlay-container/Overla
 import { useButtonGroupAware } from "../button-group/useButtonGroupAware";
 
 interface ButtonProps {
-  children: ReactNode;
+  children?: ReactNode;
   shape?: "square" | "round";
   disabled?: boolean;
   variant?: "elevated" | "filled" | "tonal" | "outlined" | "text";
@@ -20,10 +20,13 @@ interface ButtonProps {
   // TODO: separate icon component, cascade styles to it
   startIcon?: string;
   endIcon?: string;
+
+  startFilledIcon?: string;
+  endFilledIcon?: string;
 }
 
 export const Button = ({
-  children,
+  children = undefined,
   shape = "square",
   disabled = false,
   variant = "filled",
@@ -32,6 +35,8 @@ export const Button = ({
   selected = false,
   startIcon = undefined,
   endIcon = undefined,
+  startFilledIcon = undefined,
+  endFilledIcon = undefined,
 }: ButtonProps) => {
   const buttonRef = useRef(null);
   const { rippleLayer } = useRipple<HTMLButtonElement>(buttonRef);
@@ -54,11 +59,13 @@ export const Button = ({
     classNames.push("MdcButton-disabled");
   }
 
+  const isPressed = toggle ? selected : undefined;
+
   return (
     <button
       className={classNames.join(" ")}
       disabled={disabled}
-      aria-pressed={toggle ? selected : undefined}
+      aria-pressed={isPressed}
       ref={buttonRef}
     >
       <ElevationLayer />
@@ -68,13 +75,19 @@ export const Button = ({
       </OverlayContainer>
       {startIcon && (
         <svg viewBox="0 0 24 24" className="MdcButton-icon">
-          <path fill="currentColor" d={startIcon} />
+          <path
+            fill="currentColor"
+            d={isPressed ? startFilledIcon || startIcon : startIcon}
+          />
         </svg>
       )}
       {children}
       {endIcon && (
         <svg viewBox="0 0 24 24" className="MdcButton-icon">
-          <path fill="currentColor" d={endIcon} />
+          <path
+            fill="currentColor"
+            d={isPressed ? endFilledIcon || endIcon : endIcon}
+          />
         </svg>
       )}
     </button>

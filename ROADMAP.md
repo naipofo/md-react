@@ -14,7 +14,7 @@ More like a wishlist than a commitment, but I hope I can implement most of those
 - [ ] FAB menu
 - [x] Floating action buttons
 - [x] Icon buttons
-- [ ] Split buttons
+- [x] Split buttons
 
 ### Communication
 

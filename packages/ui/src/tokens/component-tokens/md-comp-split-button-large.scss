@@ -1,0 +1,35 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Split button - Size - Large */
+/* Token set name: md.comp.split-button.large */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-split-button-large: (
+  name: md-comp-split-button-large,
+  tokens: (
+    // Split button large container height
+    container-height: 96px,
+    // Split button large between space
+    between-space: 2px,
+    // Split button large container shape
+    container-shape: $md-sys-shape-corner-full,
+    // Split button large inner corner size
+    inner-corner-corner-size: $md-sys-shape-corner-value-small,
+    // Split button large leading button leading space
+    leading-button-leading-space: 48px,
+    // Split button large leading button trailing space
+    leading-button-trailing-space: 48px,
+    // Split button large trailing button icon size
+    trailing-button-icon-size: 38px,
+    // Split button large trailing button leading space
+    trailing-button-leading-space: 29px,
+    // Split button large trailing button trailing space
+    trailing-button-trailing-space: 29px,
+    // Split button large inner corner hovered size
+    inner-corner-hovered-corner-size: $md-sys-shape-corner-value-large-increased,
+    // Split button large inner corner pressed size
+    inner-corner-pressed-corner-size: $md-sys-shape-corner-value-large-increased,
+    // Split button large trailing button inner corner selected size
+    trailing-button-inner-corner-selected-corner-size: 50px
+  )
+);
