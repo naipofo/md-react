@@ -1,0 +1,55 @@
+@use "../../tokens/component-tokens/md-comp-snackbar.scss" as *;
+@use "../../util.scss" as *;
+
+.MdcSnackbar {
+  background-color: rgb(get-token($md-comp-snackbar, container-color));
+  border-radius: get-token($md-comp-snackbar, container-shape);
+
+  /* Something better? Or just leave as-is and controll via scaffold */
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* TODO: 2-line bar support */
+  @include apply-height(
+    get-token($md-comp-snackbar, with-single-line-container-height)
+  );
+
+  --md-runtime-elevation-layer-level: #{get-token(
+      $md-comp-snackbar,
+      container-elevation,
+      0
+    )};
+  --md-runtime-elevation-layer-color: #{get-token(
+      $md-comp-snackbar,
+      container-shadow-color
+    )};
+
+  /* no tokens for padding? */
+  padding-inline-start: 16px;
+  padding-inline-end: 8px;
+
+  & > .MdcSnackbar-label {
+    @include apply-local-typescale-token(
+      $md-comp-snackbar,
+      supporting-text-type
+    );
+    color: rgb(get-token($md-comp-snackbar, supporting-text-color));
+  }
+
+  & > .MdcSnackbar-action .MdcButton-text {
+    @include apply-local-typescale-token(
+      $md-comp-snackbar,
+      action-label-text-type
+    );
+    color: rgb(get-token($md-comp-snackbar, action-label-text-color));
+    &:hover {
+      color: rgb(get-token($md-comp-snackbar, action-hover-label-text-color));
+    }
+    &:active {
+      color: rgb(get-token($md-comp-snackbar, action-pressed-label-text-color));
+    }
+  }
+}

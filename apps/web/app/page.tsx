@@ -8,6 +8,7 @@ import { FabMenuItem } from "@repo/ui/components/fab-menu/FabMenuItem";
 import { IconButton } from "@repo/ui/components/icon-button/IconButton";
 import { PlainTooltip } from "@repo/ui/components/tooltip/PlainTooltip";
 import { RichTooltip } from "@repo/ui/components/tooltip/RichTooltip";
+import { Snackbar } from "@repo/ui/components/snackbar/Snackbar";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <a href="#split-button">split button</a>
         <a href="#fab-menu">fab menu</a>
         <a href="#tooltip">tooltip</a>
+        <a href="#snackbar">snackbar</a>
       </nav>
 
       <main>
@@ -476,6 +478,23 @@ export default function Home() {
                 </Button>
               </RichTooltip>
               <label className="component-label">Rich tooltip</label>
+            </div>
+          </div>
+        </section>
+        <section className="component-section">
+          <h1 id="snackbar">Snackbar</h1>
+          <div className="component-grid">
+            <div className="component-cell">
+              <Snackbar label="Photos deleted" />
+              <label className="component-label">Snackbar without action</label>
+            </div>
+            <div className="component-cell">
+              <Snackbar label="Photos deleted">
+                <Button variant="text" size="x-small" shape="round">
+                  Action
+                </Button>
+              </Snackbar>
+              <label className="component-label">Snackbar with action</label>
             </div>
           </div>
         </section>

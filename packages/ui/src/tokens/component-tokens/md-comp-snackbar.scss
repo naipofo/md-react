@@ -1,0 +1,103 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Snackbars */
+/* Token set name: md.comp.snackbar */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-snackbar: (
+  name: md-comp-snackbar,
+  tokens: (
+    // Snackbar container color
+    container-color: $md-sys-color-inverse-surface,
+    // Snackbar container shadow color
+    container-shadow-color: $md-sys-color-shadow,
+    // Snackbar container elevation
+    container-elevation: $md-sys-elevation-level3,
+    // Snackbar container shape
+    container-shape: $md-sys-shape-corner-extra-small,
+    // Snackbar container with single line height
+    with-single-line-container-height: 48px,
+    // Snackbar container with two lines height
+    with-two-lines-container-height: 68px,
+    // Snackbar label text
+    action-label-text-type: (
+      font-family: action-label-text-font,
+      font-weight: action-label-text-weight,
+      font-size: action-label-text-size,
+      letter-spacing: action-label-text-tracking,
+      line-height: action-label-text-line-height
+    ),
+    // Snackbar label text color
+    action-label-text-color: $md-sys-color-inverse-primary,
+    // Snackbar label text font
+    action-label-text-font: $md-sys-typescale-label-large-font,
+    // Snackbar label text line height
+    action-label-text-line-height: $md-sys-typescale-label-large-line-height,
+    // Snackbar label text size
+    action-label-text-size: $md-sys-typescale-label-large-size,
+    // Snackbar label text tracking
+    action-label-text-tracking: $md-sys-typescale-label-large-tracking,
+    // Snackbar label text weight
+    action-label-text-weight: $md-sys-typescale-label-large-weight,
+    // Snackbar icon color
+    icon-color: $md-sys-color-inverse-on-surface,
+    // Snackbar icon size
+    icon-size: 24px,
+    // Snackbar supporting text
+    supporting-text-type: (
+      font-family: supporting-text-font,
+      font-weight: supporting-text-weight,
+      font-size: supporting-text-size,
+      letter-spacing: supporting-text-tracking,
+      line-height: supporting-text-line-height
+    ),
+    // Snackbar supporting text color
+    supporting-text-color: $md-sys-color-inverse-on-surface,
+    // Snackbar supporting text font
+    supporting-text-font: $md-sys-typescale-body-medium-font,
+    // Snackbar supporting text line height
+    supporting-text-line-height: $md-sys-typescale-body-medium-line-height,
+    // Snackbar supporting text size
+    supporting-text-size: $md-sys-typescale-body-medium-size,
+    // Snackbar supporting text tracking
+    supporting-text-tracking: $md-sys-typescale-body-medium-tracking,
+    // Snackbar supporting text weight
+    supporting-text-weight: $md-sys-typescale-body-medium-weight,
+    // Snackbar hover label text color
+    action-hover-label-text-color: $md-sys-color-inverse-primary,
+    // Snackbar hover state layer color
+    action-hover-state-layer-color: $md-sys-color-inverse-primary,
+    // Snackbar hover state layer opacity
+    action-hover-state-layer-opacity: $md-sys-state-hover-state-layer-opacity,
+    // Snackbar icon hover state layer color
+    icon-hover-state-layer-color: $md-sys-color-inverse-on-surface,
+    // Snackbar icon hover state layer opacity
+    icon-hover-state-layer-opacity: $md-sys-state-hover-state-layer-opacity,
+    // Snackbar icon hover icon color
+    icon-hover-icon-color: $md-sys-color-inverse-on-surface,
+    // Snackbar focus label text color
+    action-focus-label-text-color: $md-sys-color-inverse-primary,
+    // Snackbar focus state layer color
+    action-focus-state-layer-color: $md-sys-color-inverse-primary,
+    // Snackbar focus state layer opacity
+    action-focus-state-layer-opacity: $md-sys-state-focus-state-layer-opacity,
+    // Snackbar icon focus state layer color
+    icon-focus-state-layer-color: $md-sys-color-inverse-on-surface,
+    // Snackbar icon focus state layer opacity
+    icon-focus-state-layer-opacity: $md-sys-state-focus-state-layer-opacity,
+    // Snackbar icon focus icon color
+    icon-focus-icon-color: $md-sys-color-inverse-on-surface,
+    // Snackbar pressed label text color
+    action-pressed-label-text-color: $md-sys-color-inverse-primary,
+    // Snackbar pressed state layer color
+    action-pressed-state-layer-color: $md-sys-color-inverse-primary,
+    // Snackbar pressed state layer opacity
+    action-pressed-state-layer-opacity: $md-sys-state-pressed-state-layer-opacity,
+    // Snackbar icon pressed state layer color
+    icon-pressed-state-layer-color: $md-sys-color-inverse-on-surface,
+    // Snackbar icon pressed state layer opacity
+    icon-pressed-state-layer-opacity: $md-sys-state-pressed-state-layer-opacity,
+    // Snackbar icon pressed icon color
+    icon-pressed-icon-color: $md-sys-color-inverse-on-surface
+  )
+);

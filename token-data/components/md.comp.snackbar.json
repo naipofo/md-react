@@ -1,0 +1,507 @@
+{
+  "displayName": "Snackbars",
+  "tokenSetName": "md.comp.snackbar",
+  "tokens": [
+    {
+      "tokenName": "md.comp.snackbar.container.color",
+      "tokenNameSuffix": "container.color",
+      "displayName": "Snackbar container color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.container.shadow-color",
+      "tokenNameSuffix": "container.shadow-color",
+      "displayName": "Snackbar container shadow color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.shadow",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.container.elevation",
+      "tokenNameSuffix": "container.elevation",
+      "displayName": "Snackbar container elevation",
+      "tokenValueType": "ELEVATION",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.elevation.level3",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.container.shape",
+      "tokenNameSuffix": "container.shape",
+      "displayName": "Snackbar container shape",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.extra-small",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.with-single-line.container.height",
+      "tokenNameSuffix": "with-single-line.container.height",
+      "displayName": "Snackbar container with single line height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 48,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.with-two-lines.container.height",
+      "tokenNameSuffix": "with-two-lines.container.height",
+      "displayName": "Snackbar container with two lines height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 68,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.action.label-text.type",
+      "tokenNameSuffix": "action.label-text.type",
+      "displayName": "Snackbar label text",
+      "tokenValueType": "TYPOGRAPHY",
+      "data": {
+        "token": {
+          "type": {
+            "fontNameTokenName": "md.comp.snackbar.action.label-text.font",
+            "fontWeightTokenName": "md.comp.snackbar.action.label-text.weight",
+            "fontSizeTokenName": "md.comp.snackbar.action.label-text.size",
+            "fontTrackingTokenName": "md.comp.snackbar.action.label-text.tracking",
+            "lineHeightTokenName": "md.comp.snackbar.action.label-text.line-height"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.action.label-text.color",
+      "tokenNameSuffix": "action.label-text.color",
+      "displayName": "Snackbar label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.action.label-text.font",
+      "tokenNameSuffix": "action.label-text.font",
+      "displayName": "Snackbar label text font",
+      "tokenValueType": "FONT_NAMES",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.label-large.font",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.action.label-text.line-height",
+      "tokenNameSuffix": "action.label-text.line-height",
+      "displayName": "Snackbar label text line height",
+      "tokenValueType": "LINE_HEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.label-large.line-height",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.action.label-text.size",
+      "tokenNameSuffix": "action.label-text.size",
+      "displayName": "Snackbar label text size",
+      "tokenValueType": "FONT_SIZE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.label-large.size",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.action.label-text.tracking",
+      "tokenNameSuffix": "action.label-text.tracking",
+      "displayName": "Snackbar label text tracking",
+      "tokenValueType": "FONT_TRACKING",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.label-large.tracking",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.action.label-text.weight",
+      "tokenNameSuffix": "action.label-text.weight",
+      "displayName": "Snackbar label text weight",
+      "tokenValueType": "FONT_WEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.label-large.weight",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.icon.color",
+      "tokenNameSuffix": "icon.color",
+      "displayName": "Snackbar icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.icon.size",
+      "tokenNameSuffix": "icon.size",
+      "displayName": "Snackbar icon size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 24,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.supporting-text.type",
+      "tokenNameSuffix": "supporting-text.type",
+      "displayName": "Snackbar supporting text",
+      "tokenValueType": "TYPOGRAPHY",
+      "data": {
+        "token": {
+          "type": {
+            "fontNameTokenName": "md.comp.snackbar.supporting-text.font",
+            "fontWeightTokenName": "md.comp.snackbar.supporting-text.weight",
+            "fontSizeTokenName": "md.comp.snackbar.supporting-text.size",
+            "fontTrackingTokenName": "md.comp.snackbar.supporting-text.tracking",
+            "lineHeightTokenName": "md.comp.snackbar.supporting-text.line-height"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.supporting-text.color",
+      "tokenNameSuffix": "supporting-text.color",
+      "displayName": "Snackbar supporting text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.supporting-text.font",
+      "tokenNameSuffix": "supporting-text.font",
+      "displayName": "Snackbar supporting text font",
+      "tokenValueType": "FONT_NAMES",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-medium.font",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.supporting-text.line-height",
+      "tokenNameSuffix": "supporting-text.line-height",
+      "displayName": "Snackbar supporting text line height",
+      "tokenValueType": "LINE_HEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-medium.line-height",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.supporting-text.size",
+      "tokenNameSuffix": "supporting-text.size",
+      "displayName": "Snackbar supporting text size",
+      "tokenValueType": "FONT_SIZE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-medium.size",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.supporting-text.tracking",
+      "tokenNameSuffix": "supporting-text.tracking",
+      "displayName": "Snackbar supporting text tracking",
+      "tokenValueType": "FONT_TRACKING",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-medium.tracking",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.supporting-text.weight",
+      "tokenNameSuffix": "supporting-text.weight",
+      "displayName": "Snackbar supporting text weight",
+      "tokenValueType": "FONT_WEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-medium.weight",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.action.hover.label-text.color",
+      "tokenNameSuffix": "action.hover.label-text.color",
+      "displayName": "Snackbar hover label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.action.hover.state-layer.color",
+      "tokenNameSuffix": "action.hover.state-layer.color",
+      "displayName": "Snackbar hover state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.action.hover.state-layer.opacity",
+      "tokenNameSuffix": "action.hover.state-layer.opacity",
+      "displayName": "Snackbar hover state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.hover.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.icon.hover.state-layer.color",
+      "tokenNameSuffix": "icon.hover.state-layer.color",
+      "displayName": "Snackbar icon hover state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.icon.hover.state-layer.opacity",
+      "tokenNameSuffix": "icon.hover.state-layer.opacity",
+      "displayName": "Snackbar icon hover state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.hover.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.icon.hover.icon.color",
+      "tokenNameSuffix": "icon.hover.icon.color",
+      "displayName": "Snackbar icon hover icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.action.focus.label-text.color",
+      "tokenNameSuffix": "action.focus.label-text.color",
+      "displayName": "Snackbar focus label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.action.focus.state-layer.color",
+      "tokenNameSuffix": "action.focus.state-layer.color",
+      "displayName": "Snackbar focus state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.action.focus.state-layer.opacity",
+      "tokenNameSuffix": "action.focus.state-layer.opacity",
+      "displayName": "Snackbar focus state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.focus.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.icon.focus.state-layer.color",
+      "tokenNameSuffix": "icon.focus.state-layer.color",
+      "displayName": "Snackbar icon focus state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.icon.focus.state-layer.opacity",
+      "tokenNameSuffix": "icon.focus.state-layer.opacity",
+      "displayName": "Snackbar icon focus state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.focus.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.icon.focus.icon.color",
+      "tokenNameSuffix": "icon.focus.icon.color",
+      "displayName": "Snackbar icon focus icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.action.pressed.label-text.color",
+      "tokenNameSuffix": "action.pressed.label-text.color",
+      "displayName": "Snackbar pressed label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.action.pressed.state-layer.color",
+      "tokenNameSuffix": "action.pressed.state-layer.color",
+      "displayName": "Snackbar pressed state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.action.pressed.state-layer.opacity",
+      "tokenNameSuffix": "action.pressed.state-layer.opacity",
+      "displayName": "Snackbar pressed state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.pressed.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.icon.pressed.state-layer.color",
+      "tokenNameSuffix": "icon.pressed.state-layer.color",
+      "displayName": "Snackbar icon pressed state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.icon.pressed.state-layer.opacity",
+      "tokenNameSuffix": "icon.pressed.state-layer.opacity",
+      "displayName": "Snackbar icon pressed state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.pressed.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.snackbar.icon.pressed.icon.color",
+      "tokenNameSuffix": "icon.pressed.icon.color",
+      "displayName": "Snackbar icon pressed icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}
