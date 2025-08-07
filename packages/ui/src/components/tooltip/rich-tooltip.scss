@@ -1,0 +1,58 @@
+@use "../../tokens/component-tokens/md-comp-rich-tooltip.scss" as *;
+@use "../../util.scss" as *;
+
+.MdcRichTooltip {
+  background-color: rgb(get-token($md-comp-rich-tooltip, container-color));
+  border-radius: get-token($md-comp-rich-tooltip, container-shape);
+
+  /* no tokens for padding? */
+  padding-block: 8px;
+  padding-inline: 16px;
+
+  /* container-surface-tint-layer-color unused - aren't tint layers dropped in expressive */
+  --md-runtime-elevation-layer-level: #{get-token(
+      $md-comp-rich-tooltip,
+      container-elevation,
+      0
+    )};
+  --md-runtime-elevation-layer-color: #{get-token(
+      $md-comp-rich-tooltip,
+      container-shadow-color
+    )};
+
+  & > .MdcRichTooltip-subhead {
+    @include apply-local-typescale-token($md-comp-rich-tooltip, subhead-type);
+    color: rgb(get-token($md-comp-rich-tooltip, subhead-color));
+
+    padding-block: 4px;
+  }
+  & > .MdcRichTooltip-supporting-text {
+    @include apply-local-typescale-token(
+      $md-comp-rich-tooltip,
+      supporting-text-type
+    );
+    color: rgb(get-token($md-comp-rich-tooltip, supporting-text-color));
+  }
+  & > .MdcRichTooltip-actions {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    & .MdcButton-text {
+      @include apply-local-typescale-token(
+        $md-comp-rich-tooltip,
+        action-label-text-type
+      );
+      color: rgb(get-token($md-comp-rich-tooltip, action-label-text-color));
+      &:hover {
+        color: rgb(
+          get-token($md-comp-rich-tooltip, action-hover-label-text-color)
+        );
+      }
+      &:active {
+        color: rgb(
+          get-token($md-comp-rich-tooltip, action-pressed-label-text-color)
+        );
+      }
+    }
+  }
+}

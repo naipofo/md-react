@@ -1,0 +1,99 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Tooltip - Rich */
+/* Token set name: md.comp.rich-tooltip */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-rich-tooltip: (
+  name: md-comp-rich-tooltip,
+  tokens: (
+    // Rich tooltip container color
+    container-color: $md-sys-color-surface-container,
+    // Rich tooltip container elevation
+    container-elevation: $md-sys-elevation-level2,
+    // Rich tooltip container surface tint layer color
+    container-surface-tint-layer-color: $md-sys-color-surface-tint,
+    // Rich tooltip container shadow color
+    container-shadow-color: $md-sys-color-shadow,
+    // Rich tooltip container shape
+    container-shape: $md-sys-shape-corner-medium,
+    // Rich tooltip action label text font
+    action-label-text-font: $md-sys-typescale-label-large-font,
+    // Rich tooltip action label text line height
+    action-label-text-line-height: $md-sys-typescale-label-large-line-height,
+    // Rich tooltip action label text size
+    action-label-text-size: $md-sys-typescale-label-large-size,
+    // Rich tooltip action label text weight
+    action-label-text-weight: $md-sys-typescale-label-large-weight,
+    // Rich tooltip action label text tracking
+    action-label-text-tracking: $md-sys-typescale-label-large-tracking,
+    // Type style
+    action-label-text-type: (
+      font-family: action-label-text-font,
+      font-weight: action-label-text-weight,
+      font-size: action-label-text-size,
+      letter-spacing: action-label-text-tracking,
+      line-height: action-label-text-line-height
+    ),
+    // Rich tooltip action label text color
+    action-label-text-color: $md-sys-color-primary,
+    // Rich tooltip subhead font
+    subhead-font: $md-sys-typescale-title-small-font,
+    // Rich tooltip subhead line height
+    subhead-line-height: $md-sys-typescale-title-small-line-height,
+    // Rich tooltip subhead size
+    subhead-size: $md-sys-typescale-title-small-size,
+    // Rich tooltip subhead weight
+    subhead-weight: $md-sys-typescale-title-small-weight,
+    // Rich tooltip subhead tracking
+    subhead-tracking: $md-sys-typescale-title-small-tracking,
+    // Type style
+    subhead-type: (
+      font-family: subhead-font,
+      font-weight: subhead-weight,
+      font-size: subhead-size,
+      letter-spacing: subhead-tracking,
+      line-height: subhead-line-height
+    ),
+    // Rich tooltip subhead color
+    subhead-color: $md-sys-color-on-surface-variant,
+    // Rich tooltip supporting text font
+    supporting-text-font: $md-sys-typescale-body-medium-font,
+    // Rich tooltip supporting text line height
+    supporting-text-line-height: $md-sys-typescale-body-medium-line-height,
+    // Rich tooltip supporting text size
+    supporting-text-size: $md-sys-typescale-body-medium-size,
+    // Rich tooltip supporting text weight
+    supporting-text-weight: $md-sys-typescale-body-medium-weight,
+    // Rich tooltip supporting text tracking
+    supporting-text-tracking: $md-sys-typescale-body-medium-tracking,
+    // Type style
+    supporting-text-type: (
+      font-family: supporting-text-font,
+      font-weight: supporting-text-weight,
+      font-size: supporting-text-size,
+      letter-spacing: supporting-text-tracking,
+      line-height: supporting-text-line-height
+    ),
+    // Rich tooltip supporting text color
+    supporting-text-color: $md-sys-color-on-surface-variant,
+    // Rich tooltip action hover label text color
+    action-hover-label-text-color: $md-sys-color-primary,
+    // Rich tooltip action hover state layer color
+    action-hover-state-layer-color: $md-sys-color-primary,
+    // Rich tooltip action hover state layer opacity
+    action-hover-state-layer-opacity: $md-sys-state-hover-state-layer-opacity,
+    // Rich tooltip action focus label text color
+    action-focus-label-text-color: $md-sys-color-primary,
+    // Rich tooltip action focus state layer color
+    action-focus-state-layer-color: $md-sys-color-primary,
+    // Rich tooltip action focus state layer opacity
+    action-focus-state-layer-opacity: $md-sys-state-focus-state-layer-opacity,
+    // Rich tooltip action pressed label text color
+    action-pressed-label-text-color: $md-sys-color-primary,
+    // Rich tooltip action pressed state layer color
+    action-pressed-state-layer-color: $md-sys-color-primary,
+    // Rich tooltip action pressed state layer opacity
+    action-pressed-state-layer-opacity: $md-sys-state-pressed-state-layer-opacity
+  )
+);

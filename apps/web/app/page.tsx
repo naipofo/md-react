@@ -7,6 +7,7 @@ import { FabMenu } from "@repo/ui/components/fab-menu/FabMenu";
 import { FabMenuItem } from "@repo/ui/components/fab-menu/FabMenuItem";
 import { IconButton } from "@repo/ui/components/icon-button/IconButton";
 import { PlainTooltip } from "@repo/ui/components/tooltip/PlainTooltip";
+import { RichTooltip } from "@repo/ui/components/tooltip/RichTooltip";
 
 export default function Home() {
   return (
@@ -461,6 +462,20 @@ export default function Home() {
             <div className="component-cell">
               <PlainTooltip supportingText="Send a message" />
               <label className="component-label">Plain tooltip</label>
+            </div>
+            <div className="component-cell">
+              <RichTooltip
+                subhead="Rich tooltip"
+                supportingText="Rich tooltips bring attention to a particular element of feature that warrants the user's focus."
+              >
+                <Button variant="text" size="x-small" shape="round">
+                  Action
+                </Button>
+                <Button variant="text" size="x-small" shape="round">
+                  Action2
+                </Button>
+              </RichTooltip>
+              <label className="component-label">Rich tooltip</label>
             </div>
           </div>
         </section>

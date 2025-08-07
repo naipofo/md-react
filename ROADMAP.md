@@ -24,9 +24,9 @@ More like a wishlist than a commitment, but I hope I can implement most of those
   - [ ] Circular
 - [ ] Progress indicators
 - [ ] Snackbar
-- [ ] Tooltips
+- [x] Tooltips
   - [x] Plain
-  - [ ] Rich
+  - [x] Rich
 
 ### Containment
 
