@@ -6,6 +6,7 @@ import { Fab } from "@repo/ui/components/fab/Fab";
 import { FabMenu } from "@repo/ui/components/fab-menu/FabMenu";
 import { FabMenuItem } from "@repo/ui/components/fab-menu/FabMenuItem";
 import { IconButton } from "@repo/ui/components/icon-button/IconButton";
+import { PlainTooltip } from "@repo/ui/components/tooltip/PlainTooltip";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <a href="#toggle-icon-button">toggle icon button</a>
         <a href="#split-button">split button</a>
         <a href="#fab-menu">fab menu</a>
+        <a href="#tooltip">tooltip</a>
       </nav>
 
       <main>
@@ -451,6 +453,15 @@ export default function Home() {
                 <label className="component-label">{variant}</label>
               </div>
             ))}
+          </div>
+        </section>
+        <section className="component-section">
+          <h1 id="tooltip">Tooltip</h1>
+          <div className="component-grid">
+            <div className="component-cell">
+              <PlainTooltip supportingText="Send a message" />
+              <label className="component-label">Plain tooltip</label>
+            </div>
           </div>
         </section>
       </main>

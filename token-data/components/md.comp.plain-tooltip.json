@@ -1,0 +1,120 @@
+{
+  "displayName": "Tooltip - Plain",
+  "tokenSetName": "md.comp.plain-tooltip",
+  "tokens": [
+    {
+      "tokenName": "md.comp.plain-tooltip.container.color",
+      "tokenNameSuffix": "container.color",
+      "displayName": "Plain tooltip container color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.plain-tooltip.container.shape",
+      "tokenNameSuffix": "container.shape",
+      "displayName": "Plain tooltip container shape",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.extra-small",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.plain-tooltip.supporting-text.font",
+      "tokenNameSuffix": "supporting-text.font",
+      "displayName": "Plain tooltip supporting text font",
+      "tokenValueType": "FONT_NAMES",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.font",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.plain-tooltip.supporting-text.line-height",
+      "tokenNameSuffix": "supporting-text.line-height",
+      "displayName": "Plain tooltip supporting text line height",
+      "tokenValueType": "LINE_HEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.line-height",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.plain-tooltip.supporting-text.size",
+      "tokenNameSuffix": "supporting-text.size",
+      "displayName": "Plain tooltip supporting text size",
+      "tokenValueType": "FONT_SIZE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.size",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.plain-tooltip.supporting-text.weight",
+      "tokenNameSuffix": "supporting-text.weight",
+      "displayName": "Plain tooltip supporting text weight",
+      "tokenValueType": "FONT_WEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.weight",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.plain-tooltip.supporting-text.tracking",
+      "tokenNameSuffix": "supporting-text.tracking",
+      "displayName": "Plain tooltip supporting text tracking",
+      "tokenValueType": "FONT_TRACKING",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.tracking",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.plain-tooltip.supporting-text.type",
+      "tokenNameSuffix": "supporting-text.type",
+      "displayName": "Supporting text type style",
+      "tokenValueType": "TYPOGRAPHY",
+      "data": {
+        "token": {
+          "type": {
+            "fontNameTokenName": "md.comp.plain-tooltip.supporting-text.font",
+            "fontWeightTokenName": "md.comp.plain-tooltip.supporting-text.weight",
+            "fontSizeTokenName": "md.comp.plain-tooltip.supporting-text.size",
+            "fontTrackingTokenName": "md.comp.plain-tooltip.supporting-text.tracking",
+            "lineHeightTokenName": "md.comp.plain-tooltip.supporting-text.line-height"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.plain-tooltip.supporting-text.color",
+      "tokenNameSuffix": "supporting-text.color",
+      "displayName": "Plain tooltip supporting text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.inverse-on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

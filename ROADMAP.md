@@ -11,7 +11,7 @@ More like a wishlist than a commitment, but I hope I can implement most of those
   - [x] Connected
 - [x] Buttons
 - [x] Extended FAB
-- [ ] FAB menu
+- [x] FAB menu
 - [x] Floating action buttons
 - [x] Icon buttons
 - [x] Split buttons
@@ -25,7 +25,7 @@ More like a wishlist than a commitment, but I hope I can implement most of those
 - [ ] Progress indicators
 - [ ] Snackbar
 - [ ] Tooltips
-  - [ ] Plain
+  - [x] Plain
   - [ ] Rich
 
 ### Containment

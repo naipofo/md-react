@@ -1,0 +1,35 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Tooltip - Plain */
+/* Token set name: md.comp.plain-tooltip */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-plain-tooltip: (
+  name: md-comp-plain-tooltip,
+  tokens: (
+    // Plain tooltip container color
+    container-color: $md-sys-color-inverse-surface,
+    // Plain tooltip container shape
+    container-shape: $md-sys-shape-corner-extra-small,
+    // Plain tooltip supporting text font
+    supporting-text-font: $md-sys-typescale-body-small-font,
+    // Plain tooltip supporting text line height
+    supporting-text-line-height: $md-sys-typescale-body-small-line-height,
+    // Plain tooltip supporting text size
+    supporting-text-size: $md-sys-typescale-body-small-size,
+    // Plain tooltip supporting text weight
+    supporting-text-weight: $md-sys-typescale-body-small-weight,
+    // Plain tooltip supporting text tracking
+    supporting-text-tracking: $md-sys-typescale-body-small-tracking,
+    // Supporting text type style
+    supporting-text-type: (
+      font-family: supporting-text-font,
+      font-weight: supporting-text-weight,
+      font-size: supporting-text-size,
+      letter-spacing: supporting-text-tracking,
+      line-height: supporting-text-line-height
+    ),
+    // Plain tooltip supporting text color
+    supporting-text-color: $md-sys-color-inverse-on-surface
+  )
+);

@@ -1,0 +1,16 @@
+@use "../../tokens/component-tokens/md-comp-plain-tooltip.scss" as *;
+@use "../../util.scss" as *;
+
+.MdcPlainTooltip {
+  background-color: rgb(get-token($md-comp-plain-tooltip, container-color));
+  border-radius: get-token($md-comp-plain-tooltip, container-shape);
+  @include apply-local-typescale-token(
+    $md-comp-plain-tooltip,
+    supporting-text-type
+  );
+  color: rgb(get-token($md-comp-plain-tooltip, supporting-text-color));
+
+  /* no tokens for padding? */
+  padding-block: 4px;
+  padding-inline: 8px;
+}
