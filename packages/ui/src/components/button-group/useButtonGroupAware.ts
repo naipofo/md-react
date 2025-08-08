@@ -13,8 +13,10 @@ export const useButtonGroupAware = (
       buttonGroupContext.reportHover(buttonElement);
     };
     buttonElement.addEventListener("pointerdown", onRecalc);
+    buttonElement.addEventListener("focusin", onRecalc);
     return () => {
       buttonElement.removeEventListener("pointerdown", onRecalc);
+      buttonElement.removeEventListener("focusin", onRecalc);
     };
   }, [buttonGroupContext, buttonRef]);
 };
