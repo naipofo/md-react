@@ -103,14 +103,17 @@
     "primary-tonal": (
       "regular": $md-comp-fab-primary-container,
       "extended": $md-comp-extended-fab-primary-container,
+      "non-tonal": "primary",
     ),
     "secondary-tonal": (
       "regular": $md-comp-fab-secondary-container,
       "extended": $md-comp-extended-fab-secondary-container,
+      "non-tonal": "secondary",
     ),
     "tertiary-tonal": (
       "regular": $md-comp-fab-tertiary-container,
       "extended": $md-comp-extended-fab-tertiary-container,
+      "non-tonal": "tertiary",
     ),
   );
 
@@ -119,6 +122,17 @@
       &:not(.MdcFab-extended) {
         @include apply-fab-base(map.get($tokens, "regular"));
         @include apply-fab-interactive-states(map.get($tokens, "regular"));
+        /* TODO: ugly, figure out something else */
+        @if map.has-key($tokens, "non-tonal") {
+          @include apply-focus-ring-indicator(
+            map.get(
+              map.get($fab-variants, map.get($tokens, "non-tonal")),
+              "regular"
+            )
+          );
+        } @else {
+          @include apply-focus-ring-indicator(map.get($tokens, "regular"));
+        }
       }
 
       &.MdcFab-extended {
@@ -126,6 +140,16 @@
         @include apply-extended-fab-interactive-states(
           map.get($tokens, "extended")
         );
+        @if map.has-key($tokens, "non-tonal") {
+          @include apply-focus-ring-indicator(
+            map.get(
+              map.get($fab-variants, map.get($tokens, "non-tonal")),
+              "extended"
+            )
+          );
+        } @else {
+          @include apply-focus-ring-indicator(map.get($tokens, "extended"));
+        }
       }
     }
   }

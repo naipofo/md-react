@@ -27,6 +27,8 @@
     pointer-events: none;
   }
 
+  @include apply-focus-ring-indicator($md-comp-button);
+
   @include button-sizes;
   @include button-types;
 

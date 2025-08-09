@@ -61,6 +61,22 @@
   line-height: map.get($token, line-height);
 }
 
+@mixin apply-focus-ring-indicator($set) {
+  &:focus-visible {
+    outline: none;
+  }
+  & .MdcFocusRing {
+    display: none;
+  }
+  &:focus-visible .MdcFocusRing {
+    display: block;
+
+    --md-runtime-focus-ring-width: #{get-token($set, focus-indicator-thickness)};
+    outline-color: rgb(get-token($set, focus-indicator-color));
+    outline-offset: get-token($set, focus-indicator-outline-offset);
+  }
+}
+
 @mixin apply-button-group-aware-padding(
   $set,
   $leading-suffix,

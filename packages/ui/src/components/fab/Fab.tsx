@@ -6,6 +6,7 @@ import { ElevationLayer } from "../../component-utils/elevation/ElevationLayer";
 import { StateLayer } from "../../component-utils/state-layer/StateLayer";
 import { ReactNode, useRef } from "react";
 import { OverlayContainer } from "../../component-utils/overlay-container/OverlayContainer";
+import { FocusRing } from "../focus-ring/FocusRing";
 
 interface FabProps {
   icon: string;
@@ -38,6 +39,7 @@ export const Fab = ({
 
   return (
     <button className={classNames.join(" ")} ref={buttonRef}>
+      <FocusRing />
       <ElevationLayer />
       <OverlayContainer>
         <StateLayer />

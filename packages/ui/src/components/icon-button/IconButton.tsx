@@ -5,6 +5,7 @@ import { useRipple } from "../../component-utils/ripple/Ripple";
 import { ElevationLayer } from "../../component-utils/elevation/ElevationLayer";
 import { StateLayer } from "../../component-utils/state-layer/StateLayer";
 import { OverlayContainer } from "../../component-utils/overlay-container/OverlayContainer";
+import { FocusRing } from "../focus-ring/FocusRing";
 import { useRef } from "react";
 import { useButtonGroupAware } from "../button-group/useButtonGroupAware";
 
@@ -62,6 +63,7 @@ export const IconButton = ({
       aria-pressed={toggle ? selected : undefined}
       ref={buttonRef}
     >
+      <FocusRing />
       <ElevationLayer />
       <OverlayContainer>
         <StateLayer />

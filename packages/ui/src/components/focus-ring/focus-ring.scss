@@ -1,0 +1,37 @@
+/* TODO: extarnal token */
+$focus-ring-duration: 600ms;
+
+$duration-grow: $focus-ring-duration * 0.25;
+$duration-shrink: $focus-ring-duration * 0.75;
+
+$focus-ring-active-width: calc(var(--md-runtime-focus-ring-width, 3px) + 5px);
+
+.MdcFocusRing {
+  position: absolute;
+  inset: calc(var(--md-runtime-ripple-border-width, 0px) * -1);
+  border-radius: inherit;
+
+  outline-style: solid;
+  outline-width: var(--md-runtime-focus-ring-width, 3px);
+  animation-delay: 0s, $duration-grow;
+  animation-duration: $duration-grow, $duration-shrink;
+  animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+  animation-name: focus-ring-grow, focus-ring-shrink;
+
+  z-index: 999;
+}
+
+@keyframes focus-ring-grow {
+  from {
+    outline-width: 0;
+  }
+  to {
+    outline-width: $focus-ring-active-width;
+  }
+}
+
+@keyframes focus-ring-shrink {
+  from {
+    outline-width: $focus-ring-active-width;
+  }
+}

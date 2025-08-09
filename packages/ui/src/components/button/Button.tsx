@@ -8,6 +8,7 @@ import { ElevationLayer } from "../../component-utils/elevation/ElevationLayer";
 import { StateLayer } from "../../component-utils/state-layer/StateLayer";
 import { OverlayContainer } from "../../component-utils/overlay-container/OverlayContainer";
 import { useButtonGroupAware } from "../button-group/useButtonGroupAware";
+import { FocusRing } from "../focus-ring/FocusRing";
 
 interface ButtonProps {
   children?: ReactNode;
@@ -68,6 +69,7 @@ export const Button = ({
       aria-pressed={isPressed}
       ref={buttonRef}
     >
+      <FocusRing />
       <ElevationLayer />
       <OverlayContainer>
         <StateLayer />
