@@ -1,0 +1,1113 @@
+{
+  "displayName": "Text field - Filled",
+  "tokenSetName": "md.comp.filled-text-field",
+  "tokens": [
+    {
+      "tokenName": "md.comp.filled-text-field.container.color",
+      "tokenNameSuffix": "container.color",
+      "displayName": "Filled text field container color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.surface-container-highest",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.container.height",
+      "tokenNameSuffix": "container.height",
+      "displayName": "Filled text field container height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 56,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.container.shape",
+      "tokenNameSuffix": "container.shape",
+      "displayName": "Filled text field container shape",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.extra-small.top",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.label-text.color",
+      "tokenNameSuffix": "label-text.color",
+      "displayName": "Filled text field label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.label-text.font",
+      "tokenNameSuffix": "label-text.font",
+      "displayName": "Filled text field label text font",
+      "tokenValueType": "FONT_NAMES",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.font",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.label-text.line-height",
+      "tokenNameSuffix": "label-text.line-height",
+      "displayName": "Filled text field label text line height",
+      "tokenValueType": "LINE_HEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.line-height",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.label-text.size",
+      "tokenNameSuffix": "label-text.size",
+      "displayName": "Filled text field label text size",
+      "tokenValueType": "FONT_SIZE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.size",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.label-text.weight",
+      "tokenNameSuffix": "label-text.weight",
+      "displayName": "Filled text field label text weight",
+      "tokenValueType": "FONT_WEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.weight",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.label-text.tracking",
+      "tokenNameSuffix": "label-text.tracking",
+      "displayName": "Filled text field label text tracking",
+      "tokenValueType": "FONT_TRACKING",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.tracking",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.label-text.type",
+      "tokenNameSuffix": "label-text.type",
+      "displayName": "Filled text field label text type",
+      "tokenValueType": "TYPOGRAPHY",
+      "data": {
+        "token": {
+          "type": {
+            "fontNameTokenName": "md.comp.filled-text-field.label-text.font",
+            "fontWeightTokenName": "md.comp.filled-text-field.label-text.weight",
+            "fontSizeTokenName": "md.comp.filled-text-field.label-text.size",
+            "fontTrackingTokenName": "md.comp.filled-text-field.label-text.tracking",
+            "lineHeightTokenName": "md.comp.filled-text-field.label-text.line-height"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.label-text.populated.line-height",
+      "tokenNameSuffix": "label-text.populated.line-height",
+      "displayName": "Filled text field label text populated line height",
+      "tokenValueType": "LINE_HEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.line-height",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.label-text.populated.size",
+      "tokenNameSuffix": "label-text.populated.size",
+      "displayName": "Filled text field label text populated size",
+      "tokenValueType": "FONT_SIZE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.size",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.leading-icon.color",
+      "tokenNameSuffix": "leading-icon.color",
+      "displayName": "Filled text field leading icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.leading-icon.size",
+      "tokenNameSuffix": "leading-icon.size",
+      "displayName": "Filled text field leading icon size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 24,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.trailing-icon.color",
+      "tokenNameSuffix": "trailing-icon.color",
+      "displayName": "Filled text field trailing icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.trailing-icon.size",
+      "tokenNameSuffix": "trailing-icon.size",
+      "displayName": "Filled text field trailing icon size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 24,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.active-indicator.height",
+      "tokenNameSuffix": "active-indicator.height",
+      "displayName": "Filled text field active indicator height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 1,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.active-indicator.color",
+      "tokenNameSuffix": "active-indicator.color",
+      "displayName": "Filled text field active indicator color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.supporting-text.type",
+      "tokenNameSuffix": "supporting-text.type",
+      "displayName": "Filled text field supporting text type",
+      "tokenValueType": "TYPOGRAPHY",
+      "data": {
+        "token": {
+          "type": {
+            "fontNameTokenName": "md.comp.filled-text-field.supporting-text.font",
+            "fontWeightTokenName": "md.comp.filled-text-field.supporting-text.weight",
+            "fontSizeTokenName": "md.comp.filled-text-field.supporting-text.size",
+            "fontTrackingTokenName": "md.comp.filled-text-field.supporting-text.tracking",
+            "lineHeightTokenName": "md.comp.filled-text-field.supporting-text.line-height"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.supporting-text.color",
+      "tokenNameSuffix": "supporting-text.color",
+      "displayName": "Filled text field supporting text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.supporting-text.font",
+      "tokenNameSuffix": "supporting-text.font",
+      "displayName": "Filled text field supporting text font",
+      "tokenValueType": "FONT_NAMES",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.font",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.supporting-text.line-height",
+      "tokenNameSuffix": "supporting-text.line-height",
+      "displayName": "Filled text field supporting text line height",
+      "tokenValueType": "LINE_HEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.line-height",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.supporting-text.size",
+      "tokenNameSuffix": "supporting-text.size",
+      "displayName": "Filled text field supporting text size",
+      "tokenValueType": "FONT_SIZE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.size",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.supporting-text.weight",
+      "tokenNameSuffix": "supporting-text.weight",
+      "displayName": "Filled text field supporting text weight",
+      "tokenValueType": "FONT_WEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.weight",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.supporting-text.tracking",
+      "tokenNameSuffix": "supporting-text.tracking",
+      "displayName": "Filled text field supporting text tracking",
+      "tokenValueType": "FONT_TRACKING",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.tracking",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.input-text.color",
+      "tokenNameSuffix": "input-text.color",
+      "displayName": "Filled text field input text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.input-text.font",
+      "tokenNameSuffix": "input-text.font",
+      "displayName": "Filled text field input text font",
+      "tokenValueType": "FONT_NAMES",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.font",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.input-text.line-height",
+      "tokenNameSuffix": "input-text.line-height",
+      "displayName": "Filled text field input text line height",
+      "tokenValueType": "LINE_HEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.line-height",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.input-text.size",
+      "tokenNameSuffix": "input-text.size",
+      "displayName": "Filled text field input text size",
+      "tokenValueType": "FONT_SIZE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.size",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.input-text.weight",
+      "tokenNameSuffix": "input-text.weight",
+      "displayName": "Filled text field input text weight",
+      "tokenValueType": "FONT_WEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.weight",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.input-text.tracking",
+      "tokenNameSuffix": "input-text.tracking",
+      "displayName": "Filled text field input text tracking",
+      "tokenValueType": "FONT_TRACKING",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.tracking",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.input-text.type",
+      "tokenNameSuffix": "input-text.type",
+      "displayName": "Filled text field input text type",
+      "tokenValueType": "TYPOGRAPHY",
+      "data": {
+        "token": {
+          "type": {
+            "fontNameTokenName": "md.comp.filled-text-field.input-text.font",
+            "fontWeightTokenName": "md.comp.filled-text-field.input-text.weight",
+            "fontSizeTokenName": "md.comp.filled-text-field.input-text.size",
+            "fontTrackingTokenName": "md.comp.filled-text-field.input-text.tracking",
+            "lineHeightTokenName": "md.comp.filled-text-field.input-text.line-height"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.input-text.prefix.color",
+      "tokenNameSuffix": "input-text.prefix.color",
+      "displayName": "Filled text field input text prefix color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.input-text.suffix.color",
+      "tokenNameSuffix": "input-text.suffix.color",
+      "displayName": "Filled text field input text suffix color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.input-text.placeholder.color",
+      "tokenNameSuffix": "input-text.placeholder.color",
+      "displayName": "Filled text field input text placeholder color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.caret.color",
+      "tokenNameSuffix": "caret.color",
+      "displayName": "Filled text field caret color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.disabled.container.color",
+      "tokenNameSuffix": "disabled.container.color",
+      "displayName": "Filled text field disabled container color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.disabled.container.opacity",
+      "tokenNameSuffix": "disabled.container.opacity",
+      "displayName": "Filled text field disabled container opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "opacity": 0.04,
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.disabled.label-text.color",
+      "tokenNameSuffix": "disabled.label-text.color",
+      "displayName": "Filled text field disabled label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.disabled.label-text.opacity",
+      "tokenNameSuffix": "disabled.label-text.opacity",
+      "displayName": "Filled text field disabled label text opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "opacity": 0.38,
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.disabled.leading-icon.color",
+      "tokenNameSuffix": "disabled.leading-icon.color",
+      "displayName": "Filled text field disabled leading icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.disabled.leading-icon.opacity",
+      "tokenNameSuffix": "disabled.leading-icon.opacity",
+      "displayName": "Filled text field disabled leading icon opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "opacity": 0.38,
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.disabled.trailing-icon.color",
+      "tokenNameSuffix": "disabled.trailing-icon.color",
+      "displayName": "Filled text field disabled trailing icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.disabled.trailing-icon.opacity",
+      "tokenNameSuffix": "disabled.trailing-icon.opacity",
+      "displayName": "Filled text field disabled trailing icon opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "opacity": 0.38,
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.disabled.supporting-text.color",
+      "tokenNameSuffix": "disabled.supporting-text.color",
+      "displayName": "Filled text field disabled supporting text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.disabled.supporting-text.opacity",
+      "tokenNameSuffix": "disabled.supporting-text.opacity",
+      "displayName": "Filled text field disabled supporting text opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "opacity": 0.38,
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.disabled.input-text.color",
+      "tokenNameSuffix": "disabled.input-text.color",
+      "displayName": "Filled text field disabled input text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.disabled.input-text.opacity",
+      "tokenNameSuffix": "disabled.input-text.opacity",
+      "displayName": "Filled text field disabled input text opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "opacity": 0.38,
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.disabled.active-indicator.height",
+      "tokenNameSuffix": "disabled.active-indicator.height",
+      "displayName": "Filled text field disabled active indicator height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 1,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.disabled.active-indicator.color",
+      "tokenNameSuffix": "disabled.active-indicator.color",
+      "displayName": "Filled text field disabled active indicator color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.disabled.active-indicator.opacity",
+      "tokenNameSuffix": "disabled.active-indicator.opacity",
+      "displayName": "Filled text field disabled active indicator opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "opacity": 0.38,
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.hover.label-text.color",
+      "tokenNameSuffix": "hover.label-text.color",
+      "displayName": "Filled text field hover label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.hover.state-layer.color",
+      "tokenNameSuffix": "hover.state-layer.color",
+      "displayName": "Filled text field hover state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.hover.state-layer.opacity",
+      "tokenNameSuffix": "hover.state-layer.opacity",
+      "displayName": "Filled text field hover state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.hover.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.hover.leading-icon.color",
+      "tokenNameSuffix": "hover.leading-icon.color",
+      "displayName": "Filled text field hover leading icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.hover.trailing-icon.color",
+      "tokenNameSuffix": "hover.trailing-icon.color",
+      "displayName": "Filled text field hover trailing icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.hover.input-text.color",
+      "tokenNameSuffix": "hover.input-text.color",
+      "displayName": "Filled text field hover input text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.hover.supporting-text.color",
+      "tokenNameSuffix": "hover.supporting-text.color",
+      "displayName": "Filled text field hover supporting text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.hover.active-indicator.height",
+      "tokenNameSuffix": "hover.active-indicator.height",
+      "displayName": "Filled text field hover active indicator height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 1,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.hover.active-indicator.color",
+      "tokenNameSuffix": "hover.active-indicator.color",
+      "displayName": "Filled text field hover active indicator color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.focus.label-text.color",
+      "tokenNameSuffix": "focus.label-text.color",
+      "displayName": "Filled text field focus label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.focus.leading-icon.color",
+      "tokenNameSuffix": "focus.leading-icon.color",
+      "displayName": "Filled text field focus leading icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.focus.trailing-icon.color",
+      "tokenNameSuffix": "focus.trailing-icon.color",
+      "displayName": "Filled text field focus trailing icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.focus.input-text.color",
+      "tokenNameSuffix": "focus.input-text.color",
+      "displayName": "Filled text field focus input text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.focus.supporting-text.color",
+      "tokenNameSuffix": "focus.supporting-text.color",
+      "displayName": "Filled text field focus supporting text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.focus.active-indicator.height",
+      "tokenNameSuffix": "focus.active-indicator.height",
+      "displayName": "Filled text field focus active indicator height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 2,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.focus.active-indicator.color",
+      "tokenNameSuffix": "focus.active-indicator.color",
+      "displayName": "Filled text field focus active indicator color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.focus.active-indicator.thickness",
+      "tokenNameSuffix": "focus.active-indicator.thickness",
+      "displayName": "Filled text field focus active indicator thickness",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.focus-indicator.thickness",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.active-indicator.color",
+      "tokenNameSuffix": "error.active-indicator.color",
+      "displayName": "Filled text field error active indicator color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.label-text.color",
+      "tokenNameSuffix": "error.label-text.color",
+      "displayName": "Filled text field error label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.input-text.color",
+      "tokenNameSuffix": "error.input-text.color",
+      "displayName": "Filled text field error input text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.supporting-text.color",
+      "tokenNameSuffix": "error.supporting-text.color",
+      "displayName": "Filled text field error supporting text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.leading-icon.color",
+      "tokenNameSuffix": "error.leading-icon.color",
+      "displayName": "Filled text field error leading icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.trailing-icon.color",
+      "tokenNameSuffix": "error.trailing-icon.color",
+      "displayName": "Filled text field error trailing icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.focus.active-indicator.color",
+      "tokenNameSuffix": "error.focus.active-indicator.color",
+      "displayName": "Filled text field error focus active indicator color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.focus.label-text.color",
+      "tokenNameSuffix": "error.focus.label-text.color",
+      "displayName": "Filled text field error focus label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.focus.input-text.color",
+      "tokenNameSuffix": "error.focus.input-text.color",
+      "displayName": "Filled text field error focus input text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.focus.supporting-text.color",
+      "tokenNameSuffix": "error.focus.supporting-text.color",
+      "displayName": "Filled text field error focus supporting text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.focus.leading-icon.color",
+      "tokenNameSuffix": "error.focus.leading-icon.color",
+      "displayName": "Filled text field error focus leading icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.focus.trailing-icon.color",
+      "tokenNameSuffix": "error.focus.trailing-icon.color",
+      "displayName": "Filled text field error focus trailing icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.focus.caret.color",
+      "tokenNameSuffix": "error.focus.caret.color",
+      "displayName": "Filled text field error focus caret color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.hover.active-indicator.color",
+      "tokenNameSuffix": "error.hover.active-indicator.color",
+      "displayName": "Filled text field error hover active indicator color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-error-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.hover.label-text.color",
+      "tokenNameSuffix": "error.hover.label-text.color",
+      "displayName": "Filled text field error hover label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-error-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.hover.input-text.color",
+      "tokenNameSuffix": "error.hover.input-text.color",
+      "displayName": "Filled text field error hover input text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.hover.supporting-text.color",
+      "tokenNameSuffix": "error.hover.supporting-text.color",
+      "displayName": "Filled text field error hover supporting text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.hover.leading-icon.color",
+      "tokenNameSuffix": "error.hover.leading-icon.color",
+      "displayName": "Filled text field error hover leading icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.hover.trailing-icon.color",
+      "tokenNameSuffix": "error.hover.trailing-icon.color",
+      "displayName": "Filled text field error hover trailing icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-error-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.hover.state-layer.color",
+      "tokenNameSuffix": "error.hover.state-layer.color",
+      "displayName": "Filled text field error hover state layer color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.filled-text-field.error.hover.state-layer.opacity",
+      "tokenNameSuffix": "error.hover.state-layer.opacity",
+      "displayName": "Filled text field error hover state layer opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.hover.state-layer-opacity",
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

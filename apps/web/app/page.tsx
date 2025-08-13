@@ -12,6 +12,7 @@ import { PlainTooltip } from "@repo/ui/components/tooltip/PlainTooltip";
 import { RichTooltip } from "@repo/ui/components/tooltip/RichTooltip";
 import { Snackbar } from "@repo/ui/components/snackbar/Snackbar";
 import { useState } from "react";
+import { TextField } from "@repo/ui/components/text-field/TextField";
 
 export default function Home() {
   const components = [
@@ -423,6 +424,25 @@ export default function Home() {
           ),
         },
       ],
+    },
+    {
+      title: "Text Field",
+      elements: () =>
+        (["filled", "outlined"] as const).flatMap((variant) =>
+          [true, false].map((hasError) => ({
+            name: variant + (hasError ? " with error" : ""),
+            element: (
+              <TextField
+                variant={variant}
+                supportingTextStart="Supporting Text"
+                supportingTextEnd="0/100"
+                labelText="Given name"
+                hasError={hasError}
+                placeholder="123"
+              />
+            ),
+          })),
+        ),
     },
   ];
 

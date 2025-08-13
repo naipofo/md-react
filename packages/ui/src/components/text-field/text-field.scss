@@ -1,0 +1,337 @@
+@use "../../tokens/component-tokens/md-comp-outlined-text-field.scss" as *;
+@use "../../tokens/component-tokens/md-comp-filled-text-field.scss" as *;
+@use "../../util.scss" as *;
+@use "../../tokens/sys-tokens.scss" as *;
+
+/* TODO: border-width animation is stepping in chromium
+ and it's inconsistent with the border-top in webkit */
+
+/* TODO: border-width changes on active - that influences the offset calculation
+ for the label in outlined - shifting it slightly! */
+
+@mixin text-field-variants-common {
+  $variants: (
+    outlined: $md-comp-outlined-text-field,
+    filled: $md-comp-filled-text-field,
+  );
+
+  @each $name, $token in $variants {
+    &.MdcTextField-#{$name} {
+      & .MdcTextField-input-container {
+        @include apply-height(get-token($token, container-height));
+      }
+
+      & .MdcTextField-input-container,
+      & .MdcTextField-border {
+        border-radius: get-token($token, container-shape);
+      }
+
+      & input {
+        @include apply-local-typescale-token($token, input-text-type);
+        color: rgb(get-token($token, input-text-color));
+        caret-color: rgb(get-token($token, caret-color));
+        &:focus-visible {
+          outline: none;
+        }
+
+        &::placeholder {
+          @include apply-motion($md-sys-motion-spring-fast-effects, opacity);
+          color: rgb(get-token($token, input-text-placeholder-color));
+          opacity: 0;
+        }
+      }
+
+      & .MdcTextField-supporting-text-container {
+        @include apply-local-typescale-token($token, supporting-text-type);
+        color: rgb(get-token($token, supporting-text-color));
+      }
+
+      & .MdcTextField-label-visible {
+        @include apply-local-typescale-token($token, label-text-type);
+        color: rgb(get-token($token, label-text-color));
+        left: calc(16px + get-token($token, outline-width, 0px));
+      }
+      &.MdcTextField-error .MdcTextField-label-visible {
+        color: rgb(get-token($token, error-label-text-color));
+      }
+
+      &.MdcTextField-error .MdcTextField-supporting-text-container {
+        color: rgb(get-token($token, error-supporting-text-color));
+      }
+
+      &:has(input:focus),
+      &:has(input:not(:placeholder-shown)) {
+        & .MdcTextField-label-visible {
+          line-height: get-token(
+            $md-comp-outlined-text-field,
+            label-text-populated-line-height
+          );
+          font-size: get-token(
+            $md-comp-outlined-text-field,
+            label-text-populated-size
+          );
+          padding-inline: 4px;
+          left: calc(
+            12px +
+              get-token($token, container-shape) +
+              get-token($token, outline-width, 0px)
+          );
+        }
+      }
+
+      &:has(input:focus) {
+        & input::placeholder {
+          opacity: 1;
+        }
+        & .MdcTextField-label-visible {
+          color: rgb(get-token($token, focus-label-text-color));
+        }
+        &.MdcTextField-error .MdcTextField-label-visible {
+          color: rgb(get-token($token, error-focus-label-text-color));
+        }
+      }
+
+      &:hover {
+        & .MdcTextField-label-visible {
+          color: rgb(get-token($token, hover-label-text-color));
+        }
+        &.MdcTextField-error .MdcTextField-label-visible {
+          color: rgb(get-token($token, error-hover-label-text-color));
+        }
+      }
+
+      &:has(input:disabled) {
+        & .MdcTextField-label-visible {
+          color: rgba(
+            get-token($token, disabled-label-text-color),
+            get-token($token, disabled-label-text-opacity)
+          );
+        }
+
+        & input {
+          color: rgba(
+            get-token($token, disabled-input-text-color),
+            get-token($token, disabled-input-text-opacity)
+          );
+        }
+
+        & .MdcTextField-supporting-text-container {
+          color: rgba(
+            get-token($token, disabled-supporting-text-color),
+            get-token($token, disabled-supporting-text-opacity)
+          );
+        }
+      }
+    }
+  }
+}
+
+.MdcTextField {
+  @include text-field-variants-common;
+
+  & .MdcTextField-input-container {
+    contain: size;
+    width: 400px;
+    position: relative;
+  }
+  &.MdcTextField-outlined {
+    --border-width: #{get-token($md-comp-outlined-text-field, outline-width)};
+    --border-color: rgb(
+      #{get-token($md-comp-outlined-text-field, outline-color)}
+    );
+
+    $border-radius: get-token($md-comp-outlined-text-field, container-shape);
+    $clip-path-outset: calc(var(--border-width) + $border-radius);
+
+    &.MdcTextField-error {
+      --border-color: rgb(
+        #{get-token($md-comp-outlined-text-field, error-outline-color)}
+      );
+    }
+
+    &:has(input:focus) {
+      --border-width: #{get-token(
+          $md-comp-outlined-text-field,
+          focus-outline-width
+        )};
+      --border-color: rgb(
+        #{get-token($md-comp-outlined-text-field, focus-outline-color)}
+      );
+      &.MdcTextField-error {
+        --border-color: rgb(
+          #{get-token($md-comp-outlined-text-field, error-focus-outline-color)}
+        );
+      }
+    }
+
+    &:hover {
+      --border-color: rgb(
+        #{get-token($md-comp-outlined-text-field, hover-outline-color)}
+      );
+      &.MdcTextField-error {
+        --border-color: rgb(
+          #{get-token($md-comp-outlined-text-field, error-hover-outline-color)}
+        );
+      }
+    }
+
+    &:has(input:disabled) {
+      --border-width: #{get-token(
+          $md-comp-outlined-text-field,
+          disabled-outline-width
+        )};
+      --border-color: rgba(
+        #{get-token($md-comp-outlined-text-field, disabled-outline-color)},
+        #{get-token($md-comp-outlined-text-field, disabled-outline-opacity)}
+      );
+    }
+
+    & .MdcTextField-border {
+      border-width: var(--border-width);
+      border-style: solid;
+      border-color: var(--border-color);
+      position: absolute;
+      inset: 0;
+      clip-path: polygon(
+        -10% 0,
+        -10% 110%,
+        110% 110%,
+        110% 0,
+        0 0,
+        $clip-path-outset 0,
+        calc(100% - $clip-path-outset) 0,
+        calc(100% - $clip-path-outset) calc(100% - $clip-path-outset),
+        $clip-path-outset calc(100% - $clip-path-outset),
+        $clip-path-outset 0
+      );
+      @include apply-motion(
+        $md-sys-motion-spring-fast-effects,
+        border-width,
+        border-color
+      );
+    }
+    & .MdcTextField-top-border-container {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      $outset-with-overlay: calc($clip-path-outset - 0.5px);
+      left: $outset-with-overlay;
+      right: $outset-with-overlay;
+      overflow: clip;
+    }
+    & .MdcTextField-label-border-animation {
+      user-select: none;
+
+      line-height: get-token(
+        $md-comp-outlined-text-field,
+        label-text-populated-line-height
+      );
+      font-size: get-token(
+        $md-comp-outlined-text-field,
+        label-text-populated-size
+      );
+      padding-inline: 4px;
+      left: 12px;
+
+      color: transparent;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        border-top-style: solid;
+        border-top-width: var(--border-width);
+        border-color: var(--border-color);
+        height: 0px;
+        width: 100vw;
+        top: 0;
+      }
+
+      &::before {
+        right: 50%;
+        @include apply-motion(
+          $md-sys-motion-spring-fast-effects,
+          right,
+          border-top-width,
+          border-color
+        );
+      }
+
+      &::after {
+        left: 50%;
+        @include apply-motion(
+          $md-sys-motion-spring-fast-effects,
+          left,
+          border-top-width,
+          border-color
+        );
+      }
+    }
+    &:has(input:focus),
+    &:has(input:not(:placeholder-shown)) {
+      & .MdcTextField-label-border-animation {
+        &::before {
+          right: 100%;
+        }
+
+        &::after {
+          left: 100%;
+        }
+      }
+    }
+  }
+
+  &.MdcTextField-filled {
+    & .MdcTextField-input-container {
+      background-color: rgb(
+        get-token($md-comp-filled-text-field, container-color)
+      );
+    }
+  }
+
+  & input {
+    position: absolute;
+    inset: 0;
+    border: none;
+    background-color: transparent;
+    padding-inline: 16px;
+  }
+
+  & .MdcTextField-label-border-animation,
+  & .MdcTextField-label-visible {
+    position: absolute;
+    padding-inline: 4px;
+  }
+
+  & .MdcTextField-label-visible {
+    transform: translateY(-50%);
+    top: 50%;
+    @include apply-motion(
+      $md-sys-motion-spring-fast-effects,
+      left,
+      top,
+      line-height,
+      font-size,
+      padding-inline,
+      color
+    );
+  }
+
+  &:has(input:focus),
+  &:has(input:not(:placeholder-shown)) {
+    & .MdcTextField-label-visible {
+      top: 0;
+    }
+  }
+
+  & .MdcTextField-supporting-text-container {
+    justify-content: space-between;
+    display: flex;
+
+    padding-block-start: 4px;
+    padding-inline: 16px;
+    > *:last-child {
+      padding-inline-start: 16px;
+    }
+  }
+}

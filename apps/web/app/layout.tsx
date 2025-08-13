@@ -10,7 +10,17 @@ import { Roboto } from "next/font/google";
 
 const roboto = Roboto({
   weight: "variable",
-  subsets: ["latin"],
+  subsets: [
+    "cyrillic",
+    "cyrillic-ext",
+    "greek",
+    "greek-ext",
+    "latin",
+    "latin-ext",
+    "math",
+    "symbols",
+    "vietnamese",
+  ],
 });
 
 export default function RootLayout({

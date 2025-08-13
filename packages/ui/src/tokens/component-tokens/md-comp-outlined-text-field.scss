@@ -1,0 +1,197 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Text field - Outlined */
+/* Token set name: md.comp.outlined-text-field */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-outlined-text-field: (
+  name: md-comp-outlined-text-field,
+  tokens: (
+    // Outlined text field container height
+    container-height: 56px,
+    // Outlined text field container shape
+    container-shape: $md-sys-shape-corner-extra-small,
+    // Outlined text field outline width
+    outline-width: 1px,
+    // Outlined text field outline color
+    outline-color: $md-sys-color-outline,
+    // Outlined text field label text color
+    label-text-color: $md-sys-color-on-surface-variant,
+    // Outlined text field label text font
+    label-text-font: $md-sys-typescale-body-large-font,
+    // Outlined text field label text line height
+    label-text-line-height: $md-sys-typescale-body-large-line-height,
+    // Outlined text field label text size
+    label-text-size: $md-sys-typescale-body-large-size,
+    // Outlined text field label text weight
+    label-text-weight: $md-sys-typescale-body-large-weight,
+    // Outlined text field label text tracking
+    label-text-tracking: $md-sys-typescale-body-large-tracking,
+    // Outlined text field label text type
+    label-text-type: (
+      font-family: label-text-font,
+      font-weight: label-text-weight,
+      font-size: label-text-size,
+      letter-spacing: label-text-tracking,
+      line-height: label-text-line-height
+    ),
+    // Outlined text field label text populated line height
+    label-text-populated-line-height: $md-sys-typescale-body-small-line-height,
+    // Outlined text field label text populated size
+    label-text-populated-size: $md-sys-typescale-body-small-size,
+    // Outlined text field leading icon color
+    leading-icon-color: $md-sys-color-on-surface-variant,
+    // Outlined text field leading icon size
+    leading-icon-size: 24px,
+    // Outlined text field trailing icon color
+    trailing-icon-color: $md-sys-color-on-surface-variant,
+    // Outlined text field trailing icon size
+    trailing-icon-size: 24px,
+    // Outlined text field supporting text color
+    supporting-text-color: $md-sys-color-on-surface-variant,
+    // Outlined text field supporting text font
+    supporting-text-font: $md-sys-typescale-body-small-font,
+    // Outlined text field supporting text line height
+    supporting-text-line-height: $md-sys-typescale-body-small-line-height,
+    // Outlined text field supporting text size
+    supporting-text-size: $md-sys-typescale-body-small-size,
+    // Outlined text field supporting text weight
+    supporting-text-weight: $md-sys-typescale-body-small-weight,
+    // Outlined text field supporting text tracking
+    supporting-text-tracking: $md-sys-typescale-body-small-tracking,
+    // Outlined text field supporting text type
+    supporting-text-type: (
+      font-family: supporting-text-font,
+      font-weight: supporting-text-weight,
+      font-size: supporting-text-size,
+      letter-spacing: supporting-text-tracking,
+      line-height: supporting-text-line-height
+    ),
+    // Outlined text field input text color
+    input-text-color: $md-sys-color-on-surface,
+    // Outlined text field input text font
+    input-text-font: $md-sys-typescale-body-large-font,
+    // Outlined text field input text line height
+    input-text-line-height: $md-sys-typescale-body-large-line-height,
+    // Outlined text field input text size
+    input-text-size: $md-sys-typescale-body-large-size,
+    // Outlined text field input text weight
+    input-text-weight: $md-sys-typescale-body-large-weight,
+    // Outlined text field input text tracking
+    input-text-tracking: $md-sys-typescale-body-large-tracking,
+    // Outlined text field input text type
+    input-text-type: (
+      font-family: input-text-font,
+      font-weight: input-text-weight,
+      font-size: input-text-size,
+      letter-spacing: input-text-tracking,
+      line-height: input-text-line-height
+    ),
+    // Outlined text field input text suffix color
+    input-text-suffix-color: $md-sys-color-on-surface-variant,
+    // Outlined text field input text prefix color
+    input-text-prefix-color: $md-sys-color-on-surface-variant,
+    // Outlined text field input text placeholder color
+    input-text-placeholder-color: $md-sys-color-on-surface-variant,
+    // Outlined text field caret color
+    caret-color: $md-sys-color-primary,
+    // Outlined text field error focus caret color
+    error-focus-caret-color: $md-sys-color-error,
+    // Outlined text field disabled label text color
+    disabled-label-text-color: $md-sys-color-on-surface,
+    // Outlined text field disabled label text opacity
+    disabled-label-text-opacity: 0.38,
+    // Outlined text field disabled leading icon color
+    disabled-leading-icon-color: $md-sys-color-on-surface,
+    // Outlined text field disabled leading icon opacity
+    disabled-leading-icon-opacity: 0.38,
+    // Outlined text field disabled trailing-icon color
+    disabled-trailing-icon-color: $md-sys-color-on-surface,
+    // Outlined text field disabled trailing-icon opacity
+    disabled-trailing-icon-opacity: 0.38,
+    // Outlined text field disabled outline width
+    disabled-outline-width: 1px,
+    // Outlined text field disabled outline color
+    disabled-outline-color: $md-sys-color-on-surface,
+    // Outlined text field disabled outline opacity
+    disabled-outline-opacity: 0.12,
+    // Outlined text field disabled supporting text color
+    disabled-supporting-text-color: $md-sys-color-on-surface,
+    // Outlined text field disabled supporting text opacity
+    disabled-supporting-text-opacity: 0.38,
+    // Outlined text field disabled input text color
+    disabled-input-text-color: $md-sys-color-on-surface,
+    // Outlined text field disabled input text opacity
+    disabled-input-text-opacity: 0.38,
+    // Outlined text field hover label text color
+    hover-label-text-color: $md-sys-color-on-surface,
+    // Outlined text field hover leading icon color
+    hover-leading-icon-color: $md-sys-color-on-surface-variant,
+    // Outlined text field hover trailing icon color
+    hover-trailing-icon-color: $md-sys-color-on-surface-variant,
+    // Outlined text field hover outline width
+    hover-outline-width: 1px,
+    // Outlined text field hover outline color
+    hover-outline-color: $md-sys-color-on-surface,
+    // Outlined text field hover input text color
+    hover-input-text-color: $md-sys-color-on-surface,
+    // Outlined text field hover supporting text color
+    hover-supporting-text-color: $md-sys-color-on-surface-variant,
+    // Outlined text field focus label text color
+    focus-label-text-color: $md-sys-color-primary,
+    // Outlined text field focus leading icon color
+    focus-leading-icon-color: $md-sys-color-on-surface-variant,
+    // Outlined text field focus trailing icon color
+    focus-trailing-icon-color: $md-sys-color-on-surface-variant,
+    // Outlined text field focus outline width
+    focus-outline-width: 3px,
+    // Outlined text field focus outline color
+    focus-outline-color: $md-sys-color-primary,
+    // Outlined text field focus input text color
+    focus-input-text-color: $md-sys-color-on-surface,
+    // Outlined text field focus supporting text color
+    focus-supporting-text-color: $md-sys-color-on-surface-variant,
+    // Outlined text field focus indicator color
+    focus-indicator-outline-color: $md-sys-color-secondary,
+    // Outlined text field focus indicator color - error
+    error-focus-indicator-outline-color: $md-sys-color-error,
+    // Outlined text field focus indicator thickness
+    focus-indicator-outline-thickness: $md-sys-state-focus-indicator-thickness,
+    // Outlined text field error outline color
+    error-outline-color: $md-sys-color-error,
+    // Outlined text field error label text color
+    error-label-text-color: $md-sys-color-error,
+    // Outlined text field error input text color
+    error-input-text-color: $md-sys-color-on-surface,
+    // Outlined text field error supporting text color
+    error-supporting-text-color: $md-sys-color-error,
+    // Outlined text field error leading icon color
+    error-leading-icon-color: $md-sys-color-on-surface-variant,
+    // Outlined text field error trailing icon color
+    error-trailing-icon-color: $md-sys-color-error,
+    // Outlined text field error focus outline color
+    error-focus-outline-color: $md-sys-color-error,
+    // Outlined text field error focus label text color
+    error-focus-label-text-color: $md-sys-color-error,
+    // Outlined text field error focus input text color
+    error-focus-input-text-color: $md-sys-color-on-surface,
+    // Outlined text field error focus supporting text color
+    error-focus-supporting-text-color: $md-sys-color-error,
+    // Outlined text field error focus leading icon color
+    error-focus-leading-icon-color: $md-sys-color-on-surface-variant,
+    // Outlined text field error focus trailing icon color
+    error-focus-trailing-icon-color: $md-sys-color-error,
+    // Outlined text field error hover outline color
+    error-hover-outline-color: $md-sys-color-on-error-container,
+    // Outlined text field error hover label text color
+    error-hover-label-text-color: $md-sys-color-on-error-container,
+    // Outlined text field error hover input text color
+    error-hover-input-text-color: $md-sys-color-on-surface,
+    // Outlined text field error hover supporting text color
+    error-hover-supporting-text-color: $md-sys-color-error,
+    // Outlined text field error hover leading icon color
+    error-hover-leading-icon-color: $md-sys-color-on-surface-variant,
+    // Outlined text field error hover trailing icon color
+    error-hover-trailing-icon-color: $md-sys-color-on-error-container
+  )
+);

@@ -1,0 +1,1053 @@
+{
+  "displayName": "Text field - Outlined",
+  "tokenSetName": "md.comp.outlined-text-field",
+  "tokens": [
+    {
+      "tokenName": "md.comp.outlined-text-field.container.height",
+      "tokenNameSuffix": "container.height",
+      "displayName": "Outlined text field container height",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 56,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.container.shape",
+      "tokenNameSuffix": "container.shape",
+      "displayName": "Outlined text field container shape",
+      "tokenValueType": "SHAPE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.shape.corner.extra-small",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.outline.width",
+      "tokenNameSuffix": "outline.width",
+      "displayName": "Outlined text field outline width",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 1,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.outline.color",
+      "tokenNameSuffix": "outline.color",
+      "displayName": "Outlined text field outline color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.outline",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.label-text.color",
+      "tokenNameSuffix": "label-text.color",
+      "displayName": "Outlined text field label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.label-text.font",
+      "tokenNameSuffix": "label-text.font",
+      "displayName": "Outlined text field label text font",
+      "tokenValueType": "FONT_NAMES",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.font",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.label-text.line-height",
+      "tokenNameSuffix": "label-text.line-height",
+      "displayName": "Outlined text field label text line height",
+      "tokenValueType": "LINE_HEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.line-height",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.label-text.size",
+      "tokenNameSuffix": "label-text.size",
+      "displayName": "Outlined text field label text size",
+      "tokenValueType": "FONT_SIZE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.size",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.label-text.weight",
+      "tokenNameSuffix": "label-text.weight",
+      "displayName": "Outlined text field label text weight",
+      "tokenValueType": "FONT_WEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.weight",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.label-text.tracking",
+      "tokenNameSuffix": "label-text.tracking",
+      "displayName": "Outlined text field label text tracking",
+      "tokenValueType": "FONT_TRACKING",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.tracking",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.label-text.type",
+      "tokenNameSuffix": "label-text.type",
+      "displayName": "Outlined text field label text type",
+      "tokenValueType": "TYPOGRAPHY",
+      "data": {
+        "token": {
+          "type": {
+            "fontNameTokenName": "md.comp.outlined-text-field.label-text.font",
+            "fontWeightTokenName": "md.comp.outlined-text-field.label-text.weight",
+            "fontSizeTokenName": "md.comp.outlined-text-field.label-text.size",
+            "fontTrackingTokenName": "md.comp.outlined-text-field.label-text.tracking",
+            "lineHeightTokenName": "md.comp.outlined-text-field.label-text.line-height"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.label-text.populated.line-height",
+      "tokenNameSuffix": "label-text.populated.line-height",
+      "displayName": "Outlined text field label text populated line height",
+      "tokenValueType": "LINE_HEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.line-height",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.label-text.populated.size",
+      "tokenNameSuffix": "label-text.populated.size",
+      "displayName": "Outlined text field label text populated size",
+      "tokenValueType": "FONT_SIZE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.size",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.leading-icon.color",
+      "tokenNameSuffix": "leading-icon.color",
+      "displayName": "Outlined text field leading icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.leading-icon.size",
+      "tokenNameSuffix": "leading-icon.size",
+      "displayName": "Outlined text field leading icon size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 24,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.trailing-icon.color",
+      "tokenNameSuffix": "trailing-icon.color",
+      "displayName": "Outlined text field trailing icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.trailing-icon.size",
+      "tokenNameSuffix": "trailing-icon.size",
+      "displayName": "Outlined text field trailing icon size",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 24,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.supporting-text.color",
+      "tokenNameSuffix": "supporting-text.color",
+      "displayName": "Outlined text field supporting text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.supporting-text.font",
+      "tokenNameSuffix": "supporting-text.font",
+      "displayName": "Outlined text field supporting text font",
+      "tokenValueType": "FONT_NAMES",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.font",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.supporting-text.line-height",
+      "tokenNameSuffix": "supporting-text.line-height",
+      "displayName": "Outlined text field supporting text line height",
+      "tokenValueType": "LINE_HEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.line-height",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.supporting-text.size",
+      "tokenNameSuffix": "supporting-text.size",
+      "displayName": "Outlined text field supporting text size",
+      "tokenValueType": "FONT_SIZE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.size",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.supporting-text.weight",
+      "tokenNameSuffix": "supporting-text.weight",
+      "displayName": "Outlined text field supporting text weight",
+      "tokenValueType": "FONT_WEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.weight",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.supporting-text.tracking",
+      "tokenNameSuffix": "supporting-text.tracking",
+      "displayName": "Outlined text field supporting text tracking",
+      "tokenValueType": "FONT_TRACKING",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-small.tracking",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.supporting-text.type",
+      "tokenNameSuffix": "supporting-text.type",
+      "displayName": "Outlined text field supporting text type",
+      "tokenValueType": "TYPOGRAPHY",
+      "data": {
+        "token": {
+          "type": {
+            "fontNameTokenName": "md.comp.outlined-text-field.supporting-text.font",
+            "fontWeightTokenName": "md.comp.outlined-text-field.supporting-text.weight",
+            "fontSizeTokenName": "md.comp.outlined-text-field.supporting-text.size",
+            "fontTrackingTokenName": "md.comp.outlined-text-field.supporting-text.tracking",
+            "lineHeightTokenName": "md.comp.outlined-text-field.supporting-text.line-height"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.input-text.color",
+      "tokenNameSuffix": "input-text.color",
+      "displayName": "Outlined text field input text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.input-text.font",
+      "tokenNameSuffix": "input-text.font",
+      "displayName": "Outlined text field input text font",
+      "tokenValueType": "FONT_NAMES",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.font",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.input-text.line-height",
+      "tokenNameSuffix": "input-text.line-height",
+      "displayName": "Outlined text field input text line height",
+      "tokenValueType": "LINE_HEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.line-height",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.input-text.size",
+      "tokenNameSuffix": "input-text.size",
+      "displayName": "Outlined text field input text size",
+      "tokenValueType": "FONT_SIZE",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.size",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.input-text.weight",
+      "tokenNameSuffix": "input-text.weight",
+      "displayName": "Outlined text field input text weight",
+      "tokenValueType": "FONT_WEIGHT",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.weight",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.input-text.tracking",
+      "tokenNameSuffix": "input-text.tracking",
+      "displayName": "Outlined text field input text tracking",
+      "tokenValueType": "FONT_TRACKING",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.typescale.body-large.tracking",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.input-text.type",
+      "tokenNameSuffix": "input-text.type",
+      "displayName": "Outlined text field input text type",
+      "tokenValueType": "TYPOGRAPHY",
+      "data": {
+        "token": {
+          "type": {
+            "fontNameTokenName": "md.comp.outlined-text-field.input-text.font",
+            "fontWeightTokenName": "md.comp.outlined-text-field.input-text.weight",
+            "fontSizeTokenName": "md.comp.outlined-text-field.input-text.size",
+            "fontTrackingTokenName": "md.comp.outlined-text-field.input-text.tracking",
+            "lineHeightTokenName": "md.comp.outlined-text-field.input-text.line-height"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.input-text.suffix.color",
+      "tokenNameSuffix": "input-text.suffix.color",
+      "displayName": "Outlined text field input text suffix color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.input-text.prefix.color",
+      "tokenNameSuffix": "input-text.prefix.color",
+      "displayName": "Outlined text field input text prefix color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.input-text.placeholder.color",
+      "tokenNameSuffix": "input-text.placeholder.color",
+      "displayName": "Outlined text field input text placeholder color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.caret.color",
+      "tokenNameSuffix": "caret.color",
+      "displayName": "Outlined text field caret color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.focus.caret.color",
+      "tokenNameSuffix": "error.focus.caret.color",
+      "displayName": "Outlined text field error focus caret color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.disabled.label-text.color",
+      "tokenNameSuffix": "disabled.label-text.color",
+      "displayName": "Outlined text field disabled label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.disabled.label-text.opacity",
+      "tokenNameSuffix": "disabled.label-text.opacity",
+      "displayName": "Outlined text field disabled label text opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "opacity": 0.38,
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.disabled.leading-icon.color",
+      "tokenNameSuffix": "disabled.leading-icon.color",
+      "displayName": "Outlined text field disabled leading icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.disabled.leading-icon.opacity",
+      "tokenNameSuffix": "disabled.leading-icon.opacity",
+      "displayName": "Outlined text field disabled leading icon opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "opacity": 0.38,
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.disabled.trailing-icon.color",
+      "tokenNameSuffix": "disabled.trailing-icon.color",
+      "displayName": "Outlined text field disabled trailing-icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.disabled.trailing-icon.opacity",
+      "tokenNameSuffix": "disabled.trailing-icon.opacity",
+      "displayName": "Outlined text field disabled trailing-icon opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "opacity": 0.38,
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.disabled.outline.width",
+      "tokenNameSuffix": "disabled.outline.width",
+      "displayName": "Outlined text field disabled outline width",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 1,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.disabled.outline.color",
+      "tokenNameSuffix": "disabled.outline.color",
+      "displayName": "Outlined text field disabled outline color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.disabled.outline.opacity",
+      "tokenNameSuffix": "disabled.outline.opacity",
+      "displayName": "Outlined text field disabled outline opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "opacity": 0.12,
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.disabled.supporting-text.color",
+      "tokenNameSuffix": "disabled.supporting-text.color",
+      "displayName": "Outlined text field disabled supporting text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.disabled.supporting-text.opacity",
+      "tokenNameSuffix": "disabled.supporting-text.opacity",
+      "displayName": "Outlined text field disabled supporting text opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "opacity": 0.38,
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.disabled.input-text.color",
+      "tokenNameSuffix": "disabled.input-text.color",
+      "displayName": "Outlined text field disabled input text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.disabled.input-text.opacity",
+      "tokenNameSuffix": "disabled.input-text.opacity",
+      "displayName": "Outlined text field disabled input text opacity",
+      "tokenValueType": "OPACITY",
+      "data": {
+        "token": {
+          "opacity": 0.38,
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.hover.label-text.color",
+      "tokenNameSuffix": "hover.label-text.color",
+      "displayName": "Outlined text field hover label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.hover.leading-icon.color",
+      "tokenNameSuffix": "hover.leading-icon.color",
+      "displayName": "Outlined text field hover leading icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.hover.trailing-icon.color",
+      "tokenNameSuffix": "hover.trailing-icon.color",
+      "displayName": "Outlined text field hover trailing icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.hover.outline.width",
+      "tokenNameSuffix": "hover.outline.width",
+      "displayName": "Outlined text field hover outline width",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 1,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.hover.outline.color",
+      "tokenNameSuffix": "hover.outline.color",
+      "displayName": "Outlined text field hover outline color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.hover.input-text.color",
+      "tokenNameSuffix": "hover.input-text.color",
+      "displayName": "Outlined text field hover input text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.hover.supporting-text.color",
+      "tokenNameSuffix": "hover.supporting-text.color",
+      "displayName": "Outlined text field hover supporting text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.focus.label-text.color",
+      "tokenNameSuffix": "focus.label-text.color",
+      "displayName": "Outlined text field focus label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.focus.leading-icon.color",
+      "tokenNameSuffix": "focus.leading-icon.color",
+      "displayName": "Outlined text field focus leading icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.focus.trailing-icon.color",
+      "tokenNameSuffix": "focus.trailing-icon.color",
+      "displayName": "Outlined text field focus trailing icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.focus.outline.width",
+      "tokenNameSuffix": "focus.outline.width",
+      "displayName": "Outlined text field focus outline width",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "length": {
+            "value": 3,
+            "unit": "DIPS"
+          },
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.focus.outline.color",
+      "tokenNameSuffix": "focus.outline.color",
+      "displayName": "Outlined text field focus outline color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.primary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.focus.input-text.color",
+      "tokenNameSuffix": "focus.input-text.color",
+      "displayName": "Outlined text field focus input text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.focus.supporting-text.color",
+      "tokenNameSuffix": "focus.supporting-text.color",
+      "displayName": "Outlined text field focus supporting text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.focus.indicator.outline.color",
+      "tokenNameSuffix": "focus.indicator.outline.color",
+      "displayName": "Outlined text field focus indicator color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.secondary",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.focus.indicator.outline.color",
+      "tokenNameSuffix": "error.focus.indicator.outline.color",
+      "displayName": "Outlined text field focus indicator color - error",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.focus.indicator.outline.thickness",
+      "tokenNameSuffix": "focus.indicator.outline.thickness",
+      "displayName": "Outlined text field focus indicator thickness",
+      "tokenValueType": "LENGTH",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.state.focus-indicator.thickness",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.outline.color",
+      "tokenNameSuffix": "error.outline.color",
+      "displayName": "Outlined text field error outline color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.label-text.color",
+      "tokenNameSuffix": "error.label-text.color",
+      "displayName": "Outlined text field error label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.input-text.color",
+      "tokenNameSuffix": "error.input-text.color",
+      "displayName": "Outlined text field error input text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.supporting-text.color",
+      "tokenNameSuffix": "error.supporting-text.color",
+      "displayName": "Outlined text field error supporting text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.leading-icon.color",
+      "tokenNameSuffix": "error.leading-icon.color",
+      "displayName": "Outlined text field error leading icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.trailing-icon.color",
+      "tokenNameSuffix": "error.trailing-icon.color",
+      "displayName": "Outlined text field error trailing icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.focus.outline.color",
+      "tokenNameSuffix": "error.focus.outline.color",
+      "displayName": "Outlined text field error focus outline color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.focus.label-text.color",
+      "tokenNameSuffix": "error.focus.label-text.color",
+      "displayName": "Outlined text field error focus label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.focus.input-text.color",
+      "tokenNameSuffix": "error.focus.input-text.color",
+      "displayName": "Outlined text field error focus input text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.focus.supporting-text.color",
+      "tokenNameSuffix": "error.focus.supporting-text.color",
+      "displayName": "Outlined text field error focus supporting text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.focus.leading-icon.color",
+      "tokenNameSuffix": "error.focus.leading-icon.color",
+      "displayName": "Outlined text field error focus leading icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.focus.trailing-icon.color",
+      "tokenNameSuffix": "error.focus.trailing-icon.color",
+      "displayName": "Outlined text field error focus trailing icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.hover.outline.color",
+      "tokenNameSuffix": "error.hover.outline.color",
+      "displayName": "Outlined text field error hover outline color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-error-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.hover.label-text.color",
+      "tokenNameSuffix": "error.hover.label-text.color",
+      "displayName": "Outlined text field error hover label text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-error-container",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.hover.input-text.color",
+      "tokenNameSuffix": "error.hover.input-text.color",
+      "displayName": "Outlined text field error hover input text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.hover.supporting-text.color",
+      "tokenNameSuffix": "error.hover.supporting-text.color",
+      "displayName": "Outlined text field error hover supporting text color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.error",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.hover.leading-icon.color",
+      "tokenNameSuffix": "error.hover.leading-icon.color",
+      "displayName": "Outlined text field error hover leading icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-surface-variant",
+          "state": "ACTIVE"
+        }
+      }
+    },
+    {
+      "tokenName": "md.comp.outlined-text-field.error.hover.trailing-icon.color",
+      "tokenNameSuffix": "error.hover.trailing-icon.color",
+      "displayName": "Outlined text field error hover trailing icon color",
+      "tokenValueType": "COLOR",
+      "data": {
+        "token": {
+          "tokenName": "md.sys.color.on-error-container",
+          "state": "ACTIVE"
+        }
+      }
+    }
+  ]
+}

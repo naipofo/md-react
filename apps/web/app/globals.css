@@ -9,6 +9,7 @@ body {
     Cantarell, "Helvetica Neue", sans-serif;
   padding: 8px;
   margin: 0;
+  text-rendering: geometricPrecision;
 }
 
 main {
