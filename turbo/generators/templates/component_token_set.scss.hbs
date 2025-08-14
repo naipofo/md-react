@@ -23,7 +23,7 @@ ${{kebabCase tokenSetName}}: (
     {{else if this.fontNames~}}
         {{#each this.fontNames.values}}{{#unless @first}}, {{/unless}}'{{this}}'{{/each}}
     {{else if this.length~}}
-        {{this.length.value}}px
+        {{#if this.length.value}}{{this.length.value}}{{else}}0{{/if}}px
     {{~else if this.fontSize~}}
         {{this.fontSize.value}}
     {{else if this.lineHeight~}}
@@ -45,8 +45,8 @@ ${{kebabCase tokenSetName}}: (
         50%
         {{else if (eq this.shape.family "SHAPE_FAMILY_ROUNDED_CORNERS")~}}
         {{#if this.shape.defaultSize~}}
-            {{this.shape.defaultSize.value}}
-        {{else if this.shape.topLeft~}}
+            {{this.shape.defaultSize.value}}px
+        {{~else if this.shape.topLeft~}}
             {{this.shape.topLeft.value}} {{!
             }}{{this.shape.topRight.value}} {{!
             }}{{this.shape.bottomRight.value}} {{!

@@ -130,6 +130,7 @@ const sysTokenActions = (): PlopTypes.ActionType[] => {
 
 export default function generator(plop: PlopTypes.NodePlopAPI): void {
   plop.setHelper("eq", (a, b) => a === b);
+  plop.setHelper("isdefined", (value) => value !== undefined);
 
   plop.setGenerator("Component Tokens", {
     description: "Generates SCSS token files from JSON data.",
