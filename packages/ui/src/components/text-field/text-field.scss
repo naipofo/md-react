@@ -30,14 +30,8 @@
         @include apply-local-typescale-token($token, input-text-type);
         color: rgb(get-token($token, input-text-color));
         caret-color: rgb(get-token($token, caret-color));
-        &:focus-visible {
-          outline: none;
-        }
-
         &::placeholder {
-          @include apply-motion($md-sys-motion-spring-fast-effects, opacity);
           color: rgb(get-token($token, input-text-placeholder-color));
-          opacity: 0;
         }
       }
 
@@ -51,43 +45,33 @@
         color: rgb(get-token($token, label-text-color));
         left: calc(16px + get-token($token, outline-width, 0px));
       }
-      &.MdcTextField-error .MdcTextField-label-visible {
-        color: rgb(get-token($token, error-label-text-color));
-      }
 
-      &.MdcTextField-error .MdcTextField-supporting-text-container {
-        color: rgb(get-token($token, error-supporting-text-color));
+      &.MdcTextField-error {
+        & .MdcTextField-label-visible {
+          color: rgb(get-token($token, error-label-text-color));
+        }
+        & .MdcTextField-supporting-text-container {
+          color: rgb(get-token($token, error-supporting-text-color));
+        }
       }
 
       &:has(input:focus),
       &:has(input:not(:placeholder-shown)) {
         & .MdcTextField-label-visible {
-          line-height: get-token(
-            $md-comp-outlined-text-field,
-            label-text-populated-line-height
-          );
-          font-size: get-token(
-            $md-comp-outlined-text-field,
-            label-text-populated-size
-          );
-          padding-inline: 4px;
-          left: calc(
-            12px +
-              get-token($token, container-shape) +
-              get-token($token, outline-width, 0px)
-          );
+          line-height: get-token($token, label-text-populated-line-height);
+          font-size: get-token($token, label-text-populated-size);
         }
       }
 
       &:has(input:focus) {
-        & input::placeholder {
-          opacity: 1;
-        }
         & .MdcTextField-label-visible {
           color: rgb(get-token($token, focus-label-text-color));
         }
         &.MdcTextField-error .MdcTextField-label-visible {
           color: rgb(get-token($token, error-focus-label-text-color));
+        }
+        & input::placeholder {
+          opacity: 1;
         }
       }
 
@@ -128,17 +112,70 @@
 
 .MdcTextField {
   @include text-field-variants-common;
+  position: relative;
 
   & .MdcTextField-input-container {
     contain: size;
     width: 400px;
     position: relative;
   }
+
+  & input {
+    position: absolute;
+    inset: 0;
+    border: none;
+    background-color: transparent;
+    padding-inline: 16px;
+    padding-block: 16px;
+
+    @include apply-motion(
+      $md-sys-motion-spring-fast-effects,
+      padding-block-start,
+      padding-block-end
+    );
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &::placeholder {
+      opacity: 0;
+      @include apply-motion($md-sys-motion-spring-fast-effects, opacity);
+    }
+  }
+
+  & .MdcTextField-label-border-animation,
+  & .MdcTextField-label-visible {
+    position: absolute;
+    pointer-events: none;
+  }
+
+  & .MdcTextField-label-visible {
+    transform: translateY(-50%);
+    top: 50%;
+    @include apply-motion(
+      $md-sys-motion-spring-fast-effects,
+      left,
+      top,
+      line-height,
+      font-size,
+      padding-inline,
+      color,
+      transform
+    );
+  }
+
   &.MdcTextField-outlined {
+    & .MdcTextField-label-visible {
+      padding-inline: 4px;
+    }
+
     --border-width: #{get-token($md-comp-outlined-text-field, outline-width)};
     --border-color: rgb(
       #{get-token($md-comp-outlined-text-field, outline-color)}
     );
+
+    @include apply-focus-ring-indicator($md-comp-outlined-text-field);
 
     $border-radius: get-token($md-comp-outlined-text-field, container-shape);
     $clip-path-outset: calc(var(--border-width) + $border-radius);
@@ -278,49 +315,150 @@
           left: 100%;
         }
       }
+      & .MdcTextField-label-visible {
+        top: 0;
+        left: calc(
+          12px + get-token($md-comp-outlined-text-field, container-shape) +
+            get-token($md-comp-outlined-text-field, outline-width, 0px)
+        );
+      }
     }
   }
 
   &.MdcTextField-filled {
+    $focus-ring-tokens: (
+      tokens: (
+        focus-indicator-color: get-token(
+            $md-comp-filled-text-field,
+            focus-active-indicator-color
+          ),
+        error-focus-indicator-color: get-token(
+            $md-comp-filled-text-field,
+            error-focus-active-indicator-color
+          ),
+        focus-indicator-thickness: $md-sys-state-focus-indicator-thickness,
+      ),
+    );
+    @include apply-focus-ring-indicator($focus-ring-tokens);
+
     & .MdcTextField-input-container {
       background-color: rgb(
         get-token($md-comp-filled-text-field, container-color)
       );
     }
-  }
 
-  & input {
-    position: absolute;
-    inset: 0;
-    border: none;
-    background-color: transparent;
-    padding-inline: 16px;
-  }
+    & input {
+      padding-block-start: 24px;
+      padding-block-end: 8px;
+    }
+    & .MdcTextField-active-indicator {
+      position: absolute;
+      inset: auto 0 0 0;
+      height: var(
+        --indicator-height,
+        #{get-token($md-comp-filled-text-field, active-indicator-height)}
+      );
+      background-color: var(
+        --indicator-color,
+        #{rgb(get-token($md-comp-filled-text-field, active-indicator-color))}
+      );
+      @include apply-motion(
+        $md-sys-motion-spring-fast-effects,
+        height,
+        background-color
+      );
+    }
 
-  & .MdcTextField-label-border-animation,
-  & .MdcTextField-label-visible {
-    position: absolute;
-    padding-inline: 4px;
-  }
+    & input {
+      padding-block-start: 24px;
+      padding-block-end: 8px;
+    }
 
-  & .MdcTextField-label-visible {
-    transform: translateY(-50%);
-    top: 50%;
-    @include apply-motion(
-      $md-sys-motion-spring-fast-effects,
-      left,
-      top,
-      line-height,
-      font-size,
-      padding-inline,
-      color
-    );
-  }
+    &:hover {
+      --indicator-height: #{get-token(
+          $md-comp-filled-text-field,
+          hover-active-indicator-height
+        )};
+      --indicator-color: #{rgb(
+          get-token($md-comp-filled-text-field, hover-active-indicator-color)
+        )};
+      & .MdcStateLayer {
+        background: rgb(
+          get-token($md-comp-filled-text-field, hover-state-layer-color)
+        );
+        opacity: get-token(
+          $md-comp-filled-text-field,
+          hover-state-layer-opacity
+        );
+      }
 
-  &:has(input:focus),
-  &:has(input:not(:placeholder-shown)) {
-    & .MdcTextField-label-visible {
-      top: 0;
+      &.MdcTextField-error .MdcStateLayer {
+        background: rgb(
+          get-token($md-comp-filled-text-field, error-hover-state-layer-color)
+        );
+        opacity: get-token(
+          $md-comp-filled-text-field,
+          error-hover-state-layer-opacity
+        );
+      }
+      &.MdcTextField-error {
+        --indicator-color: #{rgb(
+            get-token(
+              $md-comp-filled-text-field,
+              error-hover-active-indicator-color
+            )
+          )};
+      }
+    }
+
+    &:has(input:focus) {
+      --indicator-height: #{get-token(
+          $md-comp-filled-text-field,
+          focus-active-indicator-height
+        )};
+      --indicator-color: #{rgb(
+          get-token($md-comp-filled-text-field, focus-active-indicator-color)
+        )};
+    }
+
+    &.MdcTextField-error {
+      --indicator-color: #{rgb(
+          get-token($md-comp-filled-text-field, error-active-indicator-color)
+        )};
+    }
+
+    &.MdcTextField-error:has(input:focus) {
+      --indicator-color: #{rgb(
+          get-token(
+            $md-comp-filled-text-field,
+            error-focus-active-indicator-color
+          )
+        )};
+    }
+
+    &:has(input:disabled) {
+      --indicator-height: #{get-token(
+          $md-comp-filled-text-field,
+          disabled-active-indicator-height
+        )};
+      --indicator-color: #{rgba(
+          get-token(
+            $md-comp-filled-text-field,
+            disabled-active-indicator-color
+          ),
+          get-token(
+            $md-comp-filled-text-field,
+            disabled-active-indicator-opacity
+          )
+        )};
+    }
+
+    &:has(input:focus),
+    &:has(input:not(:placeholder-shown)) {
+      & .MdcTextField-label-visible {
+        top: 16px;
+        left: 16px;
+      }
     }
   }
 

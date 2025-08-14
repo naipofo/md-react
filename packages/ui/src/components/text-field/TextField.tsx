@@ -4,6 +4,9 @@ import { useRef } from "react";
 
 import "./text-field.scss";
 import { useButtonGroupAware } from "../button-group/useButtonGroupAware";
+import { FocusRing } from "../focus-ring/FocusRing";
+import { StateLayer } from "../../component-utils/state-layer/StateLayer";
+import { OverlayContainer } from "../../component-utils/overlay-container/OverlayContainer";
 
 // TODO: prefix/suffix
 // TODO: placeholder
@@ -47,6 +50,7 @@ export const TextField = ({
 
   return (
     <div className={classNames.join(" ")} ref={textFieldRef}>
+      <FocusRing />
       <div className="MdcTextField-input-container">
         {variant === "outlined" && (
           <>
@@ -59,6 +63,14 @@ export const TextField = ({
               </div>
             </div>
             <div className="MdcTextField-border" />
+          </>
+        )}
+        {variant === "filled" && (
+          <>
+            <OverlayContainer>
+              <StateLayer />
+            </OverlayContainer>
+            <div className="MdcTextField-active-indicator" />
           </>
         )}
         <label className="MdcTextField-label-visible">{labelText}</label>
