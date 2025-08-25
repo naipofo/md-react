@@ -50,7 +50,7 @@ More like a wishlist than a commitment, but I hope I can implement most of those
 
 ### Selection
 
-- [ ] Checkbox
+- [x] Checkbox
 - [ ] Chips
 - [ ] Date pickers
 - [ ] Menus

@@ -11,8 +11,9 @@ import { IconButton } from "@repo/ui/components/icon-button/IconButton";
 import { PlainTooltip } from "@repo/ui/components/tooltip/PlainTooltip";
 import { RichTooltip } from "@repo/ui/components/tooltip/RichTooltip";
 import { Snackbar } from "@repo/ui/components/snackbar/Snackbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TextField } from "@repo/ui/components/text-field/TextField";
+import { Checkbox } from "@repo/ui/components/checkbox/Checkbox";
 
 export default function Home() {
   const components = [
@@ -429,20 +430,116 @@ export default function Home() {
       title: "Text Field",
       elements: () =>
         (["filled", "outlined"] as const).flatMap((variant) =>
-          [true, false].map((hasError) => ({
-            name: variant + (hasError ? " with error" : ""),
-            element: (
-              <TextField
-                variant={variant}
-                supportingTextStart="Supporting Text"
-                supportingTextEnd="0/100"
-                labelText="Given name"
-                hasError={hasError}
-                placeholder="123"
-              />
-            ),
-          })),
+          [true, false].flatMap((hasError) =>
+            [true, false].map((disabled) => ({
+              name:
+                variant +
+                (hasError ? " with error" : "") +
+                (disabled ? " disabled" : ""),
+              element: (
+                <TextField
+                  variant={variant}
+                  supportingTextStart="Supporting Text"
+                  supportingTextEnd="0/100"
+                  labelText="Given name"
+                  hasError={hasError}
+                  disabled={disabled}
+                  placeholder="123"
+                />
+              ),
+            })),
+          ),
         ),
+    },
+    {
+      title: "Checkbox",
+      elements: () => {
+        const AnimatedStateCheckbox = ({
+          disabled = false,
+          hasError = false,
+        }: {
+          disabled?: boolean;
+          hasError?: boolean;
+        }) => {
+          const [checked, setChecked] = useState<boolean | "indeterminate">(
+            false,
+          );
+
+          useEffect(() => {
+            const statesCycle: (boolean | "indeterminate")[] = [
+              true,
+              "indeterminate",
+              false,
+            ];
+            const intervalId = setInterval(() => {
+              setChecked((currentChecked) => {
+                const currentIndex = statesCycle.indexOf(currentChecked);
+                // Cycle to the next state, wrapping around.
+                const nextIndex = (currentIndex + 1) % statesCycle.length;
+                return statesCycle[nextIndex]!;
+              });
+            }, 1500);
+
+            return () => clearInterval(intervalId); // Cleanup on unmount
+          }, []);
+
+          return (
+            <Checkbox
+              checked={checked}
+              hasError={hasError}
+              disabled={disabled}
+            />
+          );
+        };
+
+        const staticCheckboxes = (
+          [false, true, "indeterminate"] as const
+        ).flatMap((checked) =>
+          [false, true].flatMap((disabled) =>
+            [false, true].map((hasError) => {
+              let name =
+                checked === "indeterminate"
+                  ? "indeterminate"
+                  : checked
+                    ? "checked"
+                    : "unchecked";
+              if (hasError) {
+                name += " error";
+              }
+              if (disabled) {
+                name += " disabled";
+              }
+              return {
+                name,
+                element: (
+                  <Checkbox
+                    checked={checked}
+                    hasError={hasError}
+                    disabled={disabled}
+                  />
+                ),
+              };
+            }),
+          ),
+        );
+
+        const animatedCheckboxes = [
+          {
+            name: "animated normal",
+            element: <AnimatedStateCheckbox />,
+          },
+          {
+            name: "animated error",
+            element: <AnimatedStateCheckbox hasError={true} />,
+          },
+          {
+            name: "animated disabled",
+            element: <AnimatedStateCheckbox disabled={true} />,
+          },
+        ];
+
+        return [...staticCheckboxes, ...animatedCheckboxes];
+      },
     },
   ];
 

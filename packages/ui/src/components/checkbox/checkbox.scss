@@ -1,0 +1,256 @@
+@use "../../tokens/component-tokens/md-comp-checkbox.scss" as *;
+@use "../../util.scss" as *;
+@use "../../tokens/sys-tokens.scss" as *;
+@use "sass:math";
+
+$mark-stroke: 2px;
+
+$_indeterminate-bottom-left:
+  2px,
+  -8px;
+
+$_checkmark-bottom-left:
+  5px,
+  -12px;
+
+.MdcCheckbox {
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  cursor: pointer;
+  border-radius: $md-sys-shape-corner-full;
+
+  & input {
+    z-index: 1;
+    position: absolute;
+    inset: 0;
+    cursor: inherit;
+    outline: none;
+    margin: 0;
+    appearance: none;
+  }
+
+  /* better focus ring mixin */
+  & .MdcFocusRing {
+    display: none;
+  }
+
+  &:has(input:focus-visible) .MdcFocusRing {
+    display: block;
+  }
+
+  .MdcFocusRing {
+    --md-runtime-focus-ring-width: #{get-token(
+        $md-comp-checkbox,
+        focus-indicator-thickness
+      )};
+    outline-color: rgb(get-token($md-comp-checkbox, focus-indicator-color));
+    outline-offset: get-token(
+      $md-comp-checkbox,
+      focus-indicator-outline-offset
+    );
+  }
+
+  & .MdcCheckbox-container {
+    width: get-token($md-comp-checkbox, container-width);
+    height: get-token($md-comp-checkbox, container-height);
+    box-sizing: border-box;
+
+    border-radius: get-token($md-comp-checkbox, container-shape);
+    display: grid;
+    place-items: center;
+    border-width: get-token($md-comp-checkbox, unselected-outline-width);
+    border-style: solid;
+    border-color: rgb(get-token($md-comp-checkbox, unselected-outline-color));
+    background-color: transparent;
+
+    @include apply-motion(
+      $md-sys-motion-spring-fast-effects,
+      border-color,
+      background-color
+    );
+  }
+
+  & .MdcCheckbox-icon {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: transparent;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: currentColor;
+      top: 0;
+      left: 0;
+      height: $mark-stroke;
+      width: $mark-stroke;
+
+      transform-origin: 0px 0px;
+
+      @include apply-motion(
+        $md-sys-motion-spring-fast-effects,
+        transform,
+        width,
+        height,
+        background-color
+      );
+    }
+  }
+
+  &.MdcCheckbox-checked,
+  &.MdcCheckbox-indeterminate {
+    & .MdcCheckbox-container {
+      background-color: rgb(
+        get-token($md-comp-checkbox, selected-container-color)
+      );
+      border-color: transparent;
+    }
+    & .MdcCheckbox-icon {
+      color: rgb(get-token($md-comp-checkbox, selected-icon-color));
+    }
+  }
+
+  &:not(.MdcCheckbox-checked, .MdcCheckbox-indeterminate) .MdcCheckbox-icon {
+    &::before,
+    &::after {
+      transform: scaleY(-1) translate($_checkmark-bottom-left) rotate(45deg);
+    }
+
+    &::before {
+      width: $mark-stroke;
+      height: $mark-stroke;
+    }
+
+    &::after {
+      width: $mark-stroke;
+      height: 1px * math.sqrt(32);
+    }
+  }
+
+  &.MdcCheckbox-checked .MdcCheckbox-icon {
+    &::before,
+    &::after {
+      transform: scaleY(-1) translate($_checkmark-bottom-left) rotate(45deg);
+    }
+
+    // ::before is the long part of the checkmark
+    &::before {
+      width: 1px * math.sqrt(128);
+      height: $mark-stroke;
+    }
+
+    // ::after is the short part of the checkmark
+    &::after {
+      height: 1px * math.sqrt(32);
+      width: $mark-stroke;
+    }
+  }
+
+  // Indeterminate state (dash shape)
+  &.MdcCheckbox-indeterminate .MdcCheckbox-icon {
+    &::before,
+    &::after {
+      transform: scaleY(-1) translate($_indeterminate-bottom-left) rotate(0deg);
+    }
+
+    // ::before is the indeterminate dash
+    &::before {
+      width: 10px;
+      height: $mark-stroke;
+    }
+
+    // ::after is hidden
+    &::after {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  &.MdcCheckbox-error {
+    color: rgb(get-token($md-comp-checkbox, unselected-error-outline-color));
+
+    & .MdcCheckbox-container {
+      border-color: rgb(
+        get-token($md-comp-checkbox, unselected-error-outline-color)
+      );
+    }
+
+    &.MdcCheckbox-checked,
+    &.MdcCheckbox-indeterminate {
+      & .MdcCheckbox-container {
+        background-color: rgb(
+          get-token($md-comp-checkbox, selected-error-container-color)
+        );
+      }
+      & .MdcCheckbox-icon {
+        color: rgb(get-token($md-comp-checkbox, selected-error-icon-color));
+      }
+    }
+  }
+
+  &:hover {
+    & .MdcStateLayer {
+      background-color: rgb(
+        get-token($md-comp-checkbox, unselected-hover-state-layer-color)
+      );
+      opacity: get-token(
+        $md-comp-checkbox,
+        unselected-hover-state-layer-opacity
+      );
+    }
+
+    &.MdcCheckbox-checked .MdcStateLayer,
+    &.MdcCheckbox-indeterminate .MdcStateLayer {
+      background-color: rgb(
+        get-token($md-comp-checkbox, selected-hover-state-layer-color)
+      );
+      opacity: get-token($md-comp-checkbox, selected-hover-state-layer-opacity);
+    }
+
+    &.MdcCheckbox-error .MdcStateLayer {
+      background-color: rgb(
+        get-token($md-comp-checkbox, error-hover-state-layer-color)
+      );
+      opacity: get-token($md-comp-checkbox, error-hover-state-layer-opacity);
+    }
+  }
+
+  &.MdcCheckbox-disabled {
+    cursor: default;
+    pointer-events: none;
+    color: rgb(get-token($md-comp-checkbox, unselected-disabled-outline-color));
+
+    & .MdcCheckbox-container {
+      opacity: get-token(
+        $md-comp-checkbox,
+        unselected-disabled-container-opacity
+      );
+      border-color: rgb(
+        get-token($md-comp-checkbox, unselected-disabled-outline-color)
+      );
+    }
+
+    &.MdcCheckbox-checked,
+    &.MdcCheckbox-indeterminate {
+      & .MdcCheckbox-container {
+        background-color: rgb(
+          get-token($md-comp-checkbox, selected-disabled-container-color)
+        );
+        opacity: get-token(
+          $md-comp-checkbox,
+          selected-disabled-container-opacity
+        );
+      }
+
+      & .MdcCheckbox-icon {
+        color: rgb(get-token($md-comp-checkbox, selected-disabled-icon-color));
+      }
+    }
+  }
+}

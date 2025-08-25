@@ -9,6 +9,8 @@
 /* TODO: border-width changes on active - that influences the offset calculation
  for the label in outlined - shifting it slightly! */
 
+/* TODO: disabled styles */
+
 @mixin text-field-variants-common {
   $variants: (
     outlined: $md-comp-outlined-text-field,

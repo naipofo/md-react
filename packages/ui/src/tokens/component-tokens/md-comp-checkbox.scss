@@ -1,0 +1,173 @@
+/* THIS FILE WAS AUTOMATICALLY GENERATED - DO NOT MODIFY IT BY HAND */
+/* Component name: Checkbox */
+/* Token set name: md.comp.checkbox */
+
+@use '../sys-tokens.scss' as *;
+
+$md-comp-checkbox: (
+  name: md-comp-checkbox,
+  tokens: (
+    // Checkbox container width
+    container-width: 18px,
+    // Checkbox container height
+    container-height: 18px,
+    // Checkbox container size
+    container-size: 18px,
+    // Checkbox container shape
+    container-shape: 2px,
+    // Checkbox unselected outline color
+    unselected-outline-color: $md-sys-color-on-surface-variant,
+    // Checkbox unselected outline width
+    unselected-outline-width: 2px,
+    // Checkbox selected container color
+    selected-container-color: $md-sys-color-primary,
+    // Checkbox selected outline width
+    selected-outline-width: 0px,
+    // Checkbox unselected error outline color
+    unselected-error-outline-color: $md-sys-color-error,
+    // Checkbox selected error container color
+    selected-error-container-color: $md-sys-color-error,
+    // Checkbox icon size
+    icon-size: 18px,
+    // Checkbox selected icon color
+    selected-icon-color: $md-sys-color-on-primary,
+    // Checkbox selected error icon color
+    selected-error-icon-color: $md-sys-color-on-error,
+    // Checkbox unselected icon color
+    unselected-icon-color: $md-sys-color-on-surface,
+    // Checkbox state layer size
+    state-layer-size: 40px,
+    // Checkbox state layer shape
+    state-layer-shape: $md-sys-shape-corner-full,
+    // Checkbox unselected disabled outline color
+    unselected-disabled-outline-color: $md-sys-color-on-surface,
+    // Checkbox unselected disabled outline width
+    unselected-disabled-outline-width: 2px,
+    // Checkbox unselected disabled container opacity
+    unselected-disabled-container-opacity: 0.38,
+    // Checkbox selected disabled container color
+    selected-disabled-container-color: $md-sys-color-on-surface,
+    // Checkbox selected disabled container opacity
+    selected-disabled-container-opacity: 0.38,
+    // Checkbox selected disabled container outline width
+    selected-disabled-container-outline-width: 0px,
+    // Checkbox selected disabled icon color
+    selected-disabled-icon-color: $md-sys-color-surface,
+    // Checkbox disabled selected icon color
+    disabled-selected-icon-color: $md-sys-color-primary,
+    // Checkbox disabled selected icon opacity
+    disabled-selected-icon-opacity: 0.38,
+    // Checkbox disabled unselected icon color
+    disabled-unselected-icon-color: $md-sys-color-primary,
+    // Checkbox disabled unselected icon opacity
+    disabled-unselected-icon-opacity: 0.38,
+    // Checkbox unselected hover outline color
+    unselected-hover-outline-color: $md-sys-color-on-surface,
+    // Checkbox unselected hover outline width
+    unselected-hover-outline-width: 2px,
+    // Checkbox selected hover container color
+    selected-hover-container-color: $md-sys-color-primary,
+    // Checkbox selected hover outline width
+    selected-hover-outline-width: 0px,
+    // Checkbox unselected error hover outline color
+    unselected-error-hover-outline-color: $md-sys-color-error,
+    // Checkbox unselected error hover outline width
+    unselected-error-hover-outline-width: 2px,
+    // Checkbox selected error hover container color
+    selected-error-hover-container-color: $md-sys-color-error,
+    // Checkbox selected error hover outline width
+    selected-error-hover-outline-width: 0px,
+    // Checkbox selected hover state layer color
+    selected-hover-state-layer-color: $md-sys-color-primary,
+    // Checkbox selected hover state layer opacity
+    selected-hover-state-layer-opacity: $md-sys-state-hover-state-layer-opacity,
+    // Checkbox unselected hover state layer color
+    unselected-hover-state-layer-color: $md-sys-color-on-surface,
+    // Checkbox unselected hover state layer opacity
+    unselected-hover-state-layer-opacity: $md-sys-state-hover-state-layer-opacity,
+    // Checkbox error hover state layer color
+    error-hover-state-layer-color: $md-sys-color-error,
+    // Checkbox error hover state layer opacity
+    error-hover-state-layer-opacity: $md-sys-state-hover-state-layer-opacity,
+    // Checkbox selected hover icon color
+    selected-hover-icon-color: $md-sys-color-on-primary,
+    // Checkbox selected error hover icon color
+    selected-error-hover-icon-color: $md-sys-color-on-error,
+    // Checkbox unselected hover icon color
+    unselected-hover-icon-color: $md-sys-color-on-surface,
+    // Checkbox focus indicator color
+    focus-indicator-color: $md-sys-color-secondary,
+    // Checkbox focus indicator thickness
+    focus-indicator-thickness: $md-sys-state-focus-indicator-thickness,
+    // Checkbox focus indicator offset
+    focus-indicator-outline-offset: $md-sys-state-focus-indicator-outer-offset,
+    // Checkbox unselected focus outline color
+    unselected-focus-outline-color: $md-sys-color-on-surface,
+    // Checkbox unselected focus outline width
+    unselected-focus-outline-width: 2px,
+    // Checkbox selected focus container color
+    selected-focus-container-color: $md-sys-color-primary,
+    // Checkbox selected focus outline width
+    selected-focus-outline-width: 0px,
+    // Checkbox unselected error focusd outline color
+    unselected-error-focus-outline-color: $md-sys-color-error,
+    // Checkbox unselected error focusd outline width
+    unselected-error-focus-outline-width: 2px,
+    // Checkbox selected error focus container color
+    selected-error-focus-container-color: $md-sys-color-error,
+    // Checkbox selected error focus outline width
+    selected-error-focus-outline-width: 0px,
+    // Checkbox error focus state layer opacity
+    error-focus-state-layer-opacity: $md-sys-state-focus-state-layer-opacity,
+    // Checkbox selected focus state layer color
+    selected-focus-state-layer-color: $md-sys-color-primary,
+    // Checkbox selected focus state layer opacity
+    selected-focus-state-layer-opacity: $md-sys-state-focus-state-layer-opacity,
+    // Checkbox unselected focus state layer color
+    unselected-focus-state-layer-color: $md-sys-color-on-surface,
+    // Checkbox unselected focus state layer opacity
+    unselected-focus-state-layer-opacity: $md-sys-state-focus-state-layer-opacity,
+    // Checkbox error focus state layer color
+    error-focus-state-layer-color: $md-sys-color-error,
+    // Checkbox selected focus icon color
+    selected-focus-icon-color: $md-sys-color-on-primary,
+    // Checkbox selected error focus icon color
+    selected-error-focus-icon-color: $md-sys-color-on-error,
+    // Checkbox unselected focus icon color
+    unselected-focus-icon-color: $md-sys-color-on-surface,
+    // Checkbox unselected pressed outline color
+    unselected-pressed-outline-color: $md-sys-color-on-surface,
+    // Checkbox unselected pressed outline width
+    unselected-pressed-outline-width: 2px,
+    // Checkbox selected pressed container color
+    selected-pressed-container-color: $md-sys-color-primary,
+    // Checkbox selected pressed outline width
+    selected-pressed-outline-width: 0px,
+    // Checkbox unselected error pressed outline color
+    unselected-error-pressed-outline-color: $md-sys-color-error,
+    // Checkbox unselected error pressed outline width
+    unselected-error-pressed-outline-width: 2px,
+    // Checkbox selected error pressed container color
+    selected-error-pressed-container-color: $md-sys-color-error,
+    // Checkbox selected error pressed outline width
+    selected-error-pressed-outline-width: 0px,
+    // Checkbox unselected pressed state layer color
+    unselected-pressed-state-layer-color: $md-sys-color-primary,
+    // Checkbox unselected pressed state layer opacity
+    unselected-pressed-state-layer-opacity: $md-sys-state-pressed-state-layer-opacity,
+    // Checkbox selected pressed state layer color
+    selected-pressed-state-layer-color: $md-sys-color-on-surface,
+    // Checkbox selected pressed state layer opacity
+    selected-pressed-state-layer-opacity: $md-sys-state-pressed-state-layer-opacity,
+    // Checkbox error pressed state layer color
+    error-pressed-state-layer-color: $md-sys-color-error,
+    // Checkbox error pressed state layer opacity
+    error-pressed-state-layer-opacity: $md-sys-state-pressed-state-layer-opacity,
+    // Checkbox selected pressed icon color
+    selected-pressed-icon-color: $md-sys-color-on-primary,
+    // Checkbox selected error pressed icon color
+    selected-error-pressed-icon-color: $md-sys-color-on-error,
+    // Checkbox unselected pressed icon color
+    unselected-pressed-icon-color: $md-sys-color-on-surface
+  )
+);
